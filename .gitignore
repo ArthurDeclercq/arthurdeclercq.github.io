@@ -1,0 +1,39 @@
+# Ignore Quarto generated output folders
+_site/
+_quarto/
+
+# Ignore Quarto preview cache
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Ignore Python-related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+*~
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore package manager lock files (if not needed in your project)
+yarn.lock
+package-lock.json
+poetry.lock
+
+# Ignore virtual environments (if using Python)
+venv/
+.env/
+
+# Ignore temporary backup files created by text editors
+*.~undo-tree~
