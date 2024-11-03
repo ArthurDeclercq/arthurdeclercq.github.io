@@ -32,7 +32,7 @@ format:
   <div style="display: flex; align-items: center; justify-content: center;">
     <a href="#" id="homeButton" style="color: #dba14d; margin: 0 15px; text-decoration: none; font-size: 1.6em;">Home</a>
     <a href="#about" style="color: #dba14d; margin: 0 15px; text-decoration: none; font-size: 1.6em;">About</a>
-    <a href="#Experience" style="color: #dba14d; margin: 0 15px; text-decoration: none; font-size: 1.6em;">Experience</a>
+    <a href="#experience" style="color: #dba14d; margin: 0 15px; text-decoration: none; font-size: 1.6em;">Experience</a>
     <a href="#publications" style="color: #dba14d; margin: 0 15px; text-decoration: none; font-size: 1.6em;">Publications</a>
     <a href="#projects" style="color: #dba14d; margin: 0 15px; text-decoration: none; font-size: 1.6em;">Projects</a>
     <a href="#contact" style="color: #dba14d; margin: 0 15px; text-decoration: none; font-size: 1.6em;">Contact</a>
@@ -101,6 +101,73 @@ format:
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non tortor nisi. Nam facilisis auctor metus. Nulla facilisi. Morbi in vehicula urna. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis varius ligula non ligula pharetra, non elementum nisl accumsan. Aenean sit amet enim ut lectus vehicula placerat et eu augue. Phasellus tristique venenatis purus, at venenatis justo pellentesque non.</p>
     <p>Curabitur euismod, lacus at commodo vestibulum, magna metus fringilla orci, ut efficitur quam sem eget est. Mauris vel fermentum nunc. Aliquam erat volutpat. Ut vitae ex ut odio malesuada malesuada. Morbi interdum, tortor quis luctus tempor, ex libero tincidunt ligula, sit amet ultrices libero tortor nec purus. Donec vitae lectus sit amet libero vestibulum placerat. Vivamus tempus, eros et malesuada venenatis, ex nulla faucibus tortor, et tristique erat sapien et enim.</p>
 
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" style="padding: 30px; background-color: #f9f9f9; text-align: left;">
+
+  <!-- Header -->
+  <h2 style="font-size: 2.5em; color: #333; margin-bottom: 20px;">Experience</h2>
+
+  <!-- Current Position -->
+  <div style="margin-bottom: 30px;">
+    <h3 style="font-size: 1.8em; color: #dba14d;">Current Position</h3>
+    <p style="color: #555; font-size: 1.2em;">
+      <strong>Doctoral Researcher</strong> at
+      <a href="https://vib.be/en/research-and-impact/research-centers/center-medical-biotechnology#/" target="_blank" 
+         style="color: #dba14d; font-weight: bold; text-decoration: underline;">
+        VIB-UGent Center for Medical Biotechnology
+      </a><br>
+      <span style="color: #777;">2024 – Present</span>
+    </p>
+    <blockquote style="font-size: 1.1em; color: #666; border-left: 4px solid #dba14d; padding-left: 15px; margin-top: 10px; font-style: italic;">
+      "Working on data-driven bioinformatics solutions for mass spectrometry-based analysis."
+    </blockquote>
+  </div>
+
+  <!-- Education -->
+  <div style="margin-bottom: 20px;">
+    <h3 style="font-size: 1.8em; color: #dba14d;">Education</h3>
+    <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+      <li style="margin-bottom: 10px;">
+        <strong>PhD in Bioinformatics</strong> – Ghent University<br>
+        <span style="color: #777;">2021 – ...</span>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <strong>Deep learning specialisation</strong> – Coursera<br>
+        <span style="color: #777;">2021 – 2022</span>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <strong>Master in Biomedical Sciences</strong> – Ghent University<br>
+        <span style="color: #777;">2019 – 2021</span>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <strong>Ethical hacking from scratch in python</strong> – Udemy<br>
+        <span style="color: #777;">2020 – 2021</span>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <strong>Honours Programme in life sciences</strong> – Ghent University<br>
+        <span style="color: #777;">2018 – 2020</span>
+      </li>
+      <li>
+        <strong>Bachelor in Biomedical Sciences</strong> – Ghent University<br>
+        <span style="color: #777;">2016 – 2019</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Skills -->
+  <div style="margin-bottom: 20px;">
+    <h3 style="font-size: 1.8em; color: #dba14d;">Skills</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Python</span>
+      <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Machine Learning & Deep Learning</span>
+      <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Immunopeptidomics</span>
+      <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Bioinformatics</span>
+      <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Proteomics</span>
+      <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Data Analysis</span>
+    </div>
   </div>
 </section>
 
@@ -530,8 +597,8 @@ function toggleAbstract(element) {
       <div style="flex: 1; color: #333; margin-top: 10px; overflow: hidden;">
         <p style="color: #555; max-height: 80px;">Creating my own website using the quarto framework.</p>
       </div>
-      <a href="https://github.com/arthurdeclercq/website" target="_blank" style="color: #dba14d; font-size: 1.1em; text-decoration: none;">
-        github.com/arthurdeclercq/website
+      <a href="https://github.com/ArthurDeclercq/ADeclercq" target="_blank" style="color: #dba14d; font-size: 1.1em; text-decoration: none;">
+        github.com/ArthurDeclercq/ADeclercq
       </a>
     </div>
   </div>
