@@ -37,3 +37,5 @@ venv/
 
 # Ignore temporary backup files created by text editors
 *.~undo-tree~
+
+/.quarto/*
