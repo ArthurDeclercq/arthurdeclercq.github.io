@@ -2,7 +2,7 @@
 
 /* Global Styles */
 body {
-  font-family: 'Cormorant Garamond', serif; /* Choose a base font for the entire site */
+  font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman'; /* Choose a base font for the entire site */
   font-size: 16px; /* Base font size for body text */
   color: #333333; /* Text color */
   line-height: 1.6; /* Line spacing for readability */
@@ -26,8 +26,8 @@ body {
 
 /* Header Styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif; /* Font family for headers */
-  font-weight: 900;
+  font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman'; /* Font family for headers */
+  font-weight: 700;
   color: #222222;
   margin-top: 0;
   margin-bottom: 15px;
@@ -35,26 +35,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Specific Header Sizes */
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 2.4rem;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 /* Paragraph Styling with Font */
 p {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-align: justify;
   }
 
@@ -76,7 +76,7 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
 }
 
