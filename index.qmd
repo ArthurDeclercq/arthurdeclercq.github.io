@@ -86,7 +86,7 @@ format:
 
 
 <!-- Content Wrapper -->
-<div id="main-content" style="margin-top: 100vh;">
+<div id="main-content" style="margin-top: 100vh; background: rgb(255, 255, 255)">
 
 <!-- About Section -->
 <section id="about" style="padding: 15px; padding-top: 10px; text-align: left; display: flex; background: rgb(255, 255, 255); width: 100%;">
@@ -99,7 +99,7 @@ format:
   <div style="flex: 3; max-width: 75%; text-align: left;">
     <h2 style="margin-top: 0; text-align: justify;">About Me</h2>
     <p>Hi! Before I explain that white thing I’m holding above, let me introduce myself. I'm Arthur Declercq, a PhD student at CompOmics. I graduated in Biomedical Sciences, where I discovered two things: a love for immunology and a knack for working with computers rather than lab equipment. This led me to bioinformatics, where I now develop AI algorithms to study proteins. My work focuses on identifying epitopes—tiny protein fragments shown on MHC molecules (yes, that’s the white thing!)—which are crucial for designing vaccines for cancer or fighting infections.</p>
-    <p>When I'm not at my desk, you’ll probably find me on the move. Running has become my passion, whether I’m racking up kilometers with the Ghent running crew or tackling trails. Beyond running, I love heading out with my tent for a backpacking adventure. And if you ever catch me sitting still, it’s likely with a good book in hand.</p>
+    <p>When I'm not at my desk, you’ll probably find me on the move. Running has become my passion, whether I’m racking up kilometers with the Ghent Running Crew or tackling trails. Beyond running, I love heading out with my tent for a backpacking adventure. And if you ever catch me sitting still, it’s likely with a good book in hand.</p>
     <p>Reach out anytime if you’re into bioinformatics, outdoor adventures, or simply want to chat and exchange ideas!</p>
 
   </div>
@@ -619,10 +619,12 @@ function toggleDetails(element) {
 </script>
 
 <!-- Contact Section -->
-<section id="contact" style="padding: 20px 20px 30px; background: rgb(67, 69, 68, 0.95); text-align: left; width: 100%; min-height: 150px; background: url('images/sunday_running_club.jpg') center/cover no-repeat; filter: grayscale(20%);">
+<section id="contact" style="position: relative; padding: 20px 20px 30px; background: url('images/sunday_running_club.jpg') center/cover no-repeat; filter: grayscale(20%); text-align: left; width: 100%; min-height: 150px;">
+  <!-- Overlay -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(67, 69, 68, 0.8); pointer-events: none;"></div>
 
-
-  <div style="display: flex; justify-content: left; flex-wrap: wrap; gap: 15px; max-width: 1000px; padding: 30px">
+  
+  <div style="position: relative; z-index: 1; display: flex; justify-content: left; flex-wrap: wrap; gap: 15px; max-width: 1000px; padding: 30px; color: #f0f0f0;">
     <h2 style="font-size: 2.6em; margin-bottom: 5px; font-weight: bold; color: #f0f0f0;">Get in Touch</h2>
      <!-- Full Name and Job Title -->
     <div style="text-align: left; flex-basis: 100%; display: flex; align-items: center; gap: 10px;">
