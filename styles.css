@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Cormorant Garamond', serif; /* Choose a base font for the entire site */
+  font-size: 16px; /* Base font size for body text */
+  color: #333333; /* Text color */
+  line-height: 1.6; /* Line spacing for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Styling */
+section {
+  padding: 50px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in the total width */
+  overflow-x: hidden; /* Prevent horizontal scrolling within sections */
+}
+
+
+/* Prevent horizontal overflow on the entire page */
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling on the whole page */
+}
+
+/* Header Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif; /* Font family for headers */
+  font-weight: 900;
+  color: #222222;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Specific Header Sizes */
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+/* Paragraph Styling with Font */
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+
+/* Additional Styling for Links */
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* Link color on hover */
+  text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Flex Layout for Responsive Adjustments */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    text-align: center;
+  }
+  #about img {
+    margin: 0 auto 20px auto;
+  }
+}
