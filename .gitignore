@@ -41,3 +41,5 @@ venv/
 /.quarto/*
 
 logos.pptx
+
+/.quarto/

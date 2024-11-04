@@ -98,8 +98,9 @@ format:
   <!-- Text Container -->
   <div style="flex: 3; max-width: 75%; text-align: left;">
     <h2 style="margin-top: 0; text-align: justify;">About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non tortor nisi. Nam facilisis auctor metus. Nulla facilisi. Morbi in vehicula urna. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis varius ligula non ligula pharetra, non elementum nisl accumsan. Aenean sit amet enim ut lectus vehicula placerat et eu augue. Phasellus tristique venenatis purus, at venenatis justo pellentesque non.</p>
-    <p>Curabitur euismod, lacus at commodo vestibulum, magna metus fringilla orci, ut efficitur quam sem eget est. Mauris vel fermentum nunc. Aliquam erat volutpat. Ut vitae ex ut odio malesuada malesuada. Morbi interdum, tortor quis luctus tempor, ex libero tincidunt ligula, sit amet ultrices libero tortor nec purus. Donec vitae lectus sit amet libero vestibulum placerat. Vivamus tempus, eros et malesuada venenatis, ex nulla faucibus tortor, et tristique erat sapien et enim.</p>
+    <p>Hi! Before I explain that white thing I’m holding above, let me introduce myself. I'm Arthur Declercq, a PhD student at CompOmics. I graduated in Biomedical Sciences, where I discovered two things: a love for immunology and a knack for working with computers rather than lab equipment. This led me to bioinformatics, where I now develop AI algorithms to study proteins. My work focuses on identifying epitopes—tiny protein fragments shown on MHC molecules (yes, that’s the white thing!)—which are crucial for designing vaccines for cancer or fighting infections.</p>
+    <p>When I'm not at my desk, you’ll probably find me on the move. Running has become my passion, whether I’m racking up kilometers with the Ghent running crew or tackling trails. Beyond running, I love heading out with my tent for a backpacking adventure. And if you ever catch me sitting still, it’s likely with a good book in hand.</p>
+    <p>Reach out anytime if you’re into bioinformatics, outdoor adventures, or simply want to chat and exchange ideas!</p>
 
   </div>
 </section>
@@ -122,7 +123,7 @@ format:
       <span style="color: #777;">2024 – Present</span>
     </p>
     <blockquote style="font-size: 1.1em; color: #666; border-left: 4px solid #dba14d; padding-left: 15px; margin-top: 10px; font-style: italic;">
-      "Working on data-driven bioinformatics solutions for mass spectrometry-based analysis."
+      "Working on data-driven bioinformatics solutions for mass spectrometry-based immunopeptidomics."
     </blockquote>
   </div>
 
@@ -162,7 +163,7 @@ format:
     <h3 style="font-size: 1.8em; color: #dba14d;">Skills</h3>
     <div style="display: flex; flex-wrap: wrap; gap: 10px;">
       <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Python</span>
-      <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Machine Learning & Deep Learning</span>
+      <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Machine Learning</span>
       <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Immunopeptidomics</span>
       <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Bioinformatics</span>
       <span style="background-color: #dba14d; color: #fff; padding: 5px 10px; border-radius: 5px;">Proteomics</span>
@@ -618,7 +619,7 @@ function toggleDetails(element) {
 </script>
 
 <!-- Contact Section -->
-<section id="contact" style="padding: 20px 20px 30px; background: rgb(67, 69, 68, 0.95); text-align: left; width: 100%; min-height: 150px;">
+<section id="contact" style="padding: 20px 20px 30px; background: rgb(67, 69, 68, 0.95); text-align: left; width: 100%; min-height: 150px; background: url('images/sunday_running_club.jpg') center/cover no-repeat; filter: grayscale(20%);">
 
 
   <div style="display: flex; justify-content: left; flex-wrap: wrap; gap: 15px; max-width: 1000px; padding: 30px">
