@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman';
-  font-size: 18px;
+  font-size: 15px;
   color: #333;
   line-height: 1.6;
   margin: 0;
@@ -23,11 +23,11 @@ h1 a.anchorjs-link, h2 a.anchorjs-link, h3 a.anchorjs-link, h4 a.anchorjs-link, 
 
 /* Specific Header Sizes */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 h3 {
@@ -59,9 +59,9 @@ a:hover {
 
 
 
-p, a {
+a {
   font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman';
-  font-size: 1em; /* Adjust as needed */
+  font-size: 1.2em; /* Adjust as needed */
   line-height: 1.6;
   color: #333;
 }
@@ -147,7 +147,7 @@ nav a {
 .welcome-txt {
   color: #dba14d;
   margin: 0;
-  font-size: 2.5rem
+  font-size: 2.2rem
 }
 
 .main-content {
@@ -190,8 +190,12 @@ nav a {
   color: #dba14d;
 }
 
+.current-position-text {
+  font-size: 1.3em;
+}
+
 blockquote {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #666;
   border-left: 4px solid #dba14d;
   padding-left: 15px;
@@ -213,7 +217,7 @@ blockquote {
 .education-list {
   list-style: none;
   padding: 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #555;
 }
 
@@ -439,7 +443,7 @@ blockquote {
   flex: 1;
   margin-top: 10px;
   overflow: hidden;
-  max-height: 80px;
+  max-height: 120px;
 }
 
 .project-link {
@@ -452,7 +456,6 @@ blockquote {
   color: #dba14d;
   font-size: 1.1em;
   text-decoration: none;
-  margin-top: auto;
 }
 
 
