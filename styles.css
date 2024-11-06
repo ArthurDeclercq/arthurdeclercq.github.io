@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman';
-  font-size: 15px;
+  font-size: 13px;
   color: #333;
   line-height: 1.6;
   margin: 0;
@@ -147,7 +147,7 @@ nav a {
 .welcome-txt {
   color: #dba14d;
   margin: 0;
-  font-size: 2.2rem
+  font-size: 2rem
 }
 
 .main-content {
