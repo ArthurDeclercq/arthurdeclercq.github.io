@@ -366,7 +366,7 @@ function toggleAbstract(element) {
     <div class="project-card">
       <h3 class="project-title">Website</h3>
       <p class="project-description">Creating my own website using the quarto framework.</p>
-      <a href="https://github.com/ArthurDeclercq/ADeclercq" target="_blank" class="project-link">github.com/ArthurDeclercq/ADeclercq</a>
+      <a href="https://github.com/ArthurDeclercq/arthurdeclercq.github.io" target="_blank" class="project-link">github.com/ArthurDeclercq/arthurdeclercq.github.io</a>
     </div>
   </div>
 </section>
