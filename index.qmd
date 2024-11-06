@@ -57,7 +57,7 @@ format:
     <h2>Experience</h2>
     <div class="current-position">
       <h3>Current Position</h3>
-      <p><strong>Doctoral Researcher</strong> at <a href="https://vib.be/en/research-and-impact/research-centers/center-medical-biotechnology#/" target="_blank">VIB-UGent Center for Medical Biotechnology</a><br><span>2024 – Present</span></p>
+      <p class="current-position-text"><strong>Doctoral Researcher</strong> at <a href="https://vib.be/en/research-and-impact/research-centers/center-medical-biotechnology#/" target="_blank">VIB-UGent Center for Medical Biotechnology</a><br><span>2024 – Present</span></p>
       <blockquote>"Working on data-driven bioinformatics solutions for mass spectrometry-based immunopeptidomics."</blockquote>
     </div>
   
