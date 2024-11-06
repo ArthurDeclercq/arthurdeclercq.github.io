@@ -168,7 +168,7 @@ a:hover {
 }
 
 .about-paragraph {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /* Experience Section */
@@ -374,7 +374,7 @@ blockquote {
 }
 
 .abstract-text {
-  font-style: italic;
+  font-style: normal;
 }
 
 .manuscript-link {
