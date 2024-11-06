@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
-  font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman';
-  font-size: 13px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
   color: #333;
   line-height: 1.6;
   margin: 0;
@@ -10,8 +10,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman'; /* Font family for headers */
-  font-weight: 700;
+  font-family: 'Cormorant Garamond', serif; /* Font family for headers */
+  font-weight: 800;
   color: #222222;
   margin-top: 0;
   margin-bottom: 15px;
@@ -41,8 +41,8 @@ h4 {
 /* Paragraph Styling with Font */
 p {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
     text-align: justify;
   }
 
@@ -50,7 +50,7 @@ p {
  a {
   color: #dba14d; 
   text-decoration: none;
-  font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman';
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1em; /* Adjust as needed */
   line-height: 1.6;
 } 
@@ -141,36 +141,49 @@ a:hover {
 .main-content {
   margin-top: 100vh;
   background: rgb(255, 255, 255);
+  /* max-width: 1200px;  */
+  /* margin: auto; */
 }
 
 .about-section {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Image and text side by side */
+  gap: 20px;
+  align-items: center;
   padding: 40px;
-  display: flex;
   background: #fff;
 }
 
 .about-image-container {
-  flex: 1;
-  max-width: 25%;
-  padding-right: 20px;
+  max-width: 250px; /* Keeps the image a reasonable size */
 }
 
 .about-image {
-  border-radius: 10px;
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .about-text {
-  flex: 3;
-  max-width: 75%;
   text-align: justify;
+  line-height: 1.6;
 }
+/* Responsive adjustments for smaller screens */
+@media (max-width: 800px) {
+  .about-section {
+      grid-template-columns: 1fr; /* Stacks the image and text */
+      text-align: center;
+  }
 
-.about-paragraph {
-  font-size: 0.8rem;
+  .about-image-container {
+      margin: 0 auto; /* Centers the image */
+      max-width: 200px; /* Adjusts image size on smaller screens */
+  }
+
+  .about-text {
+      text-align: left; /* Left-align text for readability */
+  }
 }
-
 /* Experience Section */
 .experience-section {
   padding: 40px;
@@ -469,7 +482,7 @@ blockquote {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(67, 69, 68, 0.8);
+  background: rgba(67, 69, 68, 0.85);
   pointer-events: none;
 }
 
@@ -479,7 +492,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 1000px;
+  max-width: 300px;
   padding: 40px;
   color: #f0f0f0;
 }
@@ -500,6 +513,7 @@ blockquote {
 
 .contact-logo {
   height: 40px;
+  filter: brightness(0) invert(1)
 }
 
 .contact-full-name {
@@ -520,9 +534,10 @@ blockquote {
 }
 
 .contact-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1); /* Turns the icon white */
 }
 
 .contact-link {

@@ -7,6 +7,9 @@ format:
 ---
 
 ```{=html}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Navigation Section -->
@@ -46,9 +49,9 @@ format:
     </div>
     <div class="about-text">
       <h2>About Me</h2>
-        <p class="about-paragraph">Hi! Before I explain that white thing I’m holding above, let me introduce myself. I'm Arthur Declercq, a PhD student at CompOmics. I graduated in Biomedical Sciences, where I discovered two things: a love for immunology and a knack for working with computers rather than lab equipment. This led me to bioinformatics, where I now develop AI algorithms to study proteins. My work focuses on identifying epitopes—tiny protein fragments shown on MHC molecules (yes, that’s the white thing!)—which are crucial for designing vaccines for cancer or fighting infections.</p>
-        <p class="about-paragraph">When I'm not at my desk, you’ll probably find me on the move. Running has become my passion, whether I’m racking up kilometers with the Ghent Running Crew or tackling trails. Beyond running, I love heading out with my tent for a backpacking adventure. And if you ever catch me sitting still, it’s likely with a good book in hand.</p>
-        <p class="about-paragraph">Reach out anytime if you’re into bioinformatics, outdoor adventures, or simply want to chat and exchange ideas!</p>
+        <p>Hi! Before I explain that white thing I’m holding above, let me introduce myself. I'm Arthur Declercq, a PhD student at CompOmics. I graduated in Biomedical Sciences, where I discovered two things: a love for immunology and a knack for working with computers rather than lab equipment. This led me to bioinformatics, where I now develop AI algorithms to study proteins. My work focuses on identifying epitopes—tiny protein fragments shown on MHC molecules (yes, that’s the white thing!)—which are crucial for designing vaccines for cancer or fighting infections.</p>
+        <p>When I'm not at my desk, you’ll probably find me on the move. Running has become my passion, whether I’m racking up kilometers with the Ghent Running Crew or tackling trails. Beyond running, I love heading out with my tent for a backpacking adventure. And if you ever catch me sitting still, it’s likely with a good book in hand.</p>
+        <p>Reach out anytime if you’re into bioinformatics, outdoor adventures, or simply want to chat and exchange ideas!</p>
     </div>
   </section>
 
@@ -366,7 +369,7 @@ function toggleAbstract(element) {
     <div class="project-card">
       <h3 class="project-title">Website</h3>
       <p class="project-description">Creating my own website using the quarto framework.</p>
-      <a href="https://github.com/ArthurDeclercq/arthurdeclercq.github.io" target="_blank" class="project-link">github.com/ArthurDeclercq/arthurdeclercq.github.io</a>
+      <a href="https://github.com/ArthurDeclercq/arthurdeclercq.github.io" target="_blank" class="project-link">github.com/arthurdeclercq.github.io</a>
     </div>
   </div>
 </section>
@@ -379,7 +382,7 @@ function toggleAbstract(element) {
 
   <!-- Contact Content -->
   <div class="contact-content">
-    <h2 class="contact-title">Get in Touch</h2>
+    <h2 class="contact-title">Get in touch</h2>
 
     <!-- Full Name and Logo -->
     <div class="contact-name">
@@ -421,7 +424,7 @@ function toggleAbstract(element) {
 
       <!-- Orcid -->
       <div class="contact-item">
-        <img src="icons/orcid.png" alt="Orcid Icon" class="contact-icon">
+        <img src="icons/orcid_white.png" alt="Orcid Icon" class="contact-icon">
         <a href="https://orcid.org/0000-0002-9376-1399" target="_blank" class="contact-link">orcid.org/0000-0002-9376-1399</a>
       </div>
     </div>
@@ -462,5 +465,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-
 ```
