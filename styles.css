@@ -1,40 +1,24 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap'); */
-
-body, h1, h2, h3, h4, h5, h6, p, a, button {
-  font-family: 'Cormorant Garamond', serif !important;
-}
-
 /* Global Styles */
 body {
-  font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman'; /* Choose a base font for the entire site */
-  font-size: 16px; /* Base font size for body text */
-  color: #333333; /* Text color */
-  line-height: 1.6; /* Line spacing for readability */
+  font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman';
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Section Styling */
-section {
-  padding: 50px;
-  width: 100%;
-  box-sizing: border-box; /* Include padding in the total width */
-  overflow-x: hidden; /* Prevent horizontal scrolling within sections */
-}
-
-
-/* Prevent horizontal overflow on the entire page */
-body {
-  overflow-x: hidden; /* Prevent horizontal scrolling on the whole page */
-}
-
-/* Header Styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman'; /* Font family for headers */
   font-weight: 700;
   color: #222222;
   margin-top: 0;
   margin-bottom: 15px;
+}
+
+h1 a.anchorjs-link, h2 a.anchorjs-link, h3 a.anchorjs-link, h4 a.anchorjs-link, h5 a.anchorjs-link, h6 a.anchorjs-link {
+  display: none !important;
 }
 
 /* Specific Header Sizes */
@@ -63,38 +47,491 @@ p {
   }
 
 /* Additional Styling for Links */
-a {
-  color: #007bff; /* Link color */
+ a {
+  color: #dba14d; 
+  text-decoration: none;
+} 
+
+a:hover {
+  color: #dba14d;
+  text-decoration: underline;
+} 
+
+
+
+p, a {
+  font-family: 'Cormorant Garamond', serif, Georgia, Times, 'Times New Roman';
+  font-size: 1em; /* Adjust as needed */
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Adjust navigation link styles */
+nav a {
+  font-size: 1.4em; /* Set a consistent size */
+}
+
+
+/* Navigation Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(67, 69, 68, 0.9);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+
+.logo-container {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #dba14d;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+/* Section Styles */
+.home-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('images/ArthurDeclercq-24.jpg') center/cover no-repeat;
+  filter: grayscale(20%);
+  z-index: -1;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #f0f0f0;
+  font-size: 0.9em;
+}
+
+.home-intro {
+  text-align: center;
+  background: rgba(5, 5, 3, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 27%;
+}
+.welcome-txt {
+  color: #dba14d;
+  margin: 0;
+  font-size: 2.5rem
+}
+
+.main-content {
+  margin-top: 100vh;
+  background: rgb(255, 255, 255);
+}
+
+.about-section {
+  padding: 40px;
+  display: flex;
+  background: #fff;
+}
+
+.about-image-container {
+  flex: 1;
+  max-width: 25%;
+  padding-right: 20px;
+}
+
+.about-image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  flex: 3;
+  max-width: 75%;
+  text-align: justify;
+}
+
+/* Experience Section */
+.experience-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.current-position h3 {
+  font-size: 1.8em;
+  color: #dba14d;
+}
+
+blockquote {
+  font-size: 1.1em;
+  color: #666;
+  border-left: 4px solid #dba14d;
+  padding-left: 15px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Education Section Styles */
+.education-section {
+  margin-bottom: 20px;
+}
+
+.education-section h3 {
+  font-size: 1.8em;
+  color: #dba14d;
+  margin-bottom: 10px;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.education-list li {
+  margin-bottom: 10px;
+}
+
+.education-list span {
+  color: #777;
+}
+
+/* Skills Section Styles */
+.skills-section {
+  margin-bottom: 20px;
+}
+
+.skills-section h3 {
+  font-size: 1.8em;
+  color: #dba14d;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-item {
+  background-color: #dba14d;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* VOKA Section Styles */
+.voka-section {
+  padding: 10px;
+  padding-top: 10px;
+  text-align: left;
+  display: flex;
+  background: #fff;
+}
+
+.voka-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+  background: url('images/ArthurDeclercq-20.jpg') center/cover no-repeat;
+  filter: grayscale(25%);
+  overflow: hidden;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #f0f0f0;
+  font-size: 0.9em;
+  z-index: 2;
+}
+
+.photo-credit a {
+  color: #dba14d;
   text-decoration: none;
 }
 
-a:hover {
-  color: #0056b3; /* Link color on hover */
-  text-decoration: underline;
+.voka-quote {
+  text-align: center;
+  background: rgba(5, 5, 3, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  color: #dba14d;
 }
 
-/* Button Styling */
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+.voka-quote h2 {
+  font-size: 1.5em;
+  color: #dba14d;
+  margin: 0;
+}
+
+.voka-link {
+  text-decoration: none;
+  color: #dba14d;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-icon {
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+}
+
+
+/* Publications Section Styles */
+.publications-section {
+  padding: 40px;
+  padding-top: 10px;
+  background-color: #f7f7f7;
+  text-align: left;
+  width: 95%;
+}
+
+.publications-title {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.publication-item {
+  margin-bottom: 20px;
+  width: 100%;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+.publication-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #333;
+  margin: 0;
 }
 
-/* Flex Layout for Responsive Adjustments */
-@media (max-width: 768px) {
-  #about {
-    flex-direction: column; /* Stack image and text vertically on small screens */
-    text-align: center;
-  }
-  #about img {
-    margin: 0 auto 20px auto;
-  }
+.publication-authors, .publication-journal {
+  margin: 5px 0;
+  color: #555;
 }
+
+.publication-journal span {
+  margin-left: 10px;
+  color: #777;
+}
+
+.abstract-link {
+  color: #dba14d; 
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+.abstract {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.abstract-text {
+  font-style: italic;
+}
+
+.manuscript-link {
+  color: #dba14d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.divider {
+  width: 65%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px auto;
+}
+
+
+/* Projects Section Styles */
+.projects-section {
+  padding: 40px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.projects-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 1.5em;
+  color: #dba14d;
+  margin: 0;
+}
+
+.project-description {
+  color: #555;
+  flex: 1;
+  margin-top: 10px;
+  overflow: hidden;
+  max-height: 80px;
+}
+
+.project-link {
+  color: #dba14d;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.project-coming-soon {
+  color: #dba14d;
+  font-size: 1.1em;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+
+/* Contact Section Styles */
+.contact-section {
+  position: relative;
+  padding: 20px 20px 30px;
+  background: url('images/sunday_running_club.jpg') center/cover no-repeat;
+  filter: grayscale(20%);
+  text-align: left;
+  width: 100%;
+  min-height: 150px;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(67, 69, 68, 0.8);
+  pointer-events: none;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 1000px;
+  padding: 40px;
+  color: #f0f0f0;
+}
+
+.contact-title {
+  font-size: 2.6em;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.contact-name {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-logo {
+  height: 40px;
+}
+
+.contact-full-name {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #dba14d;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.contact-link {
+  color: #dba14d;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
