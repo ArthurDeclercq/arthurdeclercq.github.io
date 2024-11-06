@@ -68,6 +68,7 @@ a:hover {
   background-color: rgba(67, 69, 68, 0.9);
   padding: 15px 20px;
   display: flex;
+  min-height: 40px;
   align-items: center;
   justify-content: center;
   z-index: 11;
@@ -95,6 +96,70 @@ a:hover {
   margin: 0 15px;
   text-decoration: none;
   font-size: 1.4em;
+}
+
+.menu-icon {
+  display: none; /* Hidden by default on large screens */
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon .icon {
+  padding: auto;
+  width: 30px;
+  height: 30px;
+  background-color: #dba14d;
+  -webkit-mask-image: url('icons/menu.png'); 
+  mask-image: url('icons/menu.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 910px) {
+  /* Center the Logo */
+  .logo-container {
+      flex-grow: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  /* Position Menu Icon on the Right */
+  .menu-icon {
+      display: block;
+      position: absolute;
+      right: 60px;
+      top: 20px;
+      cursor: pointer;
+      width: 30px; /* Adjust size as needed */
+  }
+
+  /* Hide Nav Links Initially on Small Screens */
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on navbar height */
+      left: 0;
+      width: 100%;
+      background-color: rgba(67, 69, 68, 0.9);
+      padding: 10px 0;
+  }
+
+  .nav-link {
+      margin: 10px;
+      font-size: 1.2em;
+  }
+
+  /* Show Nav Links When Toggle is Checked */
+  #menu-toggle:checked ~ .nav-links {
+      display: flex;
+  }
 }
 
 /* Section Styles */
