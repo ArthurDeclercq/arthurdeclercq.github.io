@@ -122,7 +122,7 @@ a:hover {
 
 .home-intro {
   text-align: center;
-  background: rgba(5, 5, 3, 0.5);
+  background: rgba(5, 5, 3, 0.7);
   padding: 1.5rem;
   border-radius: 10px;
   z-index: 1;
@@ -138,55 +138,29 @@ a:hover {
   font-size: 2rem
 }
 
+.max-widht{
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px;
+}
+
 .main-content {
   margin-top: 100vh;
   background: rgb(255, 255, 255);
-  /* max-width: 1200px;  */
-  /* margin: auto; */
 }
 
 .about-section {
-  display: grid;
-  grid-template-columns: auto 1fr; /* Image and text side by side */
-  gap: 20px;
-  align-items: center;
-  padding: 40px;
   background: #fff;
 }
 
-.about-image-container {
-  max-width: 250px; /* Keeps the image a reasonable size */
-}
-
-.about-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 .about-text {
+  margin: 0; /* Centers the text within the section */
   text-align: justify;
   line-height: 1.6;
 }
-/* Responsive adjustments for smaller screens */
-@media (max-width: 800px) {
-  .about-section {
-      grid-template-columns: 1fr; /* Stacks the image and text */
-      text-align: center;
-  }
 
-  .about-image-container {
-      margin: 0 auto; /* Centers the image */
-      max-width: 200px; /* Adjusts image size on smaller screens */
-  }
-
-  .about-text {
-      text-align: left; /* Left-align text for readability */
-  }
-}
 /* Experience Section */
 .experience-section {
-  padding: 40px;
   background-color: #f9f9f9;
 }
 
@@ -261,8 +235,6 @@ blockquote {
 
 /* VOKA Section Styles */
 .voka-section {
-  padding: 10px;
-  padding-top: 10px;
   text-align: left;
   display: flex;
   background: #fff;
@@ -278,6 +250,7 @@ blockquote {
   background: url('images/ArthurDeclercq-20.jpg') center/cover no-repeat;
   filter: grayscale(25%);
   overflow: hidden;
+  background-position: left top;
 }
 
 .photo-credit {
@@ -336,11 +309,10 @@ blockquote {
 
 /* Publications Section Styles */
 .publications-section {
-  padding: 40px;
   padding-top: 10px;
   background-color: #f7f7f7;
   text-align: left;
-  width: 95%;
+  width: 100%;
 }
 
 .publications-title {
@@ -493,7 +465,6 @@ blockquote {
   flex-direction: column;
   gap: 15px;
   max-width: 300px;
-  padding: 40px;
   color: #f0f0f0;
 }
 

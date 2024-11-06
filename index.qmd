@@ -43,68 +43,67 @@ format:
 <div id="main-content" class="main-content">
 
   <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="about-image-container">
-      <img src="images/arthur.jpg" alt="About image" class="about-image">
-    </div>
+  <section id="about" class="about-section max-widht">
     <div class="about-text">
       <h2>About Me</h2>
-        <p>Hi! Before I explain that white thing I’m holding above, let me introduce myself. I'm Arthur Declercq, a PhD student at CompOmics. I graduated in Biomedical Sciences, where I discovered two things: a love for immunology and a knack for working with computers rather than lab equipment. This led me to bioinformatics, where I now develop AI algorithms to study proteins. My work focuses on identifying epitopes—tiny protein fragments shown on MHC molecules (yes, that’s the white thing!)—which are crucial for designing vaccines for cancer or fighting infections.</p>
-        <p>When I'm not at my desk, you’ll probably find me on the move. Running has become my passion, whether I’m racking up kilometers with the Ghent Running Crew or tackling trails. Beyond running, I love heading out with my tent for a backpacking adventure. And if you ever catch me sitting still, it’s likely with a good book in hand.</p>
+        <p>Hi! Before I explain that white thing I’m holding above, let me introduce myself. I'm Arthur Declercq, a PhD student at CompOmics, Ghent University. I graduated in Biomedical Sciences, where I discovered two things: a love for immunology and a knack for working with computers rather than lab equipment. This led me to bioinformatics, where I now develop AI algorithms to study proteins. My work focuses on identifying epitopes—tiny protein fragments shown on MHC molecules (yes, that’s the white thing!)—which are crucial for designing vaccines for cancer or fighting infections.</p>
+        <p>When I'm not at my desk, you’ll probably find me on the move. Running has become my passion, whether I’m racking up kilometers with the Ghent Running Crew or tackling trails. Beyond running, I love heading out with my tent for a backpacking adventure. And if you ever catch me sitting still, it’s likely with a good book in my hands.</p>
         <p>Reach out anytime if you’re into bioinformatics, outdoor adventures, or simply want to chat and exchange ideas!</p>
     </div>
   </section>
 
   <!-- Experience Section -->
   <section id="experience" class="experience-section">
-    <h2>Experience</h2>
-    <div class="current-position">
-      <h3>Current Position</h3>
-      <p class="current-position-text"><strong>Doctoral Researcher</strong> at <a href="https://vib.be/en/research-and-impact/research-centers/center-medical-biotechnology#/" target="_blank">VIB-UGent Center for Medical Biotechnology</a><br><span>2024 – Present</span></p>
-      <blockquote>"Working on data-driven bioinformatics solutions for mass spectrometry-based immunopeptidomics."</blockquote>
-    </div>
-  
- <!-- Education Section -->
-    <div class="education-section">
-      <h3>Education</h3>
-      <ul class="education-list">
-        <li>
-          <strong>PhD in Bioinformatics</strong> – Ghent University<br>
-          <span>2021 – ...</span>
-        </li>
-        <li>
-          <strong>Deep learning specialisation</strong> – Coursera<br>
-          <span>2021 – 2022</span>
-        </li>
-        <li>
-          <strong>Master in Biomedical Sciences</strong> – Ghent University<br>
-          <span>2019 – 2021</span>
-        </li>
-        <li>
-          <strong>Ethical hacking from scratch in python</strong> – Udemy<br>
-          <span>2020 – 2021</span>
-        </li>
-        <li>
-          <strong>Honours Programme in life sciences</strong> – Ghent University<br>
-          <span>2018 – 2020</span>
-        </li>
-        <li>
-          <strong>Bachelor in Biomedical Sciences</strong> – Ghent University<br>
-          <span>2016 – 2019</span>
-        </li>
-      </ul>
-    </div>
+    <div class="max-widht">
+      <h2>Experience</h2>
+      <div class="current-position">
+        <h3>Current Position</h3>
+        <p class="current-position-text"><strong>Predoctoral Researcher</strong> at <a href="https://vib.be/en/research-and-impact/research-centers/center-medical-biotechnology#/" target="_blank">VIB-UGent Center for Medical Biotechnology</a><br><span>2024 – Present</span></p>
+        <blockquote>"Working on data-driven bioinformatics solutions for mass spectrometry-based immunopeptidomics."</blockquote>
+      </div>
+    
+  <!-- Education Section -->
+      <div class="education-section">
+        <h3>Education</h3>
+        <ul class="education-list">
+          <li>
+            <strong>PhD in Bioinformatics</strong> – Ghent University<br>
+            <span>2021 – ...</span>
+          </li>
+          <li>
+            <strong>Deep learning specialisation</strong> – Coursera<br>
+            <span>2021 – 2022</span>
+          </li>
+          <li>
+            <strong>Master in Biomedical Sciences</strong> – Ghent University<br>
+            <span>2019 – 2021</span>
+          </li>
+          <li>
+            <strong>Ethical hacking from scratch in Python</strong> – Udemy<br>
+            <span>2020 – 2021</span>
+          </li>
+          <li>
+            <strong>Honours Programme in life sciences</strong> – Ghent University<br>
+            <span>2018 – 2020</span>
+          </li>
+          <li>
+            <strong>Bachelor in Biomedical Sciences</strong> – Ghent University<br>
+            <span>2016 – 2019</span>
+          </li>
+        </ul>
+      </div>
 
-    <!-- Skills Section -->
-    <div class="skills-section">
-      <h3>Skills</h3>
-      <div class="skills-list">
-        <span class="skill-item">Python</span>
-        <span class="skill-item">Machine Learning</span>
-        <span class="skill-item">Immunopeptidomics</span>
-        <span class="skill-item">Bioinformatics</span>
-        <span class="skill-item">Proteomics</span>
-        <span class="skill-item">Data Analysis</span>
+      <!-- Skills Section -->
+      <div class="skills-section">
+        <h3>Skills</h3>
+        <div class="skills-list">
+          <span class="skill-item">Python</span>
+          <span class="skill-item">Machine Learning</span>
+          <span class="skill-item">Immunopeptidomics</span>
+          <span class="skill-item">Bioinformatics</span>
+          <span class="skill-item">Proteomics</span>
+          <span class="skill-item">Data Analysis</span>
+        </div>
       </div>
     </div>
   </section>
@@ -133,245 +132,246 @@ format:
 
 <!-- Publications Section -->
 <section id="publications" class="publications-section">
-  <h2 class="publications-title">Publications</h2>
+  <div class="max-widht">
+    <h2 class="publications-title">Publications</h2>
 
-  <!-- MS²Rescore MCP -->
-  <div class="publication-item" onclick="toggleAbstract(this)">
-    <h3 class="publication-title">MS2Rescore: Data-Driven Rescoring Dramatically Boosts Immunopeptide Identification Rates</h3>
-    <p class="publication-authors">
-      <strong>Authors:</strong> Arthur Declercq ∙ Robbin Bouwmeester ∙ Aurélie Hirschler ∙ Christine Carapito ∙ Sven Degroeve ∙ Lennart Martens ∙ Ralf Gabriels
-    </p>
-    <p class="publication-journal">
-      <strong>Journal:</strong> Molecular & Cellular Proteomics<span>|</span> <strong>Year:</strong> August 2022
-    </p>
-    <div class="abstract">
-      <p class="abstract-text">Immunopeptidomics aims to identify major histocompatibility complex (MHC)-presented peptides on almost all cells that can be used in anti-cancer vaccine development. However, existing immunopeptidomics data analysis pipelines suffer from the nontryptic nature of immunopeptides, complicating their identification. Previously, peak intensity predictions by MS2PIP and retention time predictions by DeepLC have been shown to improve tryptic peptide identifications when rescoring peptide-spectrum matches with Percolator. However, as MS2PIP was tailored toward tryptic peptides, we have here retrained MS2PIP to include nontryptic peptides. Interestingly, the new models not only greatly improve predictions for immunopeptides but also yield further improvements for tryptic peptides. We show that the integration of new MS2PIP models, DeepLC, and Percolator in one software package, MS2Rescore, increases spectrum identification rate and unique identified peptides with 46% and 36% compared to standard Percolator rescoring at 1% FDR. Moreover, MS2Rescore also outperforms the current state-of-the-art in immunopeptide-specific identification approaches. Altogether, MS2Rescore thus allows substantially improved identification of novel epitopes from existing immunopeptidomics workflows.</p>
-      <a href="https://www.mcponline.org/article/S1535-9476(22)00074-3/fulltext" target="_blank" class="manuscript-link">
-        View Manuscript
-      </a>
+    <!-- MS²Rescore MCP -->
+    <div class="publication-item" onclick="toggleAbstract(this)">
+      <h3 class="publication-title">MS2Rescore: Data-Driven Rescoring Dramatically Boosts Immunopeptide Identification Rates</h3>
+      <p class="publication-authors">
+        <strong>Authors:</strong> Arthur Declercq ∙ Robbin Bouwmeester ∙ Aurélie Hirschler ∙ Christine Carapito ∙ Sven Degroeve ∙ Lennart Martens ∙ Ralf Gabriels
+      </p>
+      <p class="publication-journal">
+        <strong>Journal:</strong> Molecular & Cellular Proteomics<span>|</span> <strong>Year:</strong> August 2022
+      </p>
+      <div class="abstract">
+        <p class="abstract-text">Immunopeptidomics aims to identify major histocompatibility complex (MHC)-presented peptides on almost all cells that can be used in anti-cancer vaccine development. However, existing immunopeptidomics data analysis pipelines suffer from the nontryptic nature of immunopeptides, complicating their identification. Previously, peak intensity predictions by MS2PIP and retention time predictions by DeepLC have been shown to improve tryptic peptide identifications when rescoring peptide-spectrum matches with Percolator. However, as MS2PIP was tailored toward tryptic peptides, we have here retrained MS2PIP to include nontryptic peptides. Interestingly, the new models not only greatly improve predictions for immunopeptides but also yield further improvements for tryptic peptides. We show that the integration of new MS2PIP models, DeepLC, and Percolator in one software package, MS2Rescore, increases spectrum identification rate and unique identified peptides with 46% and 36% compared to standard Percolator rescoring at 1% FDR. Moreover, MS2Rescore also outperforms the current state-of-the-art in immunopeptide-specific identification approaches. Altogether, MS2Rescore thus allows substantially improved identification of novel epitopes from existing immunopeptidomics workflows.</p>
+        <a href="https://www.mcponline.org/article/S1535-9476(22)00074-3/fulltext" target="_blank" class="manuscript-link">
+          View Manuscript
+        </a>
+      </div>
     </div>
+    <div class="divider"></div>
+
+    <!-- Tims²Rescore -->
+    <div class="publication-item" onclick="toggleAbstract(this)">
+      <h3 class="publication-title">TIMS²Rescore: A DDA-PASEF optimized data-driven rescoring pipeline based on MS²Rescore</h3>
+      <p class="publication-authors">
+        <strong>Authors:</strong> Arthur Declercq ∙ Robbe Devreese ∙ Jonas Scheid ∙ Caroline Jachmann ∙ Tim Van Den Bossche ∙ Annica Preikschat ∙ David Gomez-Zepeda ∙ Jeewan Babu Rijal ∙ Aurélie Hirschler ∙ Jonathan R Krieger ∙ Tharan Srikumar ∙ George Rosenberger ∙ Dennis Trede ∙ Christine Carapito ∙ Stefan Tenzer ∙ Juliane S Walz ∙ Sven Degroeve ∙ Robbin Bouwmeester ∙ Lennart Martens ∙ Ralf Gabriels 
+      </p>
+      <p class="publication-journal">
+        <strong>Journal:</strong> Biorxiv<span>|</span> <strong>Year:</strong> June 2024
+      <div class="abstract">
+        <p class="abstract-text">The high throughput analysis of proteins with mass spectrometry (MS) is highly valuable for understanding human biology, discovering disease biomarkers, identifying therapeutic targets, and exploring pathogen interactions. To achieve these goals, specialized proteomics subfields – such as plasma proteomics, immunopeptidomics, and metaproteomics – must tackle specific analytical challenges, such as an increased identification ambiguity compared to routine proteomics experiments. Technical advancements in MS instrumentation can counter these issues by acquiring more discerning information at higher sensitivity levels, as is exemplified by the incorporation of ion mobility and parallel accumulation - serial fragmentation (PASEF) technologies in timsTOF instruments. In addition, AI-based bioinformatics solutions can help overcome ambiguity issues by integrating more data into the identification workflow. Here, we introduce TIMS2Rescore, a data-driven rescoring workflow optimized for DDA-PASEF data from timsTOF instruments. This platform includes new timsTOF MS2PIP spectrum prediction models and IM2Deep, a new deep learning-based peptide ion mobility predictor. Furthermore, to fully streamline data throughput, TIMS2Rescore directly accepts Bruker raw mass spectrometry data, and search results from ProteoScape and many other search engines, including MS Amanda and PEAKS. We showcase TIMS2Rescore performance on plasma proteomics, immunopeptidomics (HLA class I and II), and metaproteomics data sets. TIMS2Rescore is open-source and freely available at <a href="https://github.com/compomics/tims2rescore" target="_blank" class="abstract-link">https://github.com/compomics/tims2rescore.</a></p>
+        <a href="https://www.biorxiv.org/content/10.1101/2024.05.29.596400v1.abstract" target="_blank" class="manuscript-link">
+          View Manuscript
+        </a>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- MS²Rescore MSAmanda -->
+  <div class="publication-item" onclick="toggleAbstract(this)">
+  <h3 class="publication-title">MS2Rescore 3.0 Is a Modular, Flexible, and User-Friendly Platform to Boost Peptide Identifications, as Showcased with MS Amanda 3.0</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> Louise M. Buur ∙ Arthur Declercq ∙ Marina Strobl ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens ∙ Viktoria Dorfer ∙ Ralf Gabriels 
+  </p>
+  <p class="publication-journal">
+      <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> March 2024
+  <div class="abstract">
+      <p class="abstract-text">Rescoring of peptide–spectrum matches (PSMs) has emerged as a standard procedure for the analysis of tandem mass spectrometry data. This emphasizes the need for software maintenance and continuous improvement for such algorithms. We introduce MS2Rescore 3.0, a versatile, modular, and user-friendly platform designed to increase peptide identifications. Researchers can install MS2Rescore across various platforms with minimal effort and benefit from a graphical user interface, a modular Python API, and extensive documentation. To showcase this new version, we connected MS2Rescore 3.0 with MS Amanda 3.0, a new release of the well-established search engine, addressing previous limitations on automatic rescoring. Among new features, MS Amanda now contains additional output columns that can be used for rescoring. The full potential of rescoring is best revealed when applied on challenging data sets. We therefore evaluated the performance of these two tools on publicly available single-cell data sets, where the number of PSMs was substantially increased, thereby demonstrating that MS2Rescore offers a powerful solution to boost peptide identifications. MS2Rescore’s modular design and user-friendly interface make data-driven rescoring easily accessible, even for inexperienced users. We therefore expect the MS2Rescore to be a valuable tool for the wider proteomics community. MS2Rescore is available at <a href="https://github.com/compomics/ms2rescore" target="_blank" class="abstract-link">https://github.com/compomics/ms2rescore.</a></p>
+      <a href="https://pubs.acs.org/doi/10.1021/acs.jproteome.3c00785" target="_blank" class="manuscript-link">
+      View Manuscript
+      </a>
+  </div>
   </div>
   <div class="divider"></div>
 
-  <!-- Tims²Rescore -->
+  <!-- MS²PIP -->
   <div class="publication-item" onclick="toggleAbstract(this)">
-    <h3 class="publication-title">TIMS²Rescore: A DDA-PASEF optimized data-driven rescoring pipeline based on MS²Rescore</h3>
-    <p class="publication-authors">
-      <strong>Authors:</strong> Arthur Declercq ∙ Robbe Devreese ∙ Jonas Scheid ∙ Caroline Jachmann ∙ Tim Van Den Bossche ∙ Annica Preikschat ∙ David Gomez-Zepeda ∙ Jeewan Babu Rijal ∙ Aurélie Hirschler ∙ Jonathan R Krieger ∙ Tharan Srikumar ∙ George Rosenberger ∙ Dennis Trede ∙ Christine Carapito ∙ Stefan Tenzer ∙ Juliane S Walz ∙ Sven Degroeve ∙ Robbin Bouwmeester ∙ Lennart Martens ∙ Ralf Gabriels 
-    </p>
-    <p class="publication-journal">
-      <strong>Journal:</strong> Biorxiv<span>|</span> <strong>Year:</strong> June 2024
-    <div class="abstract">
-      <p class="abstract-text">The high throughput analysis of proteins with mass spectrometry (MS) is highly valuable for understanding human biology, discovering disease biomarkers, identifying therapeutic targets, and exploring pathogen interactions. To achieve these goals, specialized proteomics subfields – such as plasma proteomics, immunopeptidomics, and metaproteomics – must tackle specific analytical challenges, such as an increased identification ambiguity compared to routine proteomics experiments. Technical advancements in MS instrumentation can counter these issues by acquiring more discerning information at higher sensitivity levels, as is exemplified by the incorporation of ion mobility and parallel accumulation - serial fragmentation (PASEF) technologies in timsTOF instruments. In addition, AI-based bioinformatics solutions can help overcome ambiguity issues by integrating more data into the identification workflow. Here, we introduce TIMS2Rescore, a data-driven rescoring workflow optimized for DDA-PASEF data from timsTOF instruments. This platform includes new timsTOF MS2PIP spectrum prediction models and IM2Deep, a new deep learning-based peptide ion mobility predictor. Furthermore, to fully streamline data throughput, TIMS2Rescore directly accepts Bruker raw mass spectrometry data, and search results from ProteoScape and many other search engines, including MS Amanda and PEAKS. We showcase TIMS2Rescore performance on plasma proteomics, immunopeptidomics (HLA class I and II), and metaproteomics data sets. TIMS2Rescore is open-source and freely available at <a href="https://github.com/compomics/tims2rescore" target="_blank" class="abstract-link">https://github.com/compomics/tims2rescore.</a></p>
-      <a href="https://www.biorxiv.org/content/10.1101/2024.05.29.596400v1.abstract" target="_blank" class="manuscript-link">
-        View Manuscript
+  <h3 class="publication-title">Updated MS²PIP web server supports cutting-edge proteomics applications</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> Arthur Declercq ∙ Robbin Bouwmeester ∙ Cristina Chiva ∙ Eduard Sabidó ∙ Aurélie Hirschler ∙ Christine Carapito ∙ Lennart Martens ∙ Sven Degroeve ∙ Ralf Gabriels 
+  </p>
+  <p class="publication-journal">
+      <strong>Journal:</strong> Nucleic Acids Research<span>|</span> <strong>Year:</strong> July 2023
+  <div class="abstract">
+      <p class="abstract-text">Interest in the use of machine learning for peptide fragmentation spectrum prediction has been strongly on the rise over the past years, especially for applications in challenging proteomics identification workflows such as immunopeptidomics and the full-proteome identification of data independent acquisition spectra. Since its inception, the MS²PIP peptide spectrum predictor has been widely used for various downstream applications, mostly thanks to its accuracy, ease-of-use, and broad applicability. We here present a thoroughly updated version of the MS²PIP web server, which includes new and more performant prediction models for both tryptic- and non-tryptic peptides, for immunopeptides, and for CID-fragmented TMT-labeled peptides. Additionally, we have also added new functionality to greatly facilitate the generation of proteome-wide predicted spectral libraries, requiring only a FASTA protein file as input. These libraries also include retention time predictions from DeepLC. Moreover, we now provide pre-built and ready-to-download spectral libraries for various model organisms in multiple DIA-compatible spectral library formats. Besides upgrading the back-end models, the user experience on the MS²PIP web server is thus also greatly enhanced, extending its applicability to new domains, including immunopeptidomics and MS3-based TMT quantification experiments. MS²PIP is freely available at <a href="https://iomics.ugent.be/ms2pip/." target="_blank" class="abstract-link">https://iomics.ugent.be/ms2pip.</a></p>
+      <a href="https://academic.oup.com/nar/article/51/W1/W338/7151340?login=false" target="_blank" class="manuscript-link">
+      View Manuscript
       </a>
-    </div>
+  </div>
   </div>
   <div class="divider"></div>
 
-  <!-- MS²Rescore MSAmanda -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">MS2Rescore 3.0 Is a Modular, Flexible, and User-Friendly Platform to Boost Peptide Identifications, as Showcased with MS Amanda 3.0</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> Louise M. Buur ∙ Arthur Declercq ∙ Marina Strobl ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens ∙ Viktoria Dorfer ∙ Ralf Gabriels 
-</p>
-<p class="publication-journal">
-    <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> March 2024
-<div class="abstract">
-    <p class="abstract-text">Rescoring of peptide–spectrum matches (PSMs) has emerged as a standard procedure for the analysis of tandem mass spectrometry data. This emphasizes the need for software maintenance and continuous improvement for such algorithms. We introduce MS2Rescore 3.0, a versatile, modular, and user-friendly platform designed to increase peptide identifications. Researchers can install MS2Rescore across various platforms with minimal effort and benefit from a graphical user interface, a modular Python API, and extensive documentation. To showcase this new version, we connected MS2Rescore 3.0 with MS Amanda 3.0, a new release of the well-established search engine, addressing previous limitations on automatic rescoring. Among new features, MS Amanda now contains additional output columns that can be used for rescoring. The full potential of rescoring is best revealed when applied on challenging data sets. We therefore evaluated the performance of these two tools on publicly available single-cell data sets, where the number of PSMs was substantially increased, thereby demonstrating that MS2Rescore offers a powerful solution to boost peptide identifications. MS2Rescore’s modular design and user-friendly interface make data-driven rescoring easily accessible, even for inexperienced users. We therefore expect the MS2Rescore to be a valuable tool for the wider proteomics community. MS2Rescore is available at <a href="https://github.com/compomics/ms2rescore" target="_blank" class="abstract-link">https://github.com/compomics/ms2rescore.</a></p>
-    <a href="https://pubs.acs.org/doi/10.1021/acs.jproteome.3c00785" target="_blank" class="manuscript-link">
-    View Manuscript
-    </a>
-</div>
-</div>
-<div class="divider"></div>
-
-<!-- MS²PIP -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">Updated MS²PIP web server supports cutting-edge proteomics applications</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> Arthur Declercq ∙ Robbin Bouwmeester ∙ Cristina Chiva ∙ Eduard Sabidó ∙ Aurélie Hirschler ∙ Christine Carapito ∙ Lennart Martens ∙ Sven Degroeve ∙ Ralf Gabriels 
-</p>
-<p class="publication-journal">
-    <strong>Journal:</strong> Nucleic Acids Research<span>|</span> <strong>Year:</strong> July 2023
-<div class="abstract">
-    <p class="abstract-text">Interest in the use of machine learning for peptide fragmentation spectrum prediction has been strongly on the rise over the past years, especially for applications in challenging proteomics identification workflows such as immunopeptidomics and the full-proteome identification of data independent acquisition spectra. Since its inception, the MS²PIP peptide spectrum predictor has been widely used for various downstream applications, mostly thanks to its accuracy, ease-of-use, and broad applicability. We here present a thoroughly updated version of the MS²PIP web server, which includes new and more performant prediction models for both tryptic- and non-tryptic peptides, for immunopeptides, and for CID-fragmented TMT-labeled peptides. Additionally, we have also added new functionality to greatly facilitate the generation of proteome-wide predicted spectral libraries, requiring only a FASTA protein file as input. These libraries also include retention time predictions from DeepLC. Moreover, we now provide pre-built and ready-to-download spectral libraries for various model organisms in multiple DIA-compatible spectral library formats. Besides upgrading the back-end models, the user experience on the MS²PIP web server is thus also greatly enhanced, extending its applicability to new domains, including immunopeptidomics and MS3-based TMT quantification experiments. MS²PIP is freely available at <a href="https://iomics.ugent.be/ms2pip/." target="_blank" class="abstract-link">https://iomics.ugent.be/ms2pip.</a></p>
-    <a href="https://academic.oup.com/nar/article/51/W1/W338/7151340?login=false" target="_blank" class="manuscript-link">
-    View Manuscript
-    </a>
-</div>
-</div>
-<div class="divider"></div>
-
-<!-- Thunder PASEF -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">Thunder-DDA-PASEF enables high-coverage immunopeptidomics and is boosted by MS2Rescore with MS2PIP timsTOF fragmentation prediction model</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> David Gomez-Zepeda ∙ Danielle Arnold-Schild ∙ Julian Beyrle ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Elena Kumm ∙ Annica Preikschat ∙ Mateusz Krzysztof Łącki ∙ Aurélie Hirschler ∙ Jeewan Babu Rijal ∙ Christine Carapito ∙ Lennart Martens ∙ Ute Distler ∙ Hansjörg Schild ∙ Stefan Tenzer 
-</p>
-<p class="publication-journal">
-    <strong>Journal:</strong> Nature Communications<span>|</span> <strong>Year:</strong> March 2024
-<div class="abstract">
-    <p class="abstract-text">Human leukocyte antigen (HLA) class I peptide ligands (HLAIps) are key targets for developing vaccines and immunotherapies against infectious pathogens or cancer cells. Identifying HLAIps is challenging due to their high diversity, low abundance, and patient individuality. Here, we develop a highly sensitive method for identifying HLAIps using liquid chromatography-ion mobility-tandem mass spectrometry (LC-IMS-MS/MS). In addition, we train a timsTOF-specific peak intensity MS2PIP model for tryptic and non-tryptic peptides and implement it in MS2Rescore (v3) together with the CCS predictor from ionmob. The optimized method, Thunder-DDA-PASEF, semi-selectively fragments singly and multiply charged HLAIps based on their IMS and m/z. Moreover, the method employs the high sensitivity mode and extended IMS resolution with fewer MS/MS frames (300 ms TIMS ramp, 3 MS/MS frames), doubling the coverage of immunopeptidomics analyses, compared to the proteomics-tailored DDA-PASEF (100 ms TIMS ramp, 10 MS/MS frames). Additionally, rescoring boosts the HLAIps identification by 41.7% to 33%, resulting in 5738 HLAIps from as little as one million JY cell equivalents, and 14,516 HLAIps from 20 million. This enables in-depth profiling of HLAIps from diverse human cell lines and human plasma. Finally, profiling JY and Raji cells transfected to express the SARS-CoV-2 spike protein results in 16 spike HLAIps, thirteen of which have been reported to elicit immune responses in human patients.</p>
-    <a href="https://www.nature.com/articles/s41467-024-46380-y" target="_blank" class="manuscript-link">
-    View Manuscript
-    </a>
-</div>
-</div>
-<div class="divider"></div>
-
-<!-- Single cell bookchapter -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">Bioinformatics Pipeline for Processing Single-Cell Data</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> Arthur Declercq ∙ Nina Demeulemeester ∙ Ralf Gabriels ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens
-</p>
-<p class="publication-journal">
-    <strong>Book:</strong> Mass Spectrometry Based Single Cell Proteomics<span>|</span> <strong>Year:</strong> June 2024
-<div class="abstract">
-    <p class="abstract-text">Single-cell proteomics can offer valuable insights into dynamic cellular interactions, but identifying proteins at this level is challenging due to their low abundance. In this chapter, we present a state-of-the-art bioinformatics pipeline for single-cell proteomics that combines the search engine Sage (via SearchGUI), identification rescoring with MS2Rescore, quantification through FlashLFQ, and differential expression analysis using MSqRob2. MS2Rescore leverages LC-MS/MS behavior predictors, such as MS2PIP and DeepLC, to recalibrate scores with Percolator or mokapot. Combining these tools into a unified pipeline, this approach improves the detection of low-abundance peptides, resulting in increased identifications while maintaining stringent FDR thresholds.</p>
-    <a href="https://link.springer.com/protocol/10.1007/978-1-0716-3934-4_15" target="_blank" class="manuscript-link">
-    View Book Chapter
-    </a>
-</div>
-</div>
-<div class="divider"></div>
-
-<!-- PSM Utils -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">Psm_utils: A high-level Python API for parsing and handling peptide-spectrum matches and proteomics search results</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> Ralf Gabriels ∙ Arthur Declercq ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens 
-</p>
-<p class="publication-journal">
-    <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> December 2022
-<div class="abstract">
-    <p class="abstract-text">A plethora of proteomics search engine output file formats are in circulation. This lack of standardized output files greatly complicates generic downstream processing of peptide-spectrum matches (PSMs) and PSM files. While standards exist to solve this problem, these are far from universally supported by search engines. Moreover, software libraries are available to read a selection of PSM file formats, but a package to parse PSM files into a unified data structure has been missing. Here, we present psm_utils, a Python package to read and write various PSM file formats and to handle peptidoforms, PSMs, and PSM lists in a unified and user-friendly Python-, command line-, and web-interface. psm_utils was developed with pragmatism and maintainability in mind, adhering to community standards and relying on existing packages where possible. The Python API and command line interface greatly facilitate handling various PSM file formats. Moreover, a user-friendly web application was built using psm_utils that allows anyone to interconvert PSM files and retrieve basic PSM statistics. psm_utils is freely available under the permissive Apache2 license at <a href="https://github.com/compomics/psm_utils" target="_blank" class="abstract-link">https://github.com/compomics/psm_utils.</a></p>
-    <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jproteome.2c00609" target="_blank" class="manuscript-link">
-    View Manuscript
-    </a>
-</div>
-</div>
-<div class="divider"></div>
-
-<!-- Ionmob -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">Ionmob: a Python package for prediction of peptide collisional cross-section values</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> David Teschner ∙ David Gomez-Zepeda ∙ Arthur Declercq ∙ Mateusz K Łącki ∙ Seymen Avci ∙ Konstantin Bob ∙ Ute Distler ∙ Thomas Michna ∙ Lennart Martens ∙ Stefan Tenzer ∙ Andreas Hildebrandt 
-</p>
-<p class="publication-journal">
-    <strong>Journal:</strong> Bioinformatics<span>|</span> <strong>Year:</strong> August 2023
-<div class="abstract">
-    <p class="abstract-text">Including ion mobility separation (IMS) into mass spectrometry proteomics experiments is useful to improve coverage and throughput. Many IMS devices enable linking experimentally derived mobility of an ion to its collisional cross-section (CCS), a highly reproducible physicochemical property dependent on the ion’s mass, charge and conformation in the gas phase. Thus, known peptide ion mobilities can be used to tailor acquisition methods or to refine database search results. The large space of potential peptide sequences, driven also by posttranslational modifications of amino acids, motivates an in silico predictor for peptide CCS. Recent studies explored the general performance of varying machine-learning techniques, however, the workflow engineering part was of secondary importance. For the sake of applicability, such a tool should be generic, data driven, and offer the possibility to be easily adapted to individual workflows for experimental design and data processing. We created ionmob, a Python-based framework for data preparation, training, and prediction of collisional cross-section values of peptides. It is easily customizable and includes a set of pretrained, ready-to-use models and preprocessing routines for training and inference. Using a set of ≈21 000 unique phosphorylated peptides and ≈17 000 MHC ligand sequences and charge state pairs, we expand upon the space of peptides that can be integrated into CCS prediction. Lastly, we investigate the applicability of in silico predicted CCS to increase confidence in identified peptides by applying methods of re-scoring and demonstrate that predicted CCS values complement existing predictors for that task. The Python package is available at github: <a href="https://github.com/theGreatHerrLebert/ionmob" target="_blank" class="abstract-link">https://github.com/theGreatHerrLebert/ionmob.</a></p>
-    <a href="https://academic.oup.com/bioinformatics/article/39/9/btad486/7237255" target="_blank" class="manuscript-link">
-    View Manuscript
-    </a>
-</div>
-</div>
-<div class="divider"></div>
-
-<!-- PP plot -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">Quality control for the target decoy approach for peptide identification</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> Elke Debrie ∙ Milan Malfait ∙ Ralf Gabriels ∙ Arthur Declercq ∙ Adriaan Sticker ∙ Lennart Martens ∙ Lieven Clement 
-</p>
-<p class="publication-journal">
-    <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> January 2023
-<div class="abstract">
-    <p class="abstract-text">Reliable peptide identification is key in mass spectrometry (MS) based proteomics. To this end, the target decoy approach (TDA) has become the cornerstone for extracting a set of reliable peptide-to-spectrum matches (PSMs) that will be used in downstream analysis. Indeed, TDA is now the default method to estimate the false discovery rate (FDR) for a given set of PSMs, and users typically view it as a universal solution for assessing the FDR in the peptide identification step. However, the TDA also relies on a minimal set of assumptions, which are typically never verified in practice. We argue that a violation of these assumptions can lead to poor FDR control, which can be detrimental to any downstream data analysis. We here therefore first clearly spell out these TDA assumptions, and introduce TargetDecoy, a Bioconductor package with all the necessary functionality to control the TDA quality and its underlying assumptions for a given set of PSMs.</p>
-    <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jproteome.2c00423" target="_blank" class="manuscript-link">
-    View Manuscript
-    </a>
-</div>
-</div>
-<div class="divider"></div>
-
-
-<!-- cross-links -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">Intensity and retention time prediction improves the rescoring of protein-nucleic acid cross-links</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> Arslan Siraj ∙ Robbin Bouwmeester ∙ Arthur Declercq ∙ Luisa Welp ∙ Aleksandar Chernev ∙ Alexander Wulf ∙ Henning Urlaub ∙ Lennart Martens ∙ Sven Degroeve ∙ Oliver Kohlbacher ∙ Timo Sachsenberg 
-</p>
-<p class="publication-journal">
-    <strong>Journal:</strong> Proteomics<span>|</span> <strong>Year:</strong> April 2024
-<div class="abstract">
-    <p class="abstract-text">In protein-RNA cross-linking mass spectrometry, UV or chemical cross-linking introduces stable bonds between amino acids and nucleic acids in protein-RNA complexes that are then analyzed and detected in mass spectra. This analytical tool delivers valuable information about RNA-protein interactions and RNA docking sites in proteins, both in vitro and in vivo. The identification of cross-linked peptides with oligonucleotides of different length leads to a combinatorial increase in search space. We demonstrate that the peptide retention time prediction tasks can be transferred to the task of cross-linked peptide retention time prediction using a simple amino acid composition encoding, yielding improved identification rates when the prediction error is included in rescoring. For the more challenging task of including fragment intensity prediction of cross-linked peptides in the rescoring, we obtain, on average, a similar improvement. Further improvement in the encoding and fine-tuning of retention time and intensity prediction models might lead to further gains, and merit further research.</p>
-    <a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/pmic.202300144" target="_blank" class="manuscript-link">
-    View Manuscript
-    </a>
-</div>
-</div>
-<div class="divider"></div>
-</section>
-
-<script>
-function toggleAbstract(element) {
-  // Select the clicked abstract
-  const abstract = element.querySelector('.abstract');
-
-  // Close all other abstracts
-  document.querySelectorAll('.abstract').forEach(item => {
-    if (item !== abstract) item.style.display = 'none';
-  });
-
-  // Toggle the clicked abstract
-  abstract.style.display = abstract.style.display === 'block' ? 'none' : 'block';
-}
-</script>
-
-
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
-  <h2>Projects</h2>
-
-  <!-- Card Container -->
-  <div class="projects-container">
-    <!-- MS²Rescore -->
-    <div class="project-card">
-      <h3 class="project-title">MS²Rescore</h3>
-      <p class="project-description">Modular and user-friendly platform for AI-assisted rescoring of peptide identifications.</p>
-      <a href="https://github.com/compomics/ms2rescore" target="_blank" class="project-link">github.com/compomics/ms2rescore</a>
-    </div>
-
-    <!-- MS²PIP -->
-    <div class="project-card">
-      <h3 class="project-title">MS²PIP</h3>
-      <p class="project-description">MS2 Peak Intensity Prediction - Fast and accurate peptide fragmentation spectrum prediction.</p>
-      <a href="https://github.com/compomics/ms2pip" target="_blank" class="project-link">github.com/compomics/ms2pip</a>
-    </div>
-
-    <!-- Mumble -->
-    <div class="project-card">
-      <h3 class="project-title">Mumble</h3>
-      <p class="project-description">Mumble is a python-based tool designed to find candidate unimod modifications for mass shifts.</p>
-      <a href="https://github.com/compomics/mumble" target="_blank" class="project-link">github.com/compomics/mumble</a>
-    </div>
-
-    <!-- MHCMolPred -->
-    <div class="project-card">
-      <h3 class="project-title">MHCMolPred</h3>
-      <p class="project-description">MHC binding affinity predictions based using large language models and graph neural nets.</p>
-      <span class="project-coming-soon">Coming soon</span>
-    </div>
-
-    <!-- Baxerna -->
-    <div class="project-card">
-      <h3 class="project-title">Baxerna</h3>
-      <p class="project-description">Contributor to Baxerna, a next-generation bacterial vaccine development pipeline to generate novel pathogen-specific mRNA vaccines.</p>
-      <a href="https://www.baxerna.eu/" target="_blank" class="project-link">baxerna.eu</a>
-    </div>
-
-    <!-- Website -->
-    <div class="project-card">
-      <h3 class="project-title">Website</h3>
-      <p class="project-description">Creating my own website using the quarto framework.</p>
-      <a href="https://github.com/ArthurDeclercq/arthurdeclercq.github.io" target="_blank" class="project-link">github.com/arthurdeclercq.github.io</a>
-    </div>
+  <!-- Thunder PASEF -->
+  <div class="publication-item" onclick="toggleAbstract(this)">
+  <h3 class="publication-title">Thunder-DDA-PASEF enables high-coverage immunopeptidomics and is boosted by MS2Rescore with MS2PIP timsTOF fragmentation prediction model</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> David Gomez-Zepeda ∙ Danielle Arnold-Schild ∙ Julian Beyrle ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Elena Kumm ∙ Annica Preikschat ∙ Mateusz Krzysztof Łącki ∙ Aurélie Hirschler ∙ Jeewan Babu Rijal ∙ Christine Carapito ∙ Lennart Martens ∙ Ute Distler ∙ Hansjörg Schild ∙ Stefan Tenzer 
+  </p>
+  <p class="publication-journal">
+      <strong>Journal:</strong> Nature Communications<span>|</span> <strong>Year:</strong> March 2024
+  <div class="abstract">
+      <p class="abstract-text">Human leukocyte antigen (HLA) class I peptide ligands (HLAIps) are key targets for developing vaccines and immunotherapies against infectious pathogens or cancer cells. Identifying HLAIps is challenging due to their high diversity, low abundance, and patient individuality. Here, we develop a highly sensitive method for identifying HLAIps using liquid chromatography-ion mobility-tandem mass spectrometry (LC-IMS-MS/MS). In addition, we train a timsTOF-specific peak intensity MS2PIP model for tryptic and non-tryptic peptides and implement it in MS2Rescore (v3) together with the CCS predictor from ionmob. The optimized method, Thunder-DDA-PASEF, semi-selectively fragments singly and multiply charged HLAIps based on their IMS and m/z. Moreover, the method employs the high sensitivity mode and extended IMS resolution with fewer MS/MS frames (300 ms TIMS ramp, 3 MS/MS frames), doubling the coverage of immunopeptidomics analyses, compared to the proteomics-tailored DDA-PASEF (100 ms TIMS ramp, 10 MS/MS frames). Additionally, rescoring boosts the HLAIps identification by 41.7% to 33%, resulting in 5738 HLAIps from as little as one million JY cell equivalents, and 14,516 HLAIps from 20 million. This enables in-depth profiling of HLAIps from diverse human cell lines and human plasma. Finally, profiling JY and Raji cells transfected to express the SARS-CoV-2 spike protein results in 16 spike HLAIps, thirteen of which have been reported to elicit immune responses in human patients.</p>
+      <a href="https://www.nature.com/articles/s41467-024-46380-y" target="_blank" class="manuscript-link">
+      View Manuscript
+      </a>
   </div>
+  </div>
+  <div class="divider"></div>
+
+  <!-- Single cell bookchapter -->
+  <div class="publication-item" onclick="toggleAbstract(this)">
+  <h3 class="publication-title">Bioinformatics Pipeline for Processing Single-Cell Data</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> Arthur Declercq ∙ Nina Demeulemeester ∙ Ralf Gabriels ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens
+  </p>
+  <p class="publication-journal">
+      <strong>Book:</strong> Mass Spectrometry Based Single Cell Proteomics<span>|</span> <strong>Year:</strong> June 2024
+  <div class="abstract">
+      <p class="abstract-text">Single-cell proteomics can offer valuable insights into dynamic cellular interactions, but identifying proteins at this level is challenging due to their low abundance. In this chapter, we present a state-of-the-art bioinformatics pipeline for single-cell proteomics that combines the search engine Sage (via SearchGUI), identification rescoring with MS2Rescore, quantification through FlashLFQ, and differential expression analysis using MSqRob2. MS2Rescore leverages LC-MS/MS behavior predictors, such as MS2PIP and DeepLC, to recalibrate scores with Percolator or mokapot. Combining these tools into a unified pipeline, this approach improves the detection of low-abundance peptides, resulting in increased identifications while maintaining stringent FDR thresholds.</p>
+      <a href="https://link.springer.com/protocol/10.1007/978-1-0716-3934-4_15" target="_blank" class="manuscript-link">
+      View Book Chapter
+      </a>
+  </div>
+  </div>
+  <div class="divider"></div>
+
+  <!-- PSM Utils -->
+  <div class="publication-item" onclick="toggleAbstract(this)">
+  <h3 class="publication-title">Psm_utils: A high-level Python API for parsing and handling peptide-spectrum matches and proteomics search results</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> Ralf Gabriels ∙ Arthur Declercq ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens 
+  </p>
+  <p class="publication-journal">
+      <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> December 2022
+  <div class="abstract">
+      <p class="abstract-text">A plethora of proteomics search engine output file formats are in circulation. This lack of standardized output files greatly complicates generic downstream processing of peptide-spectrum matches (PSMs) and PSM files. While standards exist to solve this problem, these are far from universally supported by search engines. Moreover, software libraries are available to read a selection of PSM file formats, but a package to parse PSM files into a unified data structure has been missing. Here, we present psm_utils, a Python package to read and write various PSM file formats and to handle peptidoforms, PSMs, and PSM lists in a unified and user-friendly Python-, command line-, and web-interface. psm_utils was developed with pragmatism and maintainability in mind, adhering to community standards and relying on existing packages where possible. The Python API and command line interface greatly facilitate handling various PSM file formats. Moreover, a user-friendly web application was built using psm_utils that allows anyone to interconvert PSM files and retrieve basic PSM statistics. psm_utils is freely available under the permissive Apache2 license at <a href="https://github.com/compomics/psm_utils" target="_blank" class="abstract-link">https://github.com/compomics/psm_utils.</a></p>
+      <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jproteome.2c00609" target="_blank" class="manuscript-link">
+      View Manuscript
+      </a>
+  </div>
+  </div>
+  <div class="divider"></div>
+
+  <!-- Ionmob -->
+  <div class="publication-item" onclick="toggleAbstract(this)">
+  <h3 class="publication-title">Ionmob: a Python package for prediction of peptide collisional cross-section values</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> David Teschner ∙ David Gomez-Zepeda ∙ Arthur Declercq ∙ Mateusz K Łącki ∙ Seymen Avci ∙ Konstantin Bob ∙ Ute Distler ∙ Thomas Michna ∙ Lennart Martens ∙ Stefan Tenzer ∙ Andreas Hildebrandt 
+  </p>
+  <p class="publication-journal">
+      <strong>Journal:</strong> Bioinformatics<span>|</span> <strong>Year:</strong> August 2023
+  <div class="abstract">
+      <p class="abstract-text">Including ion mobility separation (IMS) into mass spectrometry proteomics experiments is useful to improve coverage and throughput. Many IMS devices enable linking experimentally derived mobility of an ion to its collisional cross-section (CCS), a highly reproducible physicochemical property dependent on the ion’s mass, charge and conformation in the gas phase. Thus, known peptide ion mobilities can be used to tailor acquisition methods or to refine database search results. The large space of potential peptide sequences, driven also by posttranslational modifications of amino acids, motivates an in silico predictor for peptide CCS. Recent studies explored the general performance of varying machine-learning techniques, however, the workflow engineering part was of secondary importance. For the sake of applicability, such a tool should be generic, data driven, and offer the possibility to be easily adapted to individual workflows for experimental design and data processing. We created ionmob, a Python-based framework for data preparation, training, and prediction of collisional cross-section values of peptides. It is easily customizable and includes a set of pretrained, ready-to-use models and preprocessing routines for training and inference. Using a set of ≈21 000 unique phosphorylated peptides and ≈17 000 MHC ligand sequences and charge state pairs, we expand upon the space of peptides that can be integrated into CCS prediction. Lastly, we investigate the applicability of in silico predicted CCS to increase confidence in identified peptides by applying methods of re-scoring and demonstrate that predicted CCS values complement existing predictors for that task. The Python package is available at github: <a href="https://github.com/theGreatHerrLebert/ionmob" target="_blank" class="abstract-link">https://github.com/theGreatHerrLebert/ionmob.</a></p>
+      <a href="https://academic.oup.com/bioinformatics/article/39/9/btad486/7237255" target="_blank" class="manuscript-link">
+      View Manuscript
+      </a>
+  </div>
+  </div>
+  <div class="divider"></div>
+
+  <!-- PP plot -->
+  <div class="publication-item" onclick="toggleAbstract(this)">
+  <h3 class="publication-title">Quality control for the target decoy approach for peptide identification</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> Elke Debrie ∙ Milan Malfait ∙ Ralf Gabriels ∙ Arthur Declercq ∙ Adriaan Sticker ∙ Lennart Martens ∙ Lieven Clement 
+  </p>
+  <p class="publication-journal">
+      <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> January 2023
+  <div class="abstract">
+      <p class="abstract-text">Reliable peptide identification is key in mass spectrometry (MS) based proteomics. To this end, the target decoy approach (TDA) has become the cornerstone for extracting a set of reliable peptide-to-spectrum matches (PSMs) that will be used in downstream analysis. Indeed, TDA is now the default method to estimate the false discovery rate (FDR) for a given set of PSMs, and users typically view it as a universal solution for assessing the FDR in the peptide identification step. However, the TDA also relies on a minimal set of assumptions, which are typically never verified in practice. We argue that a violation of these assumptions can lead to poor FDR control, which can be detrimental to any downstream data analysis. We here therefore first clearly spell out these TDA assumptions, and introduce TargetDecoy, a Bioconductor package with all the necessary functionality to control the TDA quality and its underlying assumptions for a given set of PSMs.</p>
+      <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jproteome.2c00423" target="_blank" class="manuscript-link">
+      View Manuscript
+      </a>
+  </div>
+  </div>
+  <div class="divider"></div>
+
+
+  <!-- cross-links -->
+  <div class="publication-item" onclick="toggleAbstract(this)">
+  <h3 class="publication-title">Intensity and retention time prediction improves the rescoring of protein-nucleic acid cross-links</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> Arslan Siraj ∙ Robbin Bouwmeester ∙ Arthur Declercq ∙ Luisa Welp ∙ Aleksandar Chernev ∙ Alexander Wulf ∙ Henning Urlaub ∙ Lennart Martens ∙ Sven Degroeve ∙ Oliver Kohlbacher ∙ Timo Sachsenberg 
+  </p>
+  <p class="publication-journal">
+      <strong>Journal:</strong> Proteomics<span>|</span> <strong>Year:</strong> April 2024
+  <div class="abstract">
+      <p class="abstract-text">In protein-RNA cross-linking mass spectrometry, UV or chemical cross-linking introduces stable bonds between amino acids and nucleic acids in protein-RNA complexes that are then analyzed and detected in mass spectra. This analytical tool delivers valuable information about RNA-protein interactions and RNA docking sites in proteins, both in vitro and in vivo. The identification of cross-linked peptides with oligonucleotides of different length leads to a combinatorial increase in search space. We demonstrate that the peptide retention time prediction tasks can be transferred to the task of cross-linked peptide retention time prediction using a simple amino acid composition encoding, yielding improved identification rates when the prediction error is included in rescoring. For the more challenging task of including fragment intensity prediction of cross-linked peptides in the rescoring, we obtain, on average, a similar improvement. Further improvement in the encoding and fine-tuning of retention time and intensity prediction models might lead to further gains, and merit further research.</p>
+      <a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/pmic.202300144" target="_blank" class="manuscript-link">
+      View Manuscript
+      </a>
+  </div>
+  </div>
+  <div class="divider"></div>
+  </div>
+  </section>
+
+  <script>
+  function toggleAbstract(element) {
+    // Select the clicked abstract
+    const abstract = element.querySelector('.abstract');
+
+    // Close all other abstracts
+    document.querySelectorAll('.abstract').forEach(item => {
+      if (item !== abstract) item.style.display = 'none';
+    });
+
+    // Toggle the clicked abstract
+    abstract.style.display = abstract.style.display === 'block' ? 'none' : 'block';
+  }
+  </script>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section max-widht">
+    <h2>Projects</h2>
+    <!-- Card Container -->
+    <div class="projects-container">
+      <!-- MS²Rescore -->
+      <div class="project-card">
+        <h3 class="project-title">MS²Rescore</h3>
+        <p class="project-description">Modular and user-friendly platform for AI-assisted rescoring of peptide identifications.</p>
+        <a href="https://github.com/compomics/ms2rescore" target="_blank" class="project-link">github.com/compomics/ms2rescore</a>
+      </div>
+
+      <!-- MS²PIP -->
+      <div class="project-card">
+        <h3 class="project-title">MS²PIP</h3>
+        <p class="project-description">MS2 Peak Intensity Prediction - Fast and accurate peptide fragmentation spectrum prediction.</p>
+        <a href="https://github.com/compomics/ms2pip" target="_blank" class="project-link">github.com/compomics/ms2pip</a>
+      </div>
+
+      <!-- Mumble -->
+      <div class="project-card">
+        <h3 class="project-title">Mumble</h3>
+        <p class="project-description">Mumble is a Python-based tool designed to find candidate unimod modifications for mass shifts.</p>
+        <a href="https://github.com/compomics/mumble" target="_blank" class="project-link">github.com/compomics/mumble</a>
+      </div>
+
+      <!-- MHCMolPred -->
+      <div class="project-card">
+        <h3 class="project-title">MHCMolPred</h3>
+        <p class="project-description">MHC binding affinity predictions based using large language models and graph neural nets.</p>
+        <span class="project-coming-soon">Coming soon</span>
+      </div>
+
+      <!-- Baxerna -->
+      <div class="project-card">
+        <h3 class="project-title">Baxerna</h3>
+        <p class="project-description">Contributor to Baxerna, a next-generation bacterial vaccine development pipeline to generate novel pathogen-specific mRNA vaccines.</p>
+        <a href="https://www.baxerna.eu/" target="_blank" class="project-link">baxerna.eu</a>
+      </div>
+
+      <!-- Website -->
+      <div class="project-card">
+        <h3 class="project-title">Website</h3>
+        <p class="project-description">Creating my own website using the Quarto framework.</p>
+        <a href="https://github.com/ArthurDeclercq/arthurdeclercq.github.io" target="_blank" class="project-link">github.com/arthurdeclercq.github.io</a>
+      </div>
+    </div>
 </section>
 
 
@@ -379,53 +379,54 @@ function toggleAbstract(element) {
 <section id="contact" class="contact-section">
   <!-- Background and Overlay -->
   <div class="contact-overlay"></div>
+  <div class="max-widht">
+    <!-- Contact Content -->
+    <div class="contact-content">
+      <h2 class="contact-title">Get in touch</h2>
 
-  <!-- Contact Content -->
-  <div class="contact-content">
-    <h2 class="contact-title">Get in touch</h2>
-
-    <!-- Full Name and Logo -->
-    <div class="contact-name">
-      <img src="icons/AD_logo_small.png" alt="Logo" class="contact-logo">
-      <p class="contact-full-name">Arthur Declercq</p>
-    </div>
-
-    <!-- Contact Information -->
-    <div class="contact-info">
-      <!-- Email -->
-      <div class="contact-item">
-        <img src="icons/send.png" alt="Email Icon" class="contact-icon">
-        <a href="mailto:Declercq.Arthur@UGent.be" class="contact-link">Declercq.Arthur@UGent.be</a>
+      <!-- Full Name and Logo -->
+      <div class="contact-name">
+        <img src="icons/AD_logo_small.png" alt="Logo" class="contact-logo">
+        <p class="contact-full-name">Arthur Declercq</p>
       </div>
 
-      <!-- LinkedIn -->
-      <div class="contact-item">
-        <img src="icons/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
-        <a href="https://www.linkedin.com/in/arthur-declercq-b37b9b1a4/" target="_blank" class="contact-link">linkedin.com/in/arthur-declercq</a>
-      </div>
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <!-- Email -->
+        <div class="contact-item">
+          <img src="icons/send.png" alt="Email Icon" class="contact-icon">
+          <a href="mailto:Declercq.Arthur@UGent.be" class="contact-link">Declercq.Arthur@UGent.be</a>
+        </div>
 
-      <!-- GitHub -->
-      <div class="contact-item">
-        <img src="icons/github.png" alt="GitHub Icon" class="contact-icon">
-        <a href="https://github.com/ArthurDeclercq" target="_blank" class="contact-link">github.com/ArthurDeclercq</a>
-      </div>
+        <!-- LinkedIn -->
+        <div class="contact-item">
+          <img src="icons/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+          <a href="https://www.linkedin.com/in/arthur-declercq-b37b9b1a4/" target="_blank" class="contact-link">linkedin.com/in/arthur-declercq</a>
+        </div>
 
-      <!-- Google Scholar -->
-      <div class="contact-item">
-        <img src="icons/google.png" alt="Google Scholar Icon" class="contact-icon">
-        <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="contact-link">Google Scholar</a>
-      </div>
+        <!-- GitHub -->
+        <div class="contact-item">
+          <img src="icons/github.png" alt="GitHub Icon" class="contact-icon">
+          <a href="https://github.com/ArthurDeclercq" target="_blank" class="contact-link">github.com/ArthurDeclercq</a>
+        </div>
 
-      <!-- Twitter -->
-      <div class="contact-item">
-        <img src="icons/x.png" alt="x Icon" class="contact-icon">
-        <a href="https://x.com/DeclercqArthur" target="_blank" class="contact-link">x.com/DeclercqArthur</a>
-      </div>
+        <!-- Google Scholar -->
+        <div class="contact-item">
+          <img src="icons/google.png" alt="Google Scholar Icon" class="contact-icon">
+          <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="contact-link">Google Scholar</a>
+        </div>
 
-      <!-- Orcid -->
-      <div class="contact-item">
-        <img src="icons/orcid_white.png" alt="Orcid Icon" class="contact-icon">
-        <a href="https://orcid.org/0000-0002-9376-1399" target="_blank" class="contact-link">orcid.org/0000-0002-9376-1399</a>
+        <!-- Twitter -->
+        <div class="contact-item">
+          <img src="icons/x.png" alt="x Icon" class="contact-icon">
+          <a href="https://x.com/DeclercqArthur" target="_blank" class="contact-link">x.com/DeclercqArthur</a>
+        </div>
+
+        <!-- Orcid -->
+        <div class="contact-item">
+          <img src="icons/orcid_white.png" alt="Orcid Icon" class="contact-icon">
+          <a href="https://orcid.org/0000-0002-9376-1399" target="_blank" class="contact-link">orcid.org/0000-0002-9376-1399</a>
+        </div>
       </div>
     </div>
   </div>
