@@ -311,11 +311,11 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   width: 100vw;
   background: url('images/ArthurDeclercq-20.jpg') center/cover no-repeat;
-  filter: grayscale(25%);
+  filter: grayscale(20%);
   overflow: hidden;
   background-position: left top;
 }
