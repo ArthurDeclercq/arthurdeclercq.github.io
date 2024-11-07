@@ -56,6 +56,12 @@ ul.task-list li input[type="checkbox"] {
     <img src="icons/AD_logo_full_colored_line.png" alt="Logo" class="logo">
   </div>
 
+  <!-- Menu toggle checkbox -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">
+      <div class="icon"></div>
+  </label>
+
   <!-- Navigation Links Section (Centered) -->
   <div class="nav-links">
     <a href="#" id="homeButton" class="nav-link">Home</a>
@@ -474,6 +480,7 @@ ul.task-list li input[type="checkbox"] {
 document.addEventListener('DOMContentLoaded', function() {
   // Get all the navigation links in the navbar
   var navLinks = document.querySelectorAll('.nav-links a');
+  var menuToggle = document.getElementById('menu-toggle');
 
   // Add click event listeners to navbar links only
   navLinks.forEach(function(link) {
@@ -491,17 +498,20 @@ document.addEventListener('DOMContentLoaded', function() {
         var targetElement = document.getElementById(targetId);
 
         // Calculate the scroll position, accounting for the navbar height
-        var navbarHeight = document.querySelector('nav').offsetHeight;
+        var navbarHeight = document.querySelector('.navbar').offsetHeight;
         var targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
 
         // Smoothly scroll to the target position
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
       }
+
+      // Uncheck the menu toggle checkbox to close the menu
+      menuToggle.checked = false;
     });
   });
 });
-
 </script>
+
 
 
 <script id="quarto-html-after-body" type="application/javascript">

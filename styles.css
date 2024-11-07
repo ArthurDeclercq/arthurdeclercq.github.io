@@ -68,6 +68,7 @@ a:hover {
   background-color: rgba(67, 69, 68, 0.9);
   padding: 15px 20px;
   display: flex;
+  min-height: 40px;
   align-items: center;
   justify-content: center;
   z-index: 11;
@@ -97,6 +98,70 @@ a:hover {
   font-size: 1.4em;
 }
 
+.menu-icon {
+  display: none; /* Hidden by default on large screens */
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon .icon {
+  padding: auto;
+  width: 30px;
+  height: 30px;
+  background-color: #dba14d;
+  -webkit-mask-image: url('icons/menu.png'); 
+  mask-image: url('icons/menu.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 910px) {
+  /* Center the Logo */
+  .logo-container {
+      flex-grow: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  /* Position Menu Icon on the Right */
+  .menu-icon {
+      display: block;
+      position: absolute;
+      right: 60px;
+      top: 20px;
+      cursor: pointer;
+      width: 30px; /* Adjust size as needed */
+  }
+
+  /* Hide Nav Links Initially on Small Screens */
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on navbar height */
+      left: 0;
+      width: 100%;
+      background-color: rgba(67, 69, 68, 0.9);
+      padding: 10px 0;
+  }
+
+  .nav-link {
+      margin: 10px;
+      font-size: 1.2em;
+  }
+
+  /* Show Nav Links When Toggle is Checked */
+  #menu-toggle:checked ~ .nav-links {
+      display: flex;
+  }
+}
+
 /* Section Styles */
 .home-section {
   position: fixed;
@@ -107,6 +172,7 @@ a:hover {
   background: url('images/ArthurDeclercq-24.jpg') center/cover no-repeat;
   filter: grayscale(20%);
   z-index: -1;
+  background-position: center;
 }
 
 .photo-credit {
@@ -127,18 +193,29 @@ a:hover {
   border-radius: 10px;
   z-index: 1;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 27%;
+  width: 32%;
 }
+
 .welcome-txt {
   color: #dba14d;
   margin: 0;
-  font-size: 2rem
+  font-size: 1.9rem
 }
 
-.max-widht{
+/* Responsive adjustments */
+@media (max-width: 910px) {
+  .home-intro {
+    width: 40%;
+  }
+  .welcome-txt {
+    font-size: 1.6rem
+  }
+}
+
+.max-widht {
   max-width: 1400px;
   margin: auto;
   padding: 40px;
@@ -235,20 +312,22 @@ blockquote {
 
 /* VOKA Section Styles */
 .voka-section {
-  text-align: left;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  background: #fff;
+  align-items: center;
+  justify-content: center;
 }
 
 .voka-background {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   width: 100vw;
   background: url('images/ArthurDeclercq-20.jpg') center/cover no-repeat;
-  filter: grayscale(25%);
+  filter: grayscale(20%);
   overflow: hidden;
   background-position: left top;
 }
@@ -306,6 +385,19 @@ blockquote {
   margin-right: 0.5rem;
 }
 
+/* Responsive adjustments */
+@media (max-width: 910px) {
+  
+  .voka-quote {
+      font-size: 0.8em;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 70%;
+      max-width: 70%;
+      padding: 1rem;
+      top: 40%;
+  }
+}
 
 /* Publications Section Styles */
 .publications-section {
@@ -516,4 +608,3 @@ blockquote {
   font-size: 1.3em;
   text-decoration: none;
 }
-
