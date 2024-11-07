@@ -300,9 +300,11 @@ blockquote {
 
 /* VOKA Section Styles */
 .voka-section {
-  text-align: left;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  background: #fff;
+  align-items: center;
+  justify-content: center;
 }
 
 .voka-background {
@@ -371,6 +373,19 @@ blockquote {
   margin-right: 0.5rem;
 }
 
+/* Responsive adjustments */
+@media (max-width: 910px) {
+  
+  .voka-quote {
+      font-size: 0.8em;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 70%;
+      max-width: 70%;
+      padding: 1rem;
+      top: 40%;
+  }
+}
 
 /* Publications Section Styles */
 .publications-section {
@@ -581,4 +596,3 @@ blockquote {
   font-size: 1.3em;
   text-decoration: none;
 }
-
