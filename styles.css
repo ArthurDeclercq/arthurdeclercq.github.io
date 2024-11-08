@@ -219,6 +219,10 @@ a:hover {
   .welcome-txt {
     font-size: 1.6rem
   }
+  /* Section Styles */
+.home-section {
+  background-position: 33% 10px;
+}
 }
 
 .max-widht {
