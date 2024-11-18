@@ -477,6 +477,11 @@ blockquote {
   margin: 20px auto;
 }
 
+.abstract-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+}
 
 /* Projects Section Styles */
 .projects-section {
