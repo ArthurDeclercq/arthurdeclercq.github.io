@@ -477,11 +477,25 @@ blockquote {
   margin: 20px auto;
 }
 
-.abstract-icon {
-    width: 14px;
-    height: 14px;
-    margin-left: 10px;
+.abstract-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; 
+  color: inherit; 
+  cursor: pointer; 
 }
+
+.abstract-container:hover {
+  color: #dba14d; /* Change text color to orange on hover */
+  text-decoration: underline;
+}
+
+.abstract-icon {
+  width: 14px;
+  height: 14px;
+
+}
+
 
 /* Projects Section Styles */
 .projects-section {
