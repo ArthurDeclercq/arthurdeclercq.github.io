@@ -7,6 +7,7 @@ publish:
 
 website:
   title: "ADeclercq"
+  site-url: "https://arthurdeclercq.bio"
 
 format:
   html:
