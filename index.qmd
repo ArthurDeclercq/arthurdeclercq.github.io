@@ -141,6 +141,50 @@ format:
   <div class="max-widht">
     <h2 class="publications-title">Publications</h2>
 
+    <!-- PAPER -->
+    <div class="publication-item">
+        <h3 class="publication-title">MHCquant2 refines immunopeptidomics tumor antigen discovery</h3>
+        <p class="publication-authors">
+          <strong>Authors:</strong> Jonas Scheid ∙ Steffen Lemke ∙ Naomi Hoenisch-Gravel ∙ Anna Dengler ∙ Timo Sachsenberg ∙ Arthur Declerq ∙ Ralf Gabriels ∙ Jens Bauer ∙ Marcel Wacker ∙ Leon Bichmann ∙ Lennart Martens ∙ Marissa L. Dubbelaar ∙ Sven Nahnsen ∙ Juliane S. Walz
+        </p>
+        <p class="publication-journal">
+          <strong>Journal:</strong> Research Square<span>|</span> <strong>Year:</strong> December 2024 <span>|</span> 
+          <span class="abstract-container" onclick="toggleAbstract(this)">
+            Abstract
+            <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
+          </span>
+        </p>
+        <div class="abstract">
+          <p class="abstract-text">The identification of human leukocyte antigen (HLA)-presented peptides as targets of anti-cancer T cell response is pivotal for the development of novel immunotherapies. Mass spectrometry (MS)-based immunopeptidomics enables the detection of these peptides, yet confident identifications and thus implementation in immunotherapy design are hampered by the high diversity and low abundance of naturally presented HLA peptides. Here, we introduce MHCquant2, a Nextflow-based open-source pipeline that leverages OpenMS tools and peptide property predictors (DeepLC, MS2PIP) for highly sensitive and scalable HLA peptide identification and quantification across various MS platforms. MHCquant2 increased peptide identifications up to 27% with a significant expansion of low-abundant peptides, outperforming state-of-the-art pipelines. Using MHCquant2 we build a comprehensive benign tissue repository comprising re-analyzed data from available benign immunopeptidomes and a novel benignMHCquant2 dataset, adding more than 160,000 novel naturally presented HLA peptides. First applications of this benign repository and the MHCquant2 pipeline enabled (i) the refinement of tumor-associated antigens, (ii) the detection of novel, high-frequent tumor-exclusive peptide antigens for multiple tumor entities, and (iii) the identification and quantification of mutation-derived low-abundant neoepitopes. MHCquant2 refines tumor antigen discovery in immunopeptidomics, paving the way for the implementation of off-the-shelf and personalized immunotherapy design.</p>
+          <a href="https://www.researchsquare.com/article/rs-5560023/v1" target="_blank" class="manuscript-link">
+            View Manuscript
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+  
+    <!-- Bacterial epitope discovery -->
+    <div class="publication-item">
+      <h3 class="publication-title">Maximizing immunopeptidomics-based bacterial epitope discovery by multiple search engines and rescoring</h3>
+      <p class="publication-authors">
+          <strong>Authors:</strong> Patrick Willems ∙ Fabien Thery ∙ Laura Van Moortel ∙ Margaux De Meyer ∙ An Staes ∙ Adillah Gul ∙ Lyudmila Kovalchuke ∙ Arthur Declercq ∙ Robbe Devreese ∙ Robbin Bouwmeester ∙ Ralf Gabriels ∙  Lennart Martens ∙ Francis Impens
+      </p>
+      <p class="publication-journal">
+        <strong>Journal:</strong> Biorxiv<span>|</span> <strong>Year:</strong> November 2024 <span>|</span> 
+        <span class="abstract-container" onclick="toggleAbstract(this)">
+          Abstract
+          <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
+        </span>
+      </p>
+      <div class="abstract">
+          <p class="abstract-text">Mass spectrometry-based discovery of bacterial immunopeptides presented by infected cells allows untargeted discovery bacterial antigens that can serve as vaccine candidates. Reliable identification of bacterial epitopes by such immunopeptidomics approaches is however challenged by their extreme low abundance. Here, we describe an optimized bioinformatical framework to enhance the confident identification of bacterial immunopeptides. Immunopeptidomics data of cell cultures infected with the foodborne model pathogen Listeria monocytogenes were searched by four different search engines, PEAKS, Comet, Sage and MSFragger, followed by data-driven rescoring with MS2Rescore. Compared to standard single search-engine results, this integrated workflow boosted the number of identified immunopeptides on average by 27% and led to the high confident detection of 18 additional bacterial peptides (+27%) matching 15 different Listeria proteins (+36%). Despite an overall large agreement between the search engines, a small number of conflicts (< 1%) in spectra-to-peptide assignments revealed ambiguous identifications that served as a quality filter. Finally, we show compatibility of our workflow with sensitive timsTOF data acquisition and find that rescoring, now with inclusion of ion mobility features, identifies 76% more peptides compared to orbitrap-based acquisition. Together, our results demonstrate how integration of multiple search engine results along with data-driven rescoring maximizes the identification of immunopeptides, boosting the detection of high confident bacterial epitopes for vaccine development.</p>
+          <a href="https://doi.org/10.1101/2024.11.22.624860" target="_blank" class="manuscript-link">
+          View Manuscript
+          </a>
+      </div>
+    </div>
+    <div class="divider"></div>
+
     <!-- MS²Rescore MCP -->
     <div class="publication-item">
       <h3 class="publication-title">MS2Rescore: Data-Driven Rescoring Dramatically Boosts Immunopeptide Identification Rates</h3>
@@ -514,6 +558,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let today = new Date();
+    let newThreshold = 200; // Days to consider an item as new
+    let publications = document.querySelectorAll(".publication-item");
+
+    publications.forEach((pub) => {
+      let yearText = pub.querySelector(".publication-journal").innerText.match(/\b\d{4}\b/);
+      let monthText = pub.querySelector(".publication-journal").innerText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)/);
+
+      if (yearText && monthText) {
+        let pubDate = new Date(`${monthText[0]} 1, ${yearText[0]}`);
+        let diffDays = (today - pubDate) / (1000 * 60 * 60 * 24);
+
+        if (diffDays <= newThreshold) {
+          let newTag = document.createElement("span");
+          newTag.classList.add("new-tag");
+          newTag.textContent = "New";
+
+          let title = pub.querySelector(".publication-title");
+          if (title) {
+            title.appendChild(newTag);
+          }
+        }
+      }
+    });
+  });
 </script>
 
 ```
