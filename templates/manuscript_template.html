@@ -1,16 +1,22 @@
-<!-- PAPER template -->
-<div class="publication-item" onclick="toggleAbstract(this)">
-<h3 class="publication-title">TITLE</h3>
-<p class="publication-authors">
-    <strong>Authors:</strong> AUTHOR ∙ 
-</p>
-<p class="publication-journal">
-    <strong>Journal:</strong> JOURNAL<span>|</span> <strong>Year:</strong> DATE
-<div class="abstract">
-    <p class="abstract-text">ABSTRACT</p>
-    <a href="LINK" target="_blank" class="manuscript-link">
-    View Manuscript
-    </a>
-</div>
-</div>
-<div class="divider"></div>
+    <!-- PAPER -->
+    <div class="publication-item">
+        <h3 class="publication-title">TITLE</h3>
+        <p class="publication-authors">
+          <strong>Authors:</strong> AUTHORS
+        </p>
+        <p class="publication-journal">
+          <strong>Journal:</strong> JOURNAL<span>|</span> <strong>Year:</strong> DATE <span>|</span> 
+          <span class="abstract-container" onclick="toggleAbstract(this)">
+            Abstract
+            <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
+          </span>
+        </p>
+        <div class="abstract">
+          <p class="abstract-text">ABSTRACT</p>
+          <a href="MANUSCRIPT_LINK" target="_blank" class="manuscript-link">
+            View Manuscript
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+  
