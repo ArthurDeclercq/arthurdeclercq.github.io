@@ -503,14 +503,14 @@ format:
         <!-- Google Scholar -->
         <div class="contact-item">
           <img src="icons/google.png" alt="Google Scholar Icon" class="contact-icon">
-          <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="contact-link">Google Scholar</a>
+          <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="contact-link">Google Scholar/ArthurDeclercq</a>
         </div>
-
-        <!-- Twitter -->
+j
+        <!-- Twitter
         <div class="contact-item">
           <img src="icons/x.png" alt="x Icon" class="contact-icon">
           <a href="https://x.com/DeclercqArthur" target="_blank" class="contact-link">x.com/DeclercqArthur</a>
-        </div>
+        </div> -->
 
         <!-- Orcid -->
         <div class="contact-item">
