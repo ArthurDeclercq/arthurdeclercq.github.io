@@ -177,7 +177,29 @@ ul.task-list li input[type="checkbox"] {
   <div class="max-widht">
     <h2 class="publications-title anchored">Publications</h2>
 
-    <!-- PAPER -->
+    
+    <!-- Tims²Rescore -->
+    <div class="publication-item">
+      <h3 class="publication-title anchored">TIMS²Rescore: A DDA-PASEF optimized data-driven rescoring pipeline based on MS²Rescore</h3>
+      <p class="publication-authors">
+        <strong>Authors:</strong> Arthur Declercq ∙ Robbe Devreese ∙ Jonas Scheid ∙ Caroline Jachmann ∙ Tim Van Den Bossche ∙ Annica Preikschat ∙ David Gomez-Zepeda ∙ Jeewan Babu Rijal ∙ Aurélie Hirschler ∙ Jonathan R Krieger ∙ Tharan Srikumar ∙ George Rosenberger ∙ Dennis Trede ∙ Christine Carapito ∙ Stefan Tenzer ∙ Juliane S Walz ∙ Sven Degroeve ∙ Robbin Bouwmeester ∙ Lennart Martens ∙ Ralf Gabriels 
+      </p>
+      <p class="publication-journal">
+        <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> February 2025 <span>|</span> 
+        <span class="abstract-container" onclick="toggleAbstract(this)">
+          Abstract
+          <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
+        </span>
+      </p><div class="abstract">
+        <p class="abstract-text">The high throughput analysis of proteins with mass spectrometry (MS) is highly valuable for understanding human biology, discovering disease biomarkers, identifying therapeutic targets, and exploring pathogen interactions. To achieve these goals, specialized proteomics subfields – such as plasma proteomics, immunopeptidomics, and metaproteomics – must tackle specific analytical challenges, such as an increased identification ambiguity compared to routine proteomics experiments. Technical advancements in MS instrumentation can counter these issues by acquiring more discerning information at higher sensitivity levels, as is exemplified by the incorporation of ion mobility and parallel accumulation - serial fragmentation (PASEF) technologies in timsTOF instruments. In addition, AI-based bioinformatics solutions can help overcome ambiguity issues by integrating more data into the identification workflow. Here, we introduce TIMS2Rescore, a data-driven rescoring workflow optimized for DDA-PASEF data from timsTOF instruments. This platform includes new timsTOF MS2PIP spectrum prediction models and IM2Deep, a new deep learning-based peptide ion mobility predictor. Furthermore, to fully streamline data throughput, TIMS2Rescore directly accepts Bruker raw mass spectrometry data, and search results from ProteoScape and many other search engines, including MS Amanda and PEAKS. We showcase TIMS2Rescore performance on plasma proteomics, immunopeptidomics (HLA class I and II), and metaproteomics data sets. TIMS2Rescore is open-source and freely available at <a href="https://github.com/compomics/tims2rescore" target="_blank" class="abstract-link">https://github.com/compomics/tims2rescore.</a></p>
+        <a href="https://pubs.acs.org/doi/10.1021/acs.jproteome.4c00609" target="_blank" class="manuscript-link">
+          View Manuscript
+        </a>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- MHCquant 2 -->
     <div class="publication-item">
         <h3 class="publication-title anchored">MHCquant2 refines immunopeptidomics tumor antigen discovery</h3>
         <p class="publication-authors">
@@ -237,27 +259,6 @@ ul.task-list li input[type="checkbox"] {
       <div class="abstract">
         <p class="abstract-text">Immunopeptidomics aims to identify major histocompatibility complex (MHC)-presented peptides on almost all cells that can be used in anti-cancer vaccine development. However, existing immunopeptidomics data analysis pipelines suffer from the nontryptic nature of immunopeptides, complicating their identification. Previously, peak intensity predictions by MS2PIP and retention time predictions by DeepLC have been shown to improve tryptic peptide identifications when rescoring peptide-spectrum matches with Percolator. However, as MS2PIP was tailored toward tryptic peptides, we have here retrained MS2PIP to include nontryptic peptides. Interestingly, the new models not only greatly improve predictions for immunopeptides but also yield further improvements for tryptic peptides. We show that the integration of new MS2PIP models, DeepLC, and Percolator in one software package, MS2Rescore, increases spectrum identification rate and unique identified peptides with 46% and 36% compared to standard Percolator rescoring at 1% FDR. Moreover, MS2Rescore also outperforms the current state-of-the-art in immunopeptide-specific identification approaches. Altogether, MS2Rescore thus allows substantially improved identification of novel epitopes from existing immunopeptidomics workflows.</p>
         <a href="https://www.mcponline.org/article/S1535-9476(22)00074-3/fulltext" target="_blank" class="manuscript-link">
-          View Manuscript
-        </a>
-      </div>
-    </div>
-    <div class="divider"></div>
-
-    <!-- Tims²Rescore -->
-    <div class="publication-item">
-      <h3 class="publication-title anchored">TIMS²Rescore: A DDA-PASEF optimized data-driven rescoring pipeline based on MS²Rescore</h3>
-      <p class="publication-authors">
-        <strong>Authors:</strong> Arthur Declercq ∙ Robbe Devreese ∙ Jonas Scheid ∙ Caroline Jachmann ∙ Tim Van Den Bossche ∙ Annica Preikschat ∙ David Gomez-Zepeda ∙ Jeewan Babu Rijal ∙ Aurélie Hirschler ∙ Jonathan R Krieger ∙ Tharan Srikumar ∙ George Rosenberger ∙ Dennis Trede ∙ Christine Carapito ∙ Stefan Tenzer ∙ Juliane S Walz ∙ Sven Degroeve ∙ Robbin Bouwmeester ∙ Lennart Martens ∙ Ralf Gabriels 
-      </p>
-      <p class="publication-journal">
-        <strong>Journal:</strong> Biorxiv<span>|</span> <strong>Year:</strong> June 2024 <span>|</span> 
-        <span class="abstract-container" onclick="toggleAbstract(this)">
-          Abstract
-          <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
-        </span>
-      </p><div class="abstract">
-        <p class="abstract-text">The high throughput analysis of proteins with mass spectrometry (MS) is highly valuable for understanding human biology, discovering disease biomarkers, identifying therapeutic targets, and exploring pathogen interactions. To achieve these goals, specialized proteomics subfields – such as plasma proteomics, immunopeptidomics, and metaproteomics – must tackle specific analytical challenges, such as an increased identification ambiguity compared to routine proteomics experiments. Technical advancements in MS instrumentation can counter these issues by acquiring more discerning information at higher sensitivity levels, as is exemplified by the incorporation of ion mobility and parallel accumulation - serial fragmentation (PASEF) technologies in timsTOF instruments. In addition, AI-based bioinformatics solutions can help overcome ambiguity issues by integrating more data into the identification workflow. Here, we introduce TIMS2Rescore, a data-driven rescoring workflow optimized for DDA-PASEF data from timsTOF instruments. This platform includes new timsTOF MS2PIP spectrum prediction models and IM2Deep, a new deep learning-based peptide ion mobility predictor. Furthermore, to fully streamline data throughput, TIMS2Rescore directly accepts Bruker raw mass spectrometry data, and search results from ProteoScape and many other search engines, including MS Amanda and PEAKS. We showcase TIMS2Rescore performance on plasma proteomics, immunopeptidomics (HLA class I and II), and metaproteomics data sets. TIMS2Rescore is open-source and freely available at <a href="https://github.com/compomics/tims2rescore" target="_blank" class="abstract-link">https://github.com/compomics/tims2rescore.</a></p>
-        <a href="https://www.biorxiv.org/content/10.1101/2024.05.29.596400v1.abstract" target="_blank" class="manuscript-link">
           View Manuscript
         </a>
       </div>
@@ -539,14 +540,14 @@ ul.task-list li input[type="checkbox"] {
         <!-- Google Scholar -->
         <div class="contact-item">
           <img src="icons/google.png" alt="Google Scholar Icon" class="contact-icon">
-          <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="contact-link">Google Scholar</a>
+          <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="contact-link">Google Scholar/ArthurDeclercq</a>
         </div>
-
-        <!-- Twitter -->
+j
+        <!-- Twitter
         <div class="contact-item">
           <img src="icons/x.png" alt="x Icon" class="contact-icon">
           <a href="https://x.com/DeclercqArthur" target="_blank" class="contact-link">x.com/DeclercqArthur</a>
-        </div>
+        </div> -->
 
         <!-- Orcid -->
         <div class="contact-item">
