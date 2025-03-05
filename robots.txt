@@ -1,1 +1,1 @@
-Sitemap: https://arthurdeclercq.bio/sitemap.xml
+Sitemap: https://arthurdeclercq.github.io/sitemap.xml
