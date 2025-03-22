@@ -18,7 +18,7 @@ format:
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="ADeclercq" />
+<meta name="apple-mobile-web-app-title" **content**="ADeclercq" />
 <link rel="manifest" href="/site.webmanifest" />
 
 <!-- Navigation Section -->
@@ -150,12 +150,11 @@ format:
   <div class="max-widht">
     <h2 class="publications-title">Publications</h2>
 
-    
     <!-- Tims²Rescore -->
-    <div class="publication-item">
+    <div class="publication-item" data-year="2025-02" data-first-author="true">
       <h3 class="publication-title">TIMS²Rescore: A DDA-PASEF optimized data-driven rescoring pipeline based on MS²Rescore</h3>
       <p class="publication-authors">
-        <strong>Authors:</strong> Arthur Declercq ∙ Robbe Devreese ∙ Jonas Scheid ∙ Caroline Jachmann ∙ Tim Van Den Bossche ∙ Annica Preikschat ∙ David Gomez-Zepeda ∙ Jeewan Babu Rijal ∙ Aurélie Hirschler ∙ Jonathan R Krieger ∙ Tharan Srikumar ∙ George Rosenberger ∙ Dennis Trede ∙ Christine Carapito ∙ Stefan Tenzer ∙ Juliane S Walz ∙ Sven Degroeve ∙ Robbin Bouwmeester ∙ Lennart Martens ∙ Ralf Gabriels 
+        <strong>Authors:</strong> Arthur Declercq & Robbe Devreese ∙ Jonas Scheid ∙ Caroline Jachmann ∙ Tim Van Den Bossche ∙ Annica Preikschat ∙ David Gomez-Zepeda ∙ Jeewan Babu Rijal ∙ Aurélie Hirschler ∙ Jonathan R Krieger ∙ Tharan Srikumar ∙ George Rosenberger ∙ Dennis Trede ∙ Christine Carapito ∙ Stefan Tenzer ∙ Juliane S Walz ∙ Sven Degroeve ∙ Robbin Bouwmeester ∙ Lennart Martens ∙ Ralf Gabriels 
       </p>
       <p class="publication-journal">
         <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> February 2025 <span>|</span> 
@@ -173,7 +172,7 @@ format:
     <div class="divider"></div>
 
     <!-- MHCquant 2 -->
-    <div class="publication-item">
+    <div class="publication-item" data-year="2024-12" data-first-author="false">
         <h3 class="publication-title">MHCquant2 refines immunopeptidomics tumor antigen discovery</h3>
         <p class="publication-authors">
           <strong>Authors:</strong> Jonas Scheid ∙ Steffen Lemke ∙ Naomi Hoenisch-Gravel ∙ Anna Dengler ∙ Timo Sachsenberg ∙ Arthur Declerq ∙ Ralf Gabriels ∙ Jens Bauer ∙ Marcel Wacker ∙ Leon Bichmann ∙ Lennart Martens ∙ Marissa L. Dubbelaar ∙ Sven Nahnsen ∙ Juliane S. Walz
@@ -193,15 +192,63 @@ format:
         </div>
       </div>
       <div class="divider"></div>
+
+    <!-- IM2Deep -->
+    <div class="publication-item" data-year="2025-02" data-first-author="false">
+        <h3 class="publication-title">Collisional cross-section prediction for multiconformational peptide ions with IM2Deep</h3>
+        <p class="publication-authors">
+          <strong>Authors:</strong> Robbe Devreese ∙ Alireza Nameni ∙ Arthur Declercq, Emmy Terryn ∙ Ralf Gabriels ∙ Francis Impens ∙ Kris Gevaert ∙ Lennart Martens ∙ Robbin Bouwmeester
+        </p>
+        <p class="publication-journal">
+          <strong>Journal:</strong> Biorxiv<span>|</span> <strong>Year:</strong> February 2025 <span>|</span> 
+          <span class="abstract-container" onclick="toggleAbstract(this)">
+            Abstract
+            <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
+          </span>
+        </p>
+        <div class="abstract">
+          <p class="abstract-text">Peptide collisional cross-section (CCS) prediction is complicated by the tendency of peptide ions to exhibit multiple conformations in the gas phase. This adds further complexity to downstream analysis of proteomics data, for example for identification or quantification through feature finding. Here, we present an improved version of IM2Deep that is trained on a carefully curated dataset to predict CCS values of multiconformational peptides. The training data is derived from a large and comprehensive set of publicly available datasets. This comprehensive training dataset together with a tailored architecture allows for the accurate CCS prediction of multiple peptide conformational states. Furthermore, the enhanced IM2Deep model also retains high precision for peptides with a single observed conformation. IM2Deep is publicly available under a permissive open source license at <a href="https://github.com/compomics/IM2Deep" target="_blank" class="manuscript-link">https://github.com/compomics/IM2Deep</a>.</p>
+          <a href="https://www.biorxiv.org/content/10.1101/2025.02.18.638865v1" target="_blank" class="manuscript-link">
+            View Manuscript
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+    <!-- ms2rescore metaproteomics -->
+    <div class="publication-item" data-year="2025-02" data-first-author="false">
+        <h3 class="publication-title">Boosting metaproteomics identification rates and taxonomic specificity with MS2Rescore</h3>
+        <p class="publication-authors">
+          <strong>Authors:</strong> Tim Van Den Bossche ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Tanja Holstein ∙ Bart Mesuere ∙ Thilo Muth ∙ Pieter Verschaffelt ∙ Lennart Martens
+        </p>
+        <p class="publication-journal">
+          <strong>Journal:</strong> Biorxiv<span>|</span> <strong>Year:</strong> February 2025 <span>|</span> 
+          <span class="abstract-container" onclick="toggleAbstract(this)">
+            Abstract
+            <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
+          </span>
+        </p>
+        <div class="abstract">
+          <p class="abstract-text">
+          <strong>Background:</strong><br>Metaproteomics, the study of the collective proteome within microbial ecosystems, has gained increasing interest over the past decade. However, peptide identification rates in metaproteomics remain low compared to single-species proteomics. A key challenge is the limited sequence resolution of current identification algorithms, which were primarily designed for single-species analyses. To address this, we applied the machine learning-driven MS2Rescore tool to multiple metaproteomics datasets from diverse microbial environments and benchmark studies.
+          <br><strong>Results:</strong><br>We demonstrate that MS2Rescore outperforms typical metaproteomics identification workflows. It significantly increases peptide identification rates compared to standard database searches, even when compared to Percolator rescoring. Moreover, it enables lowering the false discovery rate (FDR) to 0.1% with minimal sensitivity loss, a substantial improvement over the 1% or 5% FDR thresholds commonly used in metaproteomics, in turn leading to greater specificity in downstream taxonomic annotation with Unipept.
+          <br><strong>Conclusions:</strong><br> Our findings show that MS2Rescore substantially improves peptide identification sensitivity as well as specificity in metaproteomics, and delivers improved taxonomic specificity. This advancement results in a more reliable downstream taxonomic analysis, reinforcing the potential of machine learning-based rescoring in metaproteomics research.</p>
+          <a href="MANUSCRIPT_LINK" target="_blank" class="manuscript-link">
+            View Manuscript
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+  
   
     <!-- Bacterial epitope discovery -->
-    <div class="publication-item">
+    <div class="publication-item" data-year="2025-03" data-first-author="false">
       <h3 class="publication-title">Maximizing immunopeptidomics-based bacterial epitope discovery by multiple search engines and rescoring</h3>
       <p class="publication-authors">
           <strong>Authors:</strong> Patrick Willems ∙ Fabien Thery ∙ Laura Van Moortel ∙ Margaux De Meyer ∙ An Staes ∙ Adillah Gul ∙ Lyudmila Kovalchuke ∙ Arthur Declercq ∙ Robbe Devreese ∙ Robbin Bouwmeester ∙ Ralf Gabriels ∙  Lennart Martens ∙ Francis Impens
       </p>
       <p class="publication-journal">
-        <strong>Journal:</strong> Biorxiv<span>|</span> <strong>Year:</strong> November 2024 <span>|</span> 
+        <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> March 2025 <span>|</span> 
         <span class="abstract-container" onclick="toggleAbstract(this)">
           Abstract
           <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
@@ -209,7 +256,7 @@ format:
       </p>
       <div class="abstract">
           <p class="abstract-text">Mass spectrometry-based discovery of bacterial immunopeptides presented by infected cells allows untargeted discovery bacterial antigens that can serve as vaccine candidates. Reliable identification of bacterial epitopes by such immunopeptidomics approaches is however challenged by their extreme low abundance. Here, we describe an optimized bioinformatical framework to enhance the confident identification of bacterial immunopeptides. Immunopeptidomics data of cell cultures infected with the foodborne model pathogen Listeria monocytogenes were searched by four different search engines, PEAKS, Comet, Sage and MSFragger, followed by data-driven rescoring with MS2Rescore. Compared to standard single search-engine results, this integrated workflow boosted the number of identified immunopeptides on average by 27% and led to the high confident detection of 18 additional bacterial peptides (+27%) matching 15 different Listeria proteins (+36%). Despite an overall large agreement between the search engines, a small number of conflicts (< 1%) in spectra-to-peptide assignments revealed ambiguous identifications that served as a quality filter. Finally, we show compatibility of our workflow with sensitive timsTOF data acquisition and find that rescoring, now with inclusion of ion mobility features, identifies 76% more peptides compared to orbitrap-based acquisition. Together, our results demonstrate how integration of multiple search engine results along with data-driven rescoring maximizes the identification of immunopeptides, boosting the detection of high confident bacterial epitopes for vaccine development.</p>
-          <a href="https://doi.org/10.1101/2024.11.22.624860" target="_blank" class="manuscript-link">
+          <a href="https://pubs.acs.org/doi/10.1021/acs.jproteome.4c00864" target="_blank" class="manuscript-link">
           View Manuscript
           </a>
       </div>
@@ -217,7 +264,7 @@ format:
     <div class="divider"></div>
 
     <!-- MS²Rescore MCP -->
-    <div class="publication-item">
+    <div class="publication-item" data-year="2022-08" data-first-author="true">
       <h3 class="publication-title">MS2Rescore: Data-Driven Rescoring Dramatically Boosts Immunopeptide Identification Rates</h3>
       <p class="publication-authors">
         <strong>Authors:</strong> Arthur Declercq ∙ Robbin Bouwmeester ∙ Aurélie Hirschler ∙ Christine Carapito ∙ Sven Degroeve ∙ Lennart Martens ∙ Ralf Gabriels
@@ -239,10 +286,10 @@ format:
     <div class="divider"></div>
 
     <!-- MS²Rescore MSAmanda -->
-  <div class="publication-item">
+  <div class="publication-item" data-year="2024-03" data-first-author="true">
   <h3 class="publication-title">MS2Rescore 3.0 Is a Modular, Flexible, and User-Friendly Platform to Boost Peptide Identifications, as Showcased with MS Amanda 3.0</h3>
   <p class="publication-authors">
-      <strong>Authors:</strong> Louise M. Buur ∙ Arthur Declercq ∙ Marina Strobl ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens ∙ Viktoria Dorfer ∙ Ralf Gabriels 
+      <strong>Authors:</strong> Louise M. Buur & Arthur Declercq ∙ Marina Strobl ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens ∙ Viktoria Dorfer & Ralf Gabriels 
   </p>
   <p class="publication-journal">
       <strong>Journal:</strong> Journal of Proteome Research<span>|</span> <strong>Year:</strong> March 2024 <span>|</span> 
@@ -260,7 +307,7 @@ format:
   <div class="divider"></div>
 
   <!-- MS²PIP -->
-  <div class="publication-item">
+  <div class="publication-item" data-year="2023-07" data-first-author="true">
   <h3 class="publication-title">Updated MS²PIP web server supports cutting-edge proteomics applications</h3>
   <p class="publication-authors">
       <strong>Authors:</strong> Arthur Declercq ∙ Robbin Bouwmeester ∙ Cristina Chiva ∙ Eduard Sabidó ∙ Aurélie Hirschler ∙ Christine Carapito ∙ Lennart Martens ∙ Sven Degroeve ∙ Ralf Gabriels 
@@ -281,7 +328,7 @@ format:
   <div class="divider"></div>
 
   <!-- Thunder PASEF -->
-  <div class="publication-item">
+  <div class="publication-item" data-year="2024-03" data-first-author="false">
   <h3 class="publication-title">Thunder-DDA-PASEF enables high-coverage immunopeptidomics and is boosted by MS2Rescore with MS2PIP timsTOF fragmentation prediction model</h3>
   <p class="publication-authors">
       <strong>Authors:</strong> David Gomez-Zepeda ∙ Danielle Arnold-Schild ∙ Julian Beyrle ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Elena Kumm ∙ Annica Preikschat ∙ Mateusz Krzysztof Łącki ∙ Aurélie Hirschler ∙ Jeewan Babu Rijal ∙ Christine Carapito ∙ Lennart Martens ∙ Ute Distler ∙ Hansjörg Schild ∙ Stefan Tenzer 
@@ -302,7 +349,7 @@ format:
   <div class="divider"></div>
 
   <!-- Single cell bookchapter -->
-  <div class="publication-item">
+  <div class="publication-item" data-year="2024-06" data-first-author="true">
   <h3 class="publication-title">Bioinformatics Pipeline for Processing Single-Cell Data</h3>
   <p class="publication-authors">
       <strong>Authors:</strong> Arthur Declercq ∙ Nina Demeulemeester ∙ Ralf Gabriels ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens
@@ -323,7 +370,7 @@ format:
   <div class="divider"></div>
 
   <!-- PSM Utils -->
-  <div class="publication-item">
+  <div class="publication-item" data-year="2022-12" data-first-author="false">
   <h3 class="publication-title">Psm_utils: A high-level Python API for parsing and handling peptide-spectrum matches and proteomics search results</h3>
   <p class="publication-authors">
       <strong>Authors:</strong> Ralf Gabriels ∙ Arthur Declercq ∙ Robbin Bouwmeester ∙ Sven Degroeve ∙ Lennart Martens 
@@ -344,7 +391,7 @@ format:
   <div class="divider"></div>
 
   <!-- Ionmob -->
-  <div class="publication-item">
+  <div class="publication-item" data-year="2023-08" data-first-author="false">
   <h3 class="publication-title">Ionmob: a Python package for prediction of peptide collisional cross-section values</h3>
   <p class="publication-authors">
       <strong>Authors:</strong> David Teschner ∙ David Gomez-Zepeda ∙ Arthur Declercq ∙ Mateusz K Łącki ∙ Seymen Avci ∙ Konstantin Bob ∙ Ute Distler ∙ Thomas Michna ∙ Lennart Martens ∙ Stefan Tenzer ∙ Andreas Hildebrandt 
@@ -365,7 +412,7 @@ format:
   <div class="divider"></div>
 
   <!-- PP plot -->
-  <div class="publication-item">
+  <div class="publication-item" data-year="2023-01" data-first-author="false">
   <h3 class="publication-title">Quality control for the target decoy approach for peptide identification</h3>
   <p class="publication-authors">
       <strong>Authors:</strong> Elke Debrie ∙ Milan Malfait ∙ Ralf Gabriels ∙ Arthur Declercq ∙ Adriaan Sticker ∙ Lennart Martens ∙ Lieven Clement 
@@ -387,7 +434,7 @@ format:
 
 
   <!-- cross-links -->
-  <div class="publication-item">
+  <div class="publication-item" data-year="2024-04" data-first-author="false">
   <h3 class="publication-title">Intensity and retention time prediction improves the rescoring of protein-nucleic acid cross-links</h3>
   <p class="publication-authors">
       <strong>Authors:</strong> Arslan Siraj ∙ Robbin Bouwmeester ∙ Arthur Declercq ∙ Luisa Welp ∙ Aleksandar Chernev ∙ Alexander Wulf ∙ Henning Urlaub ∙ Lennart Martens ∙ Sven Degroeve ∙ Oliver Kohlbacher ∙ Timo Sachsenberg 
@@ -408,22 +455,6 @@ format:
   <div class="divider"></div>
   </div>
   </section>
-
-  <script>
-  function toggleAbstract(element) {
-    // Select the clicked abstract
-    const abstract = element.closest('.publication-item').querySelector('.abstract');
-
-    // Close all other abstracts
-    document.querySelectorAll('.abstract').forEach(item => {
-      if (item !== abstract) item.style.display = 'none';
-    });
-
-    // Toggle the clicked abstract
-    abstract.style.display = abstract.style.display === 'block' ? 'none' : 'block';
-  }
-  </script>
-
 
   <!-- Projects Section -->
   <section id="projects" class="projects-section max-widht">
@@ -534,69 +565,165 @@ j
 
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Get all the navigation links in the navbar
-  var navLinks = document.querySelectorAll('.nav-links a');
-  var menuToggle = document.getElementById('menu-toggle');
+<!-- All scripts -->
+  <!-- toggle abstract -->
+  <script>
+  function toggleAbstract(element) {
+    // Select the clicked abstract
+    const abstract = element.closest('.publication-item').querySelector('.abstract');
 
-  // Add click event listeners to navbar links only
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
-      // Prevent default anchor behavior
-      event.preventDefault();
+    // Close all other abstracts
+    document.querySelectorAll('.abstract').forEach(item => {
+      if (item !== abstract) item.style.display = 'none';
+    });
 
-      // Check if the link is the "Home" button
-      if (this.getAttribute('id') === 'homeButton') {
-        // Scroll to the top smoothly
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        // For other links, scroll to the target section
-        var targetId = this.getAttribute('href').substring(1);
-        var targetElement = document.getElementById(targetId);
+    // Toggle the clicked abstract
+    abstract.style.display = abstract.style.display === 'block' ? 'none' : 'block';
+  }
+  </script>
+  <!-- navigation headers -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all the navigation links in the navbar
+    var navLinks = document.querySelectorAll('.nav-links a');
+    var menuToggle = document.getElementById('menu-toggle');
 
-        // Calculate the scroll position, accounting for the navbar height
-        var navbarHeight = document.querySelector('.navbar').offsetHeight;
-        var targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+    // Add click event listeners to navbar links only
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        // Prevent default anchor behavior
+        event.preventDefault();
 
-        // Smoothly scroll to the target position
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-      }
+        // Check if the link is the "Home" button
+        if (this.getAttribute('id') === 'homeButton') {
+          // Scroll to the top smoothly
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          // For other links, scroll to the target section
+          var targetId = this.getAttribute('href').substring(1);
+          var targetElement = document.getElementById(targetId);
 
-      // Uncheck the menu toggle checkbox to close the menu
-      menuToggle.checked = false;
+          // Calculate the scroll position, accounting for the navbar height
+          var navbarHeight = document.querySelector('.navbar').offsetHeight;
+          var targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+          // Smoothly scroll to the target position
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
+
+        // Uncheck the menu toggle checkbox to close the menu
+        menuToggle.checked = false;
+      });
     });
   });
-});
-</script>
+  </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    let today = new Date();
-    let newThreshold = 200; // Days to consider an item as new
-    let publications = document.querySelectorAll(".publication-item");
+  <!-- add new tag -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let today = new Date();
+      let newThreshold = 200; // Days to consider an item as new
+      let publications = document.querySelectorAll(".publication-item");
 
-    publications.forEach((pub) => {
-      let yearText = pub.querySelector(".publication-journal").innerText.match(/\b\d{4}\b/);
-      let monthText = pub.querySelector(".publication-journal").innerText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)/);
+      publications.forEach((pub) => {
+        let yearData = pub.getAttribute("data-year");
 
-      if (yearText && monthText) {
-        let pubDate = new Date(`${monthText[0]} 1, ${yearText[0]}`);
-        let diffDays = (today - pubDate) / (1000 * 60 * 60 * 24);
+        if (yearData) {
+          // Handle both "YYYY-MM" and "YYYY" formats
+          let pubDate = null;
+          if (yearData.match(/^\d{4}-\d{2}$/)) {
+            pubDate = new Date(`${yearData}-01`);
+          } else if (yearData.match(/^\d{4}$/)) {
+            pubDate = new Date(`${yearData}-01-01`);
+          }
 
-        if (diffDays <= newThreshold) {
-          let newTag = document.createElement("span");
-          newTag.classList.add("new-tag");
-          newTag.textContent = "New";
+          if (pubDate) {
+            let diffDays = (today - pubDate) / (1000 * 60 * 60 * 24);
 
-          let title = pub.querySelector(".publication-title");
-          if (title) {
-            title.appendChild(newTag);
+            if (diffDays <= newThreshold) {
+              let newTag = document.createElement("span");
+              newTag.classList.add("new-tag");
+              newTag.textContent = "New";
+
+              let title = pub.querySelector(".publication-title");
+              if (title && !title.querySelector(".new-tag")) {
+                title.appendChild(newTag);
+              }
+            }
           }
         }
+      });
+    });
+  </script>
+
+
+  <!-- order manuscripts -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const container = document.querySelector(".publications-section .max-widht");
+
+      if (!container) return;
+
+      const items = Array.from(container.querySelectorAll(".publication-item"));
+
+      items.sort((a, b) => {
+        const aFirst = a.dataset.firstAuthor === "true" ? 0 : 1;
+        const bFirst = b.dataset.firstAuthor === "true" ? 0 : 1;
+
+        // Sort first by first-authorship, then by date (descending)
+        if (aFirst !== bFirst) {
+          return aFirst - bFirst;
+        } else {
+          return b.dataset.year.localeCompare(a.dataset.year);
+        }
+      });
+
+      // Remove existing items (and dividers)
+      items.forEach(item => {
+        const divider = item.nextElementSibling;
+        if (divider && divider.classList.contains("divider")) {
+          divider.remove();
+        }
+        item.remove();
+      });
+
+      // Append sorted items and new dividers
+      items.forEach((item, index) => {
+        container.appendChild(item);
+        if (index < items.length - 1) {
+          const divider = document.createElement("div");
+          divider.classList.add("divider");
+          container.appendChild(divider);
+        }
+      });
+    });
+  </script>
+  <!--change color of divider -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const publications = Array.from(document.querySelectorAll(".publication-item"));
+
+    // Find the last first-author publication
+    let lastFirstAuthorIndex = -1;
+    publications.forEach((pub, index) => {
+      if (pub.dataset.firstAuthor === "true") {
+        lastFirstAuthorIndex = index;
       }
     });
+
+    // If we found at least one first-author publication and there's a divider after it
+    if (lastFirstAuthorIndex !== -1 && lastFirstAuthorIndex < publications.length - 1) {
+      const lastFirstAuthor = publications[lastFirstAuthorIndex];
+      const divider = lastFirstAuthor.nextElementSibling;
+
+      if (divider && divider.classList.contains("divider")) {
+        // Change the divider color
+        divider.style.backgroundColor = "#dba14d";
+        divider.style.height = "1px"; // Optional: make it a bit thicker
+      }
+    }
   });
 </script>
+
 
 ```

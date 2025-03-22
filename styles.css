@@ -462,6 +462,7 @@ blockquote {
 
 .abstract-text {
   font-style: normal;
+  margin-top: 3px;
 }
 
 .manuscript-link {
