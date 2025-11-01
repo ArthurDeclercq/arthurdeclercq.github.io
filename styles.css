@@ -53,7 +53,7 @@ p {
 
 /* Additional Styling for Links */
  a {
-  color: #dba14d; 
+  color: #e2aa3c; 
   text-decoration: none;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1em; /* Adjust as needed */
@@ -61,7 +61,7 @@ p {
 } 
 
 a:hover {
-  color: #dba14d;
+  color: #e2aa3c;
   text-decoration: underline;
 } 
 
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .nav-link {
-  color: #dba14d;
+  color: #e2aa3c;
   margin: 0 15px;
   text-decoration: none;
   font-size: 1.4em;
@@ -115,7 +115,7 @@ a:hover {
 .menu-icon .icon {
   width: 30px;
   height: 30px;
-  background-color: #dba14d;
+  background-color: #e2aa3c;
   -webkit-mask-image: url('icons/menu.png'); 
   mask-image: url('icons/menu.png');
   mask-size: contain;
@@ -175,7 +175,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: url('images/ArthurDeclercq-24.jpg') center/cover no-repeat;
+  background: url('images/ArthurDeclercq-1.jpg') center/cover no-repeat;
   filter: grayscale(20%);
   z-index: -1;
   background-position: center;
@@ -190,6 +190,14 @@ a:hover {
   border-radius: 5px;
   color: #f0f0f0;
   font-size: 0.9em;
+  z-index: 2;
+}
+
+.home-photo-credit {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 10;
 }
 
 .home-intro {
@@ -199,14 +207,14 @@ a:hover {
   border-radius: 10px;
   z-index: 1;
   position: absolute;
-  top: 55%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 32%;
 }
 
 .welcome-txt {
-  color: #dba14d;
+  color: #e2aa3c;
   margin: 0;
   font-size: 1.9rem
 }
@@ -253,7 +261,7 @@ a:hover {
 
 .current-position h3 {
   font-size: 1.8em;
-  color: #dba14d;
+  color: #e2aa3c;
 }
 
 .current-position-text {
@@ -263,7 +271,7 @@ a:hover {
 blockquote {
   font-size: 1.3em;
   color: #666;
-  border-left: 4px solid #dba14d;
+  border-left: 4px solid #e2aa3c;
   padding-left: 15px;
   margin-top: 10px;
   font-style: italic;
@@ -276,7 +284,7 @@ blockquote {
 
 .education-section h3 {
   font-size: 1.8em;
-  color: #dba14d;
+  color: #e2aa3c;
   margin-bottom: 10px;
 }
 
@@ -302,7 +310,7 @@ blockquote {
 
 .skills-section h3 {
   font-size: 1.8em;
-  color: #dba14d;
+  color: #e2aa3c;
   margin-bottom: 10px;
 }
 
@@ -313,7 +321,7 @@ blockquote {
 }
 
 .skill-item {
-  background-color: #dba14d;
+  background-color: #e2aa3c;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -355,7 +363,7 @@ blockquote {
 }
 
 .photo-credit a {
-  color: #dba14d;
+  color: #e2aa3c;
   text-decoration: none;
 }
 
@@ -372,18 +380,18 @@ blockquote {
   max-width: 50%;
   font-weight: bold;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  color: #dba14d;
+  color: #e2aa3c;
 }
 
 .voka-quote h2 {
   font-size: 1.5em;
-  color: #dba14d;
+  color: #e2aa3c;
   margin: 0;
 }
 
 .voka-link {
   text-decoration: none;
-  color: #dba14d;
+  color: #e2aa3c;
   font-weight: bold;
   margin-top: 1rem;
   display: inline-flex;
@@ -447,7 +455,7 @@ blockquote {
 }
 
 .abstract-link {
-  color: #dba14d; 
+  color: #e2aa3c; 
   text-decoration: none; 
   font-weight: bold;
 }
@@ -466,7 +474,7 @@ blockquote {
 }
 
 .manuscript-link {
-  color: #dba14d;
+  color: #e2aa3c;
   text-decoration: none;
   font-weight: bold;
 }
@@ -487,7 +495,7 @@ blockquote {
 }
 
 .abstract-container:hover {
-  color: #dba14d; /* Change text color to orange on hover */
+  color: #e2aa3c; /* Change text color to orange on hover */
   text-decoration: underline;
 }
 
@@ -498,7 +506,7 @@ blockquote {
 }
 
 .new-tag {
-  background-color: #dba14d;
+  background-color: #e2aa3c;
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -544,7 +552,7 @@ blockquote {
 
 .project-title {
   font-size: 1.5em;
-  color: #dba14d;
+  color: #e2aa3c;
   margin: 0;
 }
 
@@ -558,13 +566,13 @@ blockquote {
 }
 
 .project-link {
-  color: #dba14d;
+  color: #e2aa3c;
   font-size: 1.1em;
   text-decoration: none;
 }
 
 .project-coming-soon {
-  color: #dba14d;
+  color: #e2aa3c;
   font-size: 1.1em;
   text-decoration: none;
 }
@@ -624,7 +632,7 @@ blockquote {
 .contact-full-name {
   font-size: 1.7em;
   font-weight: bold;
-  color: #dba14d;
+  color: #e2aa3c;
 }
 
 .contact-info {
@@ -646,7 +654,7 @@ blockquote {
 }
 
 .contact-link {
-  color: #dba14d;
+  color: #e2aa3c;
   font-size: 1.3em;
   text-decoration: none;
 }

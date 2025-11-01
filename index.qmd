@@ -47,12 +47,13 @@ format:
 
 <!-- Home Section -->
 <section id="home" class="home-section">
-  <!-- Photographer Credit Box -->
-  <div class="photo-credit">Photo by <a href="https://www.nathaliedolmans.be/" target="_blank">Nathalie Dolmans</a></div>
   <div class="home-intro">
     <h1 class="welcome-txt">Hi! My name is Arthur.</h1>
   </div>
 </section>
+
+<!-- Photographer Credit Box (outside home-section to remain clickable) -->
+<div class="photo-credit home-photo-credit">Photo by <a href="https://jasperzuallaert.com/" target="_blank">Jasper Zualleart</a></div>
 
 <!-- Content Wrapper -->
 <div id="main-content" class="main-content">
@@ -61,9 +62,9 @@ format:
   <section id="about" class="about-section max-widht">
     <div class="about-text">
       <h2>About Me</h2>
-        <p>Hi! Before I explain that white thing I’m holding above, let me introduce myself. I'm Arthur Declercq, a PhD student at CompOmics, Ghent University. I graduated in Biomedical Sciences, where I discovered two things: a love for immunology and a knack for working with computers rather than lab equipment. This led me to bioinformatics, where I now develop AI algorithms to study proteins. My work focuses on identifying epitopes—tiny protein fragments shown on MHC molecules (yes, that’s the white thing!)—which are crucial for designing vaccines for cancer or fighting infections.</p>
-        <p>When I'm not at my desk, you’ll probably find me on the move. Running has become my passion, whether I’m racking up kilometers with the Ghent Running Crew or tackling trails. Beyond running, I love heading out with my tent for a backpacking adventure. And if you ever catch me sitting still, it’s likely with a good book in my hands.</p>
-        <p>Reach out anytime if you’re into bioinformatics, outdoor adventures, or simply want to chat and exchange ideas!</p>
+        <p>Despite the space-themed presentation, this is not an astronomy website. Rather, it marks one of the happiest and most meaningful milestones of my career: presenting my doctoral research to family and close friends and receiving my PhD in Health Sciences. I began in Biomedical Sciences, where I discovered a strong interest in immunology and informatics; at their intersection, I completed a master’s degree and embarked on a PhD. During my doctoral work, I developed artificial intelligence methods to study protein fragments—epitopes—presented by cells via major histocompatibility complex (MHC) molecules. These epitopes provide critical insight for the design of effective vaccines against infectious diseases and cancer.</p>
+        <p>When I am away from my desk, I am usually on the move. Running is my primary hobby—on city routes with the Ghent Running Crew or on longer trail courses. I also enjoy backpacking and spending nights in my tent and recently picked up photography. When I do slow down, it is often with a good book (often a good space opera).</p>
+        <p>Welcome to my website. If you have questions or would like to connect, please feel free to reach out.</p>
     </div>
   </section>
 
@@ -73,8 +74,8 @@ format:
       <h2>Experience</h2>
       <div class="current-position">
         <h3>Current Position</h3>
-        <p class="current-position-text"><strong>Predoctoral Researcher</strong> at <a href="https://vib.be/en/research-and-impact/research-centers/center-medical-biotechnology#/" target="_blank">VIB-UGent Center for Medical Biotechnology</a><br><span>2024 – Present</span></p>
-        <blockquote>"Working on data-driven bioinformatics solutions for mass spectrometry-based immunopeptidomics."</blockquote>
+        <p class="current-position-text"><strong>Postdoctoral Researcher</strong> at <a href="https://vib.be/en/research-and-impact/research-centers/center-medical-biotechnology#/" target="_blank">VIB-UGent Center for Medical Biotechnology</a><br><span>2024 – Present</span></p>
+        <blockquote>"Working on data-driven bioinformatics solutions for mass spectrometry-based immunopeptidomics & immunoinformatics."</blockquote>
       </div>
     
   <!-- Education Section -->
@@ -82,8 +83,12 @@ format:
         <h3>Education</h3>
         <ul class="education-list">
           <li>
-            <strong>PhD in Bioinformatics</strong> – Ghent University<br>
-            <span>2021 – ...</span>
+            <strong>Postdoc in immunoinformatics</strong> – VIB<br>
+            <span>2025 – ...</span>
+          </li>
+          <li>
+            <strong>PhD in Health Sciences</strong> – Ghent University<br>
+            <span>2021 – 2025</span>
           </li>
           <li>
             <strong>Deep learning specialisation</strong> – Coursera<br>
@@ -116,6 +121,7 @@ format:
           <span class="skill-item">Machine Learning</span>
           <span class="skill-item">Immunopeptidomics</span>
           <span class="skill-item">Bioinformatics</span>
+          <span class="skill-item">Immunoinformatics</span>
           <span class="skill-item">Proteomics</span>
           <span class="skill-item">Data Analysis</span>
         </div>
@@ -546,7 +552,7 @@ format:
           <img src="icons/google.png" alt="Google Scholar Icon" class="contact-icon">
           <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="contact-link">Google Scholar/ArthurDeclercq</a>
         </div>
-j
+
         <!-- Twitter
         <div class="contact-item">
           <img src="icons/x.png" alt="x Icon" class="contact-icon">
