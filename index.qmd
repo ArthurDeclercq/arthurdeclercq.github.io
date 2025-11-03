@@ -502,6 +502,13 @@ format:
         <a href="https://www.baxerna.eu/" target="_blank" class="project-link">baxerna.eu</a>
       </div>
 
+      <!-- ARLUXIS -->
+      <div class="project-card">
+        <h3 class="project-title">ARLUXIS</h3>
+        <p class="project-description">My photography journey - exploring light, moments, and perspectives.</p>
+        <a href="arluxis.html" class="project-link">View Portfolio</a>
+      </div>
+
       <!-- Website -->
       <div class="project-card">
         <h3 class="project-title">Website</h3>

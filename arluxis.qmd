@@ -1,0 +1,154 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+    css: arluxis-styles.css
+---
+
+```{=html}
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- favicon -->
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="ARLUXIS" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <h1 class="portfolio-title">ARLUXIS</h1>
+    <a href="https://www.instagram.com/arluxis/" target="_blank" class="instagram-link">
+      <img src="icons\instagram_white.png" alt="Instagram" class="social-icon">
+        Instagram
+    </a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h2 class="hero-subtitle">Photography Portfolio</h2>
+    <p class="hero-description">Exploring light, moments, and perspectives through the lens.</p>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+  <div class="gallery-container">
+    
+    <!-- Photo Item 1 -->
+    <div class="photo-item">
+      <img src="images/arthur.jpg" alt="Portrait" class="photo-img">
+      <div class="photo-overlay">
+        <p class="photo-caption">Portrait</p>
+      </div>
+    </div>
+
+    <!-- Photo Item 2 -->
+    <div class="photo-item">
+      <img src="images/ArthurDeclercq-20.jpg" alt="Outdoor" class="photo-img">
+      <div class="photo-overlay">
+        <p class="photo-caption">Nature</p>
+      </div>
+    </div>
+
+    <!-- Photo Item 3 -->
+    <div class="photo-item">
+      <img src="images/sunday_running_club.jpg" alt="Running" class="photo-img">
+      <div class="photo-overlay">
+        <p class="photo-caption">Movement</p>
+      </div>
+    </div>
+
+    <!-- Add more photo items as you create them -->
+    <!-- Template for adding new photos:
+    <div class="photo-item">
+      <img src="images/your-photo.jpg" alt="Description" class="photo-img">
+      <div class="photo-overlay">
+        <p class="photo-caption">Your Caption</p>
+      </div>
+    </div>
+    -->
+
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-portfolio-section">
+  <div class="about-portfolio-content">
+    <h3>About ARLUXIS</h3>
+    <p>Recently embarked on a photography journey, capturing moments that blend science, nature, and everyday beauty. Follow along on <a href="https://www.instagram.com/arluxis/" target="_blank" class="inline-link">Instagram</a> for more.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="portfolio-footer">
+  <p>© 2025 Arthur Declercq | <a href="index.html" class="footer-link">Back to Main Site</a></p>
+</footer>
+
+<!-- Lightbox for full-size images -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<!-- JavaScript for lightbox functionality -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const photoItems = document.querySelectorAll('.photo-item');
+
+    // Open lightbox when clicking on a photo
+    photoItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const img = this.querySelector('.photo-img');
+        const caption = this.querySelector('.photo-caption');
+        
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = caption ? caption.textContent : '';
+        
+        // Prevent body scroll when lightbox is open
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Close lightbox when clicking the X button
+    closeBtn.addEventListener('click', function() {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    });
+
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+</script>
+
+```
