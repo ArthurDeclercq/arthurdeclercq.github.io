@@ -43,9 +43,11 @@ format:
 
 <!-- Gallery Section -->
 <section class="gallery-section">
+  
+  <!-- Portraits -->
+  <h3 class="gallery-category-title">Portraits</h3>
   <div class="gallery-container">
     
-    <!-- Photo Item 1 -->
     <div class="photo-item">
       <img src="images/arthur.jpg" alt="Portrait" class="photo-img">
       <div class="photo-overlay">
@@ -53,33 +55,49 @@ format:
       </div>
     </div>
 
-    <!-- Photo Item 2 -->
-    <div class="photo-item">
-      <img src="images/ArthurDeclercq-20.jpg" alt="Outdoor" class="photo-img">
-      <div class="photo-overlay">
-        <p class="photo-caption">Nature</p>
-      </div>
-    </div>
+    <!-- Add more portrait photos here -->
 
-    <!-- Photo Item 3 -->
+  </div>
+
+  <!-- Nature -->
+  <h3 class="gallery-category-title">Nature</h3>
+  <div class="gallery-container">
+    
+
+
+    <!-- Add more nature photos here -->
+
+  </div>
+
+  <!-- Movement -->
+  <h3 class="gallery-category-title">Movement</h3>
+  <div class="gallery-container">
+    
     <div class="photo-item">
       <img src="images/sunday_running_club.jpg" alt="Running" class="photo-img">
       <div class="photo-overlay">
-        <p class="photo-caption">Movement</p>
+        <p class="photo-caption">Running</p>
       </div>
     </div>
 
-    <!-- Add more photo items as you create them -->
-    <!-- Template for adding new photos:
+    <!-- Add more movement photos here -->
+
+  </div>
+
+  <!-- Template for adding new categories:
+  <h3 class="gallery-category-title">Category Name</h3>
+  <div class="gallery-container">
+    
     <div class="photo-item">
       <img src="images/your-photo.jpg" alt="Description" class="photo-img">
       <div class="photo-overlay">
         <p class="photo-caption">Your Caption</p>
       </div>
     </div>
-    -->
 
   </div>
+  -->
+
 </section>
 
 <!-- About Section -->
