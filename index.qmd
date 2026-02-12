@@ -113,6 +113,32 @@ format:
         </ul>
       </div>
 
+      <!-- Prizes Section -->
+      <div class="prizes-section">
+        <h3>Prizes & Awards</h3>
+        <ul class="education-list">
+          <li>
+            <strong>Winner Best Thesis in Health Sciences</strong> – Ghent University <span>|</span> <span>2026</span>
+            <div style="margin-left: 20px; margin-top: 5px;">
+              <span class="prize-description">"Epitope Odyssey: Data-driven tools to extend the known immunopeptide universe"
+            </span>
+            </div>
+          </li>
+          <li>
+            <strong>Winner PhD Innovation Café</strong> – VOKA & Ghent university <span>|</span> <span>2023</span>
+            <div style="margin-left: 20px; margin-top: 5px;">
+              <span class="prize-description">PhD students pitch their research to relevant companies</span>
+            </div>
+          </li>
+              <li>
+                <strong>Second Place Best Presentation Award</strong> – French Proteomic Society <span>|</span> <span>2023</span>
+                <div style="margin-left: 20px; margin-top: 5px;">
+                  <span class="prize-description">Flash talk at the 16th Club Jeune Days</span>
+                </div>
+              </li>
+        </ul>
+      </div>
+
       <!-- Skills Section -->
       <div class="skills-section">
         <h3>Skills</h3>
@@ -141,8 +167,8 @@ format:
         <h2>“Meetinstrumenten in de biotechwereld worden elke dag beter, met onze software proberen we de ontwikkeling van mRNA-vaccins een duwtje in de rug te geven.”</h2>
         
         <!-- Link button with icon -->
-        <a href="https://www.voka.be/nieuws/innovatiecafe-arthur-declercq-wint-2023-met-doctoraat-over-specifieke-epitopen-het-lichaam"
-          class="voka-link">
+        <a href="images/VOKA_article.pdf"
+          class="voka-link" target="_blank">
           <span class="link-icon">🔗</span> <!-- Link icon -->
           Read Article
         </a>

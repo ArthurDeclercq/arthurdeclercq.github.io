@@ -327,6 +327,16 @@ blockquote {
   border-radius: 5px;
   font-size: 1em;
 }
+/* Skills Section Styles */
+.prizes-section {
+  margin-bottom: 20px;
+}
+
+.prizes-section h3 {
+  font-size: 1.8em;
+  color: #e2aa3c;
+  margin-bottom: 10px;
+}
 
 /* VOKA Section Styles */
 .voka-section {
