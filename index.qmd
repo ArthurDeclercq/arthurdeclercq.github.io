@@ -459,6 +459,27 @@ format:
   </div>
   </div>
   <div class="divider"></div>
+
+  <!-- transfer learning -->
+  <div class="publication-item" data-year="2026-02" data-first-author="false">
+  <h3 class="publication-title">Transfer learning in DeepLC improves LC retention time prediction across substantially different modifications and setups</h3>
+  <p class="publication-authors">
+      <strong>Authors:</strong> Robbin Bouwmeester ∙ Alireza Nameni ∙ Arthur Declercq ∙ Robbe Devreese ∙ Kevin Velghe ∙ Vladimir Gorshkov ∙ Pelayo A. Penanes ∙ Frank kjeldsen ∙ Magali Rompais ∙ Christine Carapito ∙ Ralf Gabriels & Lennart Martens 
+  </p>
+  <p class="publication-journal">
+      <strong>Journal:</strong> Nature Communications<span>|</span> <strong>Year:</strong> February 2026 <span>|</span> 
+        <span class="abstract-container" onclick="toggleAbstract(this)">
+          Abstract
+          <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
+        </span>
+  <div class="abstract">
+      <p class="abstract-text">While LC retention time prediction of peptides and their modifications has proven useful, widespread adoption and optimal performance are hindered by variations in experimental parameters. These variations can render retention time prediction models inaccurate and dramatically reduce the value of predictions for identification, validation, and DIA spectral library generation. To date, mitigation of these issues has been attempted through calibration or by training bespoke models for specific experimental setups, with only partial success. We here demonstrate that transfer learning can successfully overcome these limitations by leveraging pre-trained model parameters. Remarkably, this approach can even fit highly performant models to substantially different peptide modifications and LC conditions than those on which the model was originally trained. This impressive adaptability of transfer learning makes it a highly robust solution for accurate peptide retention time prediction across a very wide variety of imaginable proteomics workflows.</p>
+      <a href="https://www.nature.com/articles/s41467-026-68981-5" target="_blank" class="manuscript-link">
+      View Manuscript
+      </a>
+  </div>
+  </div>
+  <div class="divider"></div>
   </div>
   </section>
 
@@ -488,7 +509,7 @@ format:
         <a href="https://github.com/compomics/mumble" target="_blank" class="project-link">github.com/compomics/mumble</a>
       </div>
 
-      <!-- MHCMolPred -->
+      <!-- MHC-3PO -->
       <div class="project-card">
         <h3 class="project-title">MHC-3PO</h3>
         <p class="project-description">MHC binding affinity predictions based using large language models and graph neural nets.</p>
