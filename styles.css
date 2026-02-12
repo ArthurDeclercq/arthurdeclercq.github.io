@@ -101,6 +101,28 @@ a:hover {
   margin: 0 15px;
   text-decoration: none;
   font-size: 1.4em;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e2aa3c;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #dba14d;
+  text-decoration: none;
 }
 
 .menu-icon {
@@ -327,6 +349,40 @@ blockquote {
   border-radius: 5px;
   font-size: 1em;
 }
+/* Skills Section Styles */
+.prizes-section {
+  margin-bottom: 20px;
+}
+
+.prizes-section h3 {
+  font-size: 1.8em;
+  color: #e2aa3c;
+  margin-bottom: 10px;
+}
+
+.prize-item {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.prize-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 2px;
+}
+
+.prize-gold::before {
+  background: linear-gradient(180deg, #e2aa3c, #dba14d);
+}
+
+.prize-silver::before {
+  background: linear-gradient(180deg, #c0c0c0, #d3d3d3);
+}
 
 /* VOKA Section Styles */
 .voka-section {
@@ -435,6 +491,15 @@ blockquote {
   margin-bottom: 20px;
   width: 100%;
   cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+  box-shadow: 0 8px 20px rgba(226, 170, 60, 0.15);
+  transform: translateY(-3px);
+  background-color: rgba(226, 170, 60, 0.02);
 }
 
 .publication-title {
@@ -548,6 +613,13 @@ blockquote {
   flex-direction: column;
   height: 250px;
   justify-content: space-between;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(226, 170, 60, 0.2);
 }
 
 .project-title {
