@@ -117,20 +117,20 @@ format:
       <div class="prizes-section">
         <h3>Prizes & Awards</h3>
         <ul class="education-list">
-          <li>
+          <li class="prize-item prize-gold">
             <strong>Winner Best Thesis in Health Sciences</strong> – Ghent University <span>|</span> <span>2026</span>
             <div style="margin-left: 20px; margin-top: 5px;">
               <span class="prize-description">"Epitope Odyssey: Data-driven tools to extend the known immunopeptide universe"
             </span>
             </div>
           </li>
-          <li>
+          <li class="prize-item prize-gold">
             <strong>Winner PhD Innovation Café</strong> – VOKA & Ghent university <span>|</span> <span>2023</span>
             <div style="margin-left: 20px; margin-top: 5px;">
               <span class="prize-description">PhD students pitch their research to relevant companies</span>
             </div>
           </li>
-              <li>
+              <li class="prize-item prize-silver">
                 <strong>Second Place Best Presentation Award</strong> – French Proteomic Society <span>|</span> <span>2023</span>
                 <div style="margin-left: 20px; margin-top: 5px;">
                   <span class="prize-description">Flash talk at the 16th Club Jeune Days</span>

@@ -359,6 +359,30 @@ blockquote {
   margin-bottom: 10px;
 }
 
+.prize-item {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.prize-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 2px;
+}
+
+.prize-gold::before {
+  background: linear-gradient(180deg, #e2aa3c, #dba14d);
+}
+
+.prize-silver::before {
+  background: linear-gradient(180deg, #c0c0c0, #d3d3d3);
+}
+
 /* VOKA Section Styles */
 .voka-section {
   position: relative;
