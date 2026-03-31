@@ -78,14 +78,32 @@ body {
 /* Hero Section */
 .hero-section {
   margin-top: 80px;
-  padding: 100px 40px 80px;
+  padding: 130px 40px 110px;
+  min-height: 52vh;
+  position: relative;
+  overflow: hidden;
   text-align: center;
-  background: linear-gradient(to bottom, #0a0a0a 0%, #1a1a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    linear-gradient(to bottom, rgba(10, 10, 10, 0.88) 0%, rgba(10, 10, 10, 0.58) 35%, rgba(10, 10, 10, 0.82) 100%),
+    radial-gradient(circle at 50% 45%, rgba(226, 170, 60, 0.14) 0%, rgba(226, 170, 60, 0) 55%),
+    url("images/arluxis/hero_shot.jpg");
+  background-size: 125%;
+  background-position: center 45%;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 26px 30px;
+  border-radius: 14px;
+  background: rgba(8, 8, 8, 0.38);
+  border: 1px solid rgba(226, 170, 60, 0.22);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
 }
 
 .hero-subtitle {
@@ -94,14 +112,16 @@ body {
   margin-bottom: 20px;
   font-weight: 400;
   letter-spacing: 0.05em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
 }
 
 .hero-description {
   font-size: 1.3em;
-  color: #b0b0b0;
+  color: #d0d0d0;
   font-weight: 400;
   line-height: 1.6;
   text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.88);
 }
 
 /* Gallery Section */
@@ -337,7 +357,13 @@ body {
   }
 
   .hero-section {
-    padding: 60px 20px 40px;
+    padding: 95px 20px 70px;
+    min-height: 46vh;
+    background-position: center 30%;
+  }
+
+  .hero-content {
+    padding: 20px 18px;
   }
 
   .hero-subtitle {
