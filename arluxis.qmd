@@ -25,7 +25,7 @@ format:
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="back-link">← Back to Home</a>
-    <h1 class="portfolio-title">ARLUXIS</h1>
+    <img src="icons/logo_arluxis_short.png" alt="ARLUXIS logo" class="nav-logo">
     <a href="https://www.instagram.com/arluxis/" target="_blank" class="instagram-link">
       <img src="icons\instagram_white.png" alt="Instagram" class="social-icon">
         Instagram
@@ -36,8 +36,10 @@ format:
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-content">
+    <p class="hero-kicker">BY ARTHUR DECLERCQ</p>
+    <h1 class="hero-title">ARLUXIS</h1>
     <h2 class="hero-subtitle">Photography Portfolio</h2>
-    <p class="hero-description">Exploring light, moments, and perspectives through the lens.</p>
+    <p class="hero-description">A personal visual journal of <span class="hero-highlight">movement</span>, atmosphere, and everyday scenes worth remembering.</p>
   </div>
 </section>
 

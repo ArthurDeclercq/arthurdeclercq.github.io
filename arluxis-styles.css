@@ -15,32 +15,39 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --nav-height: 96px;
+}
+
 /* Navigation Bar */
 .navbar {
   position: fixed;
+  height: var(--nav-height);
   top: 0;
   width: 100%;
   background-color: rgba(10, 10, 10, 0.95);
-  padding: 20px 0;
+  padding: 0;
   z-index: 1000;
   border-bottom: 1px solid rgba(226, 170, 60, 0.3);
 }
 
 .nav-container {
   max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
+  height: 100%;
+  margin: 0 0;
+  padding: 0 0px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .back-link {
   color: #e2aa3c;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.5em;
   transition: opacity 0.3s;
+  justify-self: start;
 }
 
 .back-link:hover {
@@ -55,14 +62,23 @@ body {
   font-weight: 600;
 }
 
+.nav-logo {
+  height: 110px;
+  width: auto;
+  justify-self: center;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+}
+
 .instagram-link {
   color: #e2aa3c;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   gap: 8px;
   transition: opacity 0.3s;
+  justify-self: center;
 }
 
 .instagram-link:hover {
@@ -77,7 +93,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  margin-top: 80px;
+  margin-top: var(--nav-height);
   padding: 130px 40px 110px;
   min-height: 52vh;
   position: relative;
@@ -106,12 +122,31 @@ body {
   backdrop-filter: blur(2px);
 }
 
+.hero-kicker {
+  margin: 0 0 10px;
+  color: #e2aa3c;
+  font-size: 0.85em;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+}
+
+.hero-title {
+  margin: 0;
+  color: #f5f5f5;
+  font-size: 3.4em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.95);
+}
+
 .hero-subtitle {
-  font-size: 2.5em;
+  font-size: 1.35em;
   color: #f0f0f0;
-  margin-bottom: 20px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
+  margin: 12px 0 20px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
 }
 
@@ -122,6 +157,11 @@ body {
   line-height: 1.6;
   text-align: center;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.88);
+}
+
+.hero-highlight {
+  color: #e2aa3c;
+  font-weight: 600;
 }
 
 /* Gallery Section */
@@ -346,14 +386,22 @@ body {
 
 /* Responsive Design */
 @media (max-width: 910px) {
+  :root {
+    --nav-height: 82px;
+  }
+
   .nav-container {
-    flex-direction: column;
-    gap: 15px;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 10px;
     padding: 0 20px;
   }
 
   .portfolio-title {
     font-size: 1.5em;
+  }
+
+  .nav-logo {
+    height: 54px;
   }
 
   .hero-section {
@@ -366,8 +414,12 @@ body {
     padding: 20px 18px;
   }
 
+  .hero-title {
+    font-size: 2.5em;
+  }
+
   .hero-subtitle {
-    font-size: 1.8em;
+    font-size: 1.1em;
   }
 
   .hero-description {
@@ -400,6 +452,10 @@ body {
 }
 
 @media (max-width: 600px) {
+  :root {
+    --nav-height: 74px;
+  }
+
   .back-link,
   .instagram-link {
     font-size: 0.9em;
@@ -409,7 +465,17 @@ body {
     font-size: 1.3em;
   }
 
+  .nav-logo {
+    height: 48px;
+  }
+
+  .hero-title {
+    font-size: 2.1em;
+    letter-spacing: 0.1em;
+  }
+
   .hero-subtitle {
-    font-size: 1.5em;
+    font-size: 0.95em;
+    letter-spacing: 0.1em;
   }
 }
