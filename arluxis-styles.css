@@ -407,7 +407,8 @@ body {
   .hero-section {
     padding: 95px 20px 70px;
     min-height: 46vh;
-    background-position: center 30%;
+    background-size: 165%;
+    background-position: 56% 28%;
   }
 
   .hero-content {
@@ -433,9 +434,14 @@ body {
 
   .gallery-container {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 10px;
+    gap: 16px;
+    padding: 0;
     margin-bottom: 40px;
+  }
+
+  .photo-item {
+    max-width: 100%;
+    border-radius: 6px;
   }
 
   .about-portfolio-section {
@@ -453,29 +459,115 @@ body {
 
 @media (max-width: 600px) {
   :root {
-    --nav-height: 74px;
+    --nav-height: 68px;
+  }
+
+  .navbar {
+    border-bottom: 1px solid rgba(226, 170, 60, 0.24);
+  }
+
+  .nav-container {
+    gap: 8px;
+    padding: 0 12px;
   }
 
   .back-link,
   .instagram-link {
-    font-size: 0.9em;
+    font-size: 0.78em;
+    gap: 5px;
   }
 
   .portfolio-title {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    letter-spacing: 0.08em;
   }
 
   .nav-logo {
-    height: 48px;
+    height: 42px;
+  }
+
+  .social-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hero-section {
+    padding: 82px 14px 48px;
+    min-height: 40vh;
+    background-size: 205%;
+    background-position: 60% 24%;
+  }
+
+  .hero-content {
+    padding: 16px 14px;
+    border-radius: 10px;
   }
 
   .hero-title {
-    font-size: 2.1em;
+    font-size: 1.85em;
     letter-spacing: 0.1em;
   }
 
   .hero-subtitle {
+    font-size: 0.82em;
+    letter-spacing: 0.08em;
+    margin: 10px 0 12px;
+  }
+
+  .hero-description {
     font-size: 0.95em;
-    letter-spacing: 0.1em;
+    line-height: 1.45;
+  }
+
+  .gallery-section {
+    padding: 34px 14px 60px;
+  }
+
+  .gallery-category-title {
+    font-size: 1.2em;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+  }
+
+  .photo-item {
+    aspect-ratio: 3/2;
+  }
+
+  .about-portfolio-section {
+    padding: 44px 14px;
+  }
+
+  .about-portfolio-content h3 {
+    font-size: 1.35em;
+    margin-bottom: 12px;
+  }
+
+  .about-portfolio-content p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .lightbox-close {
+    top: 14px;
+    right: 16px;
+    font-size: 38px;
+  }
+
+  .lightbox-caption {
+    font-size: 1.05em;
+    margin-top: 12px;
+    max-width: 92%;
+  }
+}
+
+@media (hover: none) {
+  .photo-overlay {
+    opacity: 1;
+    padding: 20px 14px 14px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.08) 100%);
+  }
+
+  .photo-caption {
+    font-size: 1em;
   }
 }

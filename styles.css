@@ -200,7 +200,7 @@ a:hover {
   background: url('images/ArthurDeclercq-1.jpg') center/cover no-repeat;
   filter: grayscale(20%);
   z-index: -1;
-  background-position: center;
+  background-position: 52% center;
 }
 
 .photo-credit {
@@ -244,15 +244,33 @@ a:hover {
 /* Responsive adjustments */
 @media (max-width: 910px) {
   .home-intro {
-    width: 40%;
+    width: min(68vw, 430px);
   }
   .welcome-txt {
     font-size: 1.6rem
   }
   /* Section Styles */
 .home-section {
-  background-position: 33% 10px;
+  background-position: 72% 18%;
 }
+}
+
+@media (max-width: 600px) {
+  .home-intro {
+    width: min(92vw, 420px);
+    padding: 1.1rem;
+    top: 62%;
+  }
+
+  .welcome-txt {
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  .home-photo-credit {
+    right: 10px;
+    bottom: 10px;
+  }
 }
 
 .max-widht {
