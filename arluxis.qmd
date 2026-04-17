@@ -1,9 +1,15 @@
 ---
+pagetitle: "Arluxis"
 toc: false
 format:
   html:
     page-layout: full
     css: arluxis-styles.css
+    include-in-header:
+      text: |
+        <link rel="icon" type="image/png" href="icons/logo_arluxis_short.png" />
+        <link rel="shortcut icon" href="icons/logo_arluxis_short.png" />
+        <link rel="apple-touch-icon" href="icons/logo_arluxis_short.png" />
 ---
 
 ```{=html}
@@ -13,21 +19,13 @@ format:
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- favicon -->
-<link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-<link rel="shortcut icon" href="/assets/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="ARLUXIS" />
-<link rel="manifest" href="/assets/site.webmanifest" />
-
 <!-- Navigation Bar -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="back-link">← Back to Home</a>
     <img src="icons/logo_arluxis_short.png" alt="ARLUXIS logo" class="nav-logo">
     <a href="https://www.instagram.com/arluxis/" target="_blank" class="instagram-link">
-      <img src="icons\instagram_white.png" alt="Instagram" class="social-icon">
+      <img src="icons/instagram_white.png" alt="Instagram" class="social-icon">
         Instagram
     </a>
   </div>

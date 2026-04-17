@@ -560,14 +560,3 @@ body {
   }
 }
 
-@media (hover: none) {
-  .photo-overlay {
-    opacity: 1;
-    padding: 20px 14px 14px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.08) 100%);
-  }
-
-  .photo-caption {
-    font-size: 1em;
-  }
-}
