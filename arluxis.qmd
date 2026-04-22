@@ -37,7 +37,7 @@ format:
     <p class="hero-kicker">BY ARTHUR DECLERCQ</p>
     <h1 class="hero-title">ARLUXIS</h1>
     <h2 class="hero-subtitle">Photography Portfolio</h2>
-    <p class="hero-description">A visual journal of <span class="hero-highlight">movement</span>, atmosphere, and everyday scenes worth remembering.</p>
+    <p class="hero-description">A visual journal of movement, atmosphere, and everyday scenes worth remembering.</p>
   </div>
 </section>
 
@@ -110,7 +110,7 @@ format:
 <section class="about-portfolio-section">
   <div class="about-portfolio-content">
     <h3>About ARLUXIS</h3>
-    <p>ARLUXIS is my ongoing photography journey, shaped by travel for work, the sport events I attend to compete or cheer for friends or landscapes I get lost in. I’m still exploring all kinds of photography, but these types are the ones I keep coming back to. If you’d like to follow more closely and support a photographer, follow me on <a href="https://www.instagram.com/arluxis/" target="_blank" class="inline-link">Instagram</a>. It means a lot.</p>
+    <p>ARLUXIS is my ongoing photography journey, shaped by travel for work, the sport events I attend to compete or cheer for friends or landscapes I get lost in. I’m still exploring all kinds of photography, but these types are the ones I keep coming back to. If you’d like to follow more closely and support a photographer, follow me on <a href="https://www.instagram.com/arluxis/" target="_blank" class="inline-link">Instagram</a>.</p>
   </div>
 </section>
 
