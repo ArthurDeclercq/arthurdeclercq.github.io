@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Space';
+  src: url('fonts/Aerospace.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Global Styles */
 
 html {
@@ -14,25 +22,27 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* FIX: visual-hierarchy — increased margin-bottom for breathing room */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif; /* Font family for headers */
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 800;
   color: #222222;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
+
 
 h1 a.anchorjs-link, h2 a.anchorjs-link, h3 a.anchorjs-link, h4 a.anchorjs-link, h5 a.anchorjs-link, h6 a.anchorjs-link {
   display: none !important;
 }
 
-/* Specific Header Sizes */
+/* FIX: visual-hierarchy — h1/h2 were 2.3/2.2rem (imperceptible gap); now 3/2.6rem for clear three-tier scale */
 h1 {
-  font-size: 2.3rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
 }
 
 h3 {
@@ -43,10 +53,10 @@ h4 {
   font-size: 1.5rem;
 }
 
-/* Paragraph Styling with Font */
+/* FIX: visual-hierarchy — weight 600 (semi-bold) competed with headings; reduced to 500 */
 p {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1rem;
     text-align: justify;
   }
@@ -203,10 +213,94 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: url('images/ArthurDeclercq-1.jpg') center/cover no-repeat;
-  filter: grayscale(20%);
   z-index: -1;
-  background-position: 52% center;
+  overflow: hidden;
+}
+
+/* Background image with isolated grayscale filter */
+.home-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('images/ArthurDeclercq-1.jpg') 52% center / cover no-repeat;
+  filter: grayscale(20%);
+  z-index: 0;
+}
+
+/* Radial vignette anchored at text position, bleeds into a subtle directional fade */
+.home-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 70% at 8% 88%, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.0) 100%),
+    linear-gradient(to right, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.0) 55%);
+  z-index: 1;
+}
+
+/* Hero text block — bottom-left */
+.hero-content {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  z-index: 3;
+}
+
+/* Gold vertical bar + stacked name */
+.hero-name-block {
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.hero-name-bar {
+  width: 2px;
+  background-color: #e2aa3c;
+  flex-shrink: 0;
+}
+
+.hero-name-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-first {
+  font-family: 'Space', serif;
+  font-size: clamp(2.8rem, 5.5vw, 7rem);
+  font-weight: normal;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  line-height: 0.92;
+}
+
+.hero-last {
+  font-family: 'Space', serif;
+  font-size: clamp(2.0rem, 4vw, 5rem);
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.48);
+  letter-spacing: 0.22em;
+  line-height: 0.92;
+}
+
+/* Thin gold rule — aligned to name text (bar 2px + gap 18px = 20px offset) */
+.hero-rule {
+  width: 55px;
+  height: 1px;
+  background: linear-gradient(to right, #e2aa3c 0%, rgba(226, 170, 60, 0) 100%);
+  margin: 0 0 14px 20px;
+}
+
+.hero-tagline {
+  color: rgba(255, 255, 255, 0.68);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  text-align: left;
 }
 
 .photo-credit {
@@ -228,49 +322,36 @@ a:hover {
   z-index: 10;
 }
 
-.home-intro {
-  text-align: center;
-  background: rgba(5, 5, 3, 0.7);
-  padding: 1.5rem;
-  border-radius: 10px;
-  z-index: 1;
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 32%;
-}
-
-.welcome-txt {
-  color: #e2aa3c;
-  margin: 0;
-  font-size: 1.9rem
-}
-
 /* Responsive adjustments */
 @media (max-width: 910px) {
-  .home-intro {
-    width: min(68vw, 430px);
+  .home-section::before {
+    background-position: 72% 18%;
   }
-  .welcome-txt {
-    font-size: 1.6rem
+
+  .hero-content {
+    bottom: 14%;
+    left: 5%;
   }
-  /* Section Styles */
-.home-section {
-  background-position: 72% 18%;
-}
 }
 
 @media (max-width: 600px) {
-  .home-intro {
-    width: min(92vw, 420px);
-    padding: 1.1rem;
-    top: 62%;
+  .hero-first {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
   }
 
-  .welcome-txt {
-    font-size: 1.35rem;
-    line-height: 1.2;
+  .hero-last {
+    font-size: clamp(1.4rem, 6vw, 2.0rem);
+  }
+
+  .hero-tagline {
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    margin-left: 16px;
+  }
+
+  .hero-rule {
+    width: 38px;
+    margin-left: 16px;
   }
 
   .home-photo-credit {
@@ -294,6 +375,14 @@ a:hover {
   background: #fff;
 }
 
+/* FIX: color-contrast — #e2aa3c on white is ~2:1 (fails WCAG AA); #8B6914 is 5:1 on white */
+.about-section a,
+.experience-section a,
+.publications-section a,
+.projects-section a {
+  color: #8B6914;
+}
+
 .about-text {
   margin: 0; /* Centers the text within the section */
   text-align: justify;
@@ -301,12 +390,13 @@ a:hover {
 }
 
 /* Experience Section */
+/* FIX: color-usage — consolidated near-identical backgrounds (#f9f9f9, #f7f7f7) to a single value */
 .experience-section {
-  background-color: #f9f9f9;
+  background-color: #f5f5f5;
 }
 
+/* FIX: visual-hierarchy — removed 1.8em override; global h3 (1.75rem) now applies, preserving scale */
 .current-position h3 {
-  font-size: 1.8em;
   color: #e2aa3c;
 }
 
@@ -328,8 +418,8 @@ blockquote {
   margin-bottom: 20px;
 }
 
+/* FIX: visual-hierarchy — removed 1.8em override */
 .education-section h3 {
-  font-size: 1.8em;
   color: #e2aa3c;
   margin-bottom: 10px;
 }
@@ -354,8 +444,8 @@ blockquote {
   margin-bottom: 20px;
 }
 
+/* FIX: visual-hierarchy — removed 1.8em override */
 .skills-section h3 {
-  font-size: 1.8em;
   color: #e2aa3c;
   margin-bottom: 10px;
 }
@@ -378,8 +468,8 @@ blockquote {
   margin-bottom: 20px;
 }
 
+/* FIX: visual-hierarchy — removed 1.8em override */
 .prizes-section h3 {
-  font-size: 1.8em;
   color: #e2aa3c;
   margin-bottom: 10px;
 }
@@ -469,6 +559,7 @@ blockquote {
   margin: 0;
 }
 
+/* FIX: cta-clarity — added border/padding so voka-link reads as a button */
 .voka-link {
   text-decoration: none;
   color: #e2aa3c;
@@ -476,6 +567,16 @@ blockquote {
   margin-top: 1rem;
   display: inline-flex;
   align-items: center;
+  padding: 8px 18px;
+  border: 1px solid #e2aa3c;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.voka-link:hover {
+  background-color: #e2aa3c;
+  color: #1a1a1a;
+  text-decoration: none;
 }
 
 .link-icon {
@@ -498,9 +599,10 @@ blockquote {
 }
 
 /* Publications Section Styles */
+/* FIX: color-usage — background unified to #f5f5f5 */
 .publications-section {
   padding-top: 10px;
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
   text-align: left;
   width: 100%;
 }
@@ -562,10 +664,23 @@ blockquote {
   margin-top: 3px;
 }
 
+/* FIX: cta-clarity — styled as button so "View Manuscript" is visible as an action target */
 .manuscript-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 16px;
   color: #e2aa3c;
   text-decoration: none;
   font-weight: bold;
+  border: 1px solid #e2aa3c;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.manuscript-link:hover {
+  background-color: #e2aa3c;
+  color: #1a1a1a;
+  text-decoration: none;
 }
 
 .divider {
@@ -675,9 +790,11 @@ blockquote {
 
 
 /* Contact Section Styles */
+/* FIX: spacing-consistency — padding 20/20/30px was inconsistent with 40px used everywhere else;
+   inner .max-widht now handles all horizontal spacing */
 .contact-section {
   position: relative;
-  padding: 20px 20px 30px;
+  padding: 0;
   background: url('images/sunday_running_club.jpg') center/cover no-repeat;
   filter: grayscale(20%);
   text-align: left;
@@ -759,27 +876,35 @@ blockquote {
 @media (max-width: 910px) {
   .contact-section {
     background-size: cover;
-    padding: 15px; 
+    /* FIX: spacing-consistency — padding removed; max-widht handles spacing */
+    padding: 0;
     text-align: center;
     max-width: 100%;
     box-sizing: border-box;
   }
 
   .contact-content {
-    max-width: 90%; /* Allow more width for content on small screens */
+    max-width: 90%;
     margin: auto;
   }
 
+  /* FIX: mobile — flex row stayed left-aligned despite text-align: center */
+  .contact-name {
+    justify-content: center;
+  }
+
   .contact-title {
-    font-size: 2em; /* Adjust font size */
+    font-size: 2em;
   }
 
   .contact-full-name {
-    font-size: 1.5em; /* Adjust font size for mobile */
+    font-size: 1.5em;
   }
 
+  /* FIX: mobile — 1.2em links overflow at 375px; word-break prevents clipping */
   .contact-link {
-    font-size: 1.2em; /* Adjust link font size */
+    font-size: 1em;
+    word-break: break-all;
   }
 }
 
