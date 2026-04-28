@@ -784,7 +784,7 @@ format:
 
       if (divider && divider.classList.contains("divider")) {
         // Change the divider color
-        divider.style.backgroundColor = "#dba14d";
+        divider.style.backgroundColor = "#c9933a";
         divider.style.height = "1px"; // Optional: make it a bit thicker
       }
     }

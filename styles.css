@@ -15,7 +15,7 @@ html {
 body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 16px;
-  color: #333;
+  color: #1a1a1a;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 800;
-  color: #222222;
+  color: #1a1a1a;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -80,7 +80,7 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(67, 69, 68, 0.9);
+  background: linear-gradient(to right, rgba(15, 30, 46, 0.92) 0%, rgba(20, 36, 52, 0.92) 100%);
   padding: 15px 20px;
   display: flex;
   min-height: 40px;
@@ -100,6 +100,7 @@ a:hover {
   height: 52px;
   width: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -133,7 +134,7 @@ a:hover {
 }
 
 .nav-link:hover {
-  color: #dba14d;
+  color: #c9933a;
   text-decoration: none;
 }
 
@@ -189,7 +190,7 @@ a:hover {
       top: 60px; /* Adjust based on navbar height */
       left: 0;
       width: 100%;
-      background-color: rgba(67, 69, 68, 0.9);
+      background: linear-gradient(to right, rgba(15, 30, 46, 0.92) 0%, rgba(20, 36, 52, 0.92) 100%);
       padding: 10px 0;
       max-width: 100%;
   }
@@ -256,7 +257,7 @@ a:hover {
 
 .hero-name-bar {
   width: 2px;
-  background-color: #e2aa3c;
+  background: linear-gradient(180deg, #e2aa3c 0%, #c9933a 100%);
   flex-shrink: 0;
 }
 
@@ -368,18 +369,16 @@ a:hover {
 
 .main-content {
   margin-top: 100vh;
-  background: rgb(255, 255, 255);
+  background: #fdfbf7;
 }
 
 .about-section {
-  background: #fff;
+  background: #fdfbf7;
 }
 
-/* FIX: color-contrast — #e2aa3c on white is ~2:1 (fails WCAG AA); #8B6914 is 5:1 on white */
 .about-section a,
-.experience-section a,
-.publications-section a,
-.projects-section a {
+.projects-section a,
+.publications-section .abstract a {
   color: #8B6914;
 }
 
@@ -390,9 +389,22 @@ a:hover {
 }
 
 /* Experience Section */
-/* FIX: color-usage — consolidated near-identical backgrounds (#f9f9f9, #f7f7f7) to a single value */
 .experience-section {
-  background-color: #f5f5f5;
+  background: linear-gradient(180deg, #0f1e2e 0%, #1a2a3a 100%);
+  color: #c4c2b8;
+}
+
+.experience-section h2 {
+  color: #fdfbf7;
+}
+
+.experience-section blockquote,
+.experience-section .education-list {
+  color: #c4c2b8;
+}
+
+.experience-section .education-list span {
+  color: #9a9890;
 }
 
 /* FIX: visual-hierarchy — removed 1.8em override; global h3 (1.75rem) now applies, preserving scale */
@@ -406,7 +418,7 @@ a:hover {
 
 blockquote {
   font-size: 1.3em;
-  color: #666;
+  color: #5a5550;
   border-left: 4px solid #e2aa3c;
   padding-left: 15px;
   margin-top: 10px;
@@ -428,7 +440,7 @@ blockquote {
   list-style: none;
   padding: 0;
   font-size: 1.2em;
-  color: #555;
+  color: #5a5550;
 }
 
 .education-list li {
@@ -436,7 +448,7 @@ blockquote {
 }
 
 .education-list span {
-  color: #777;
+  color: #857d72;
 }
 
 /* Skills Section Styles */
@@ -457,7 +469,7 @@ blockquote {
 }
 
 .skill-item {
-  background-color: #e2aa3c;
+  background: linear-gradient(135deg, #e2aa3c 0%, #c9933a 100%);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -491,7 +503,7 @@ blockquote {
 }
 
 .prize-gold::before {
-  background: linear-gradient(180deg, #e2aa3c, #dba14d);
+  background: linear-gradient(180deg, #e2aa3c, #c9933a);
 }
 
 .prize-silver::before {
@@ -539,7 +551,7 @@ blockquote {
 
 .voka-quote {
   text-align: center;
-  background: rgba(5, 5, 3, 0.6);
+  background: linear-gradient(135deg, rgba(15, 30, 46, 0.7) 0%, rgba(26, 42, 58, 0.7) 100%);
   padding: 2rem;
   border-radius: 10px;
   z-index: 1;
@@ -599,12 +611,38 @@ blockquote {
 }
 
 /* Publications Section Styles */
-/* FIX: color-usage — background unified to #f5f5f5 */
 .publications-section {
   padding-top: 10px;
-  background-color: #f5f5f5;
+  background: linear-gradient(180deg, #0f1e2e 0%, #1a2a3a 100%);
   text-align: left;
   width: 100%;
+}
+
+/* Dark-mode overrides scoped to publications */
+.publications-section .publications-title,
+.publications-section .publication-title {
+  color: #fdfbf7;
+}
+
+.publications-section .publication-authors,
+.publications-section .publication-journal {
+  color: #c4c2b8;
+}
+
+.publications-section .publication-journal span {
+  color: #9a9890;
+}
+
+.publications-section .divider {
+  background-color: rgba(226, 170, 60, 0.25);
+}
+
+.publications-section .publication-item:hover {
+  background-color: rgba(226, 170, 60, 0.08);
+}
+
+.publications-section .abstract-icon {
+  filter: brightness(0) invert(1) opacity(0.7);
 }
 
 .publications-title {
@@ -631,18 +669,18 @@ blockquote {
 .publication-title {
   font-weight: bold;
   font-size: 1.4em;
-  color: #333;
+  color: #1a1a1a;
   margin: 0;
 }
 
 .publication-authors, .publication-journal {
   margin: 5px 0;
-  color: #555;
+  color: #5a5550;
 }
 
 .publication-journal span {
   margin-left: 10px;
-  color: #777;
+  color: #857d72;
 }
 
 .abstract-link {
@@ -655,7 +693,7 @@ blockquote {
   display: none;
   margin-top: 10px;
   padding: 10px;
-  background-color: #f0f0f0;
+  background-color: #ebe5d8;
   border-radius: 5px;
 }
 
@@ -686,7 +724,7 @@ blockquote {
 .divider {
   width: 65%;
   height: 1px;
-  background-color: #ddd;
+  background-color: #d9d0bd;
   margin: 20px auto;
 }
 
@@ -724,14 +762,14 @@ blockquote {
 /* Projects Section Styles */
 .projects-section {
   padding: 40px;
-  background-color: #fff;
+  background-color: #fdfbf7;
   text-align: left;
 }
 
 .projects-title {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #333;
+  color: #1a1a1a;
 }
 
 .projects-container {
@@ -741,7 +779,7 @@ blockquote {
 }
 
 .project-card {
-  background: #fff;
+  background: #fdfbf7;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -768,7 +806,7 @@ blockquote {
 }
 
 .project-description {
-  color: #555;
+  color: #5a5550;
   flex: 1;
   margin-top: 10px;
   overflow: hidden;
@@ -808,7 +846,7 @@ blockquote {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(67, 69, 68, 0.85);
+  background: linear-gradient(135deg, rgba(15, 30, 46, 0.88) 0%, rgba(26, 42, 58, 0.88) 100%);
   pointer-events: none;
 }
 
