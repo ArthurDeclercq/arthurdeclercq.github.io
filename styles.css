@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Space';
+  src: url('fonts/Aerospace.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Global Styles */
 
 html {
@@ -6,48 +14,52 @@ html {
 
 body {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
-  color: #333;
+  font-size: 17px;
+  color: #1a1a1a;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* FIX: visual-hierarchy — increased margin-bottom for breathing room */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif; /* Font family for headers */
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 800;
-  color: #222222;
+  color: #1a1a1a;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
+
 
 h1 a.anchorjs-link, h2 a.anchorjs-link, h3 a.anchorjs-link, h4 a.anchorjs-link, h5 a.anchorjs-link, h6 a.anchorjs-link {
   display: none !important;
 }
 
-/* Specific Header Sizes */
+/* FIX: visual-hierarchy — h1/h2 were 2.3/2.2rem (imperceptible gap); now 3/2.6rem for clear three-tier scale */
 h1 {
-  font-size: 2.3rem;
+  font-size: 3.25rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.85rem;
+  border-bottom: 2px solid rgba(226, 170, 60, 0.3);
+  padding-bottom: 15px;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.9rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
-/* Paragraph Styling with Font */
+/* FIX: visual-hierarchy — weight 600 (semi-bold) competed with headings; reduced to 500 */
 p {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     text-align: justify;
   }
 
@@ -70,7 +82,8 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(67, 69, 68, 0.9);
+  background-color: rgba(37, 37, 37, 0.95);
+  border-bottom: 1px solid rgba(226, 170, 60, 0.3);
   padding: 15px 20px;
   display: flex;
   min-height: 40px;
@@ -90,6 +103,7 @@ a:hover {
   height: 52px;
   width: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -123,7 +137,7 @@ a:hover {
 }
 
 .nav-link:hover {
-  color: #dba14d;
+  color: #c9933a;
   text-decoration: none;
 }
 
@@ -179,7 +193,7 @@ a:hover {
       top: 60px; /* Adjust based on navbar height */
       left: 0;
       width: 100%;
-      background-color: rgba(67, 69, 68, 0.9);
+      background-color: rgba(37, 37, 37, 0.95);
       padding: 10px 0;
       max-width: 100%;
   }
@@ -203,17 +217,101 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: url('images/ArthurDeclercq-1.jpg') center/cover no-repeat;
-  filter: grayscale(20%);
   z-index: -1;
-  background-position: 52% center;
+  overflow: hidden;
+}
+
+/* Background image with isolated grayscale filter */
+.home-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('images/ArthurDeclercq-1.jpg') 52% center / cover no-repeat;
+  filter: grayscale(20%);
+  z-index: 0;
+}
+
+/* Radial vignette anchored at text position, bleeds into a subtle directional fade */
+.home-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 70% at 8% 88%, rgba(37, 37, 37, 0.72) 0%, rgba(37, 37, 37, 0.0) 100%),
+    linear-gradient(to right, rgba(37, 37, 37, 0.30) 0%, rgba(37, 37, 37, 0.0) 55%);
+  z-index: 1;
+}
+
+/* Hero text block — bottom-left */
+.home-section .hero-content {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  z-index: 3;
+}
+
+/* Gold vertical bar + stacked name */
+.hero-name-block {
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.hero-name-bar {
+  width: 2px;
+  background: linear-gradient(180deg, #e2aa3c 0%, #c9933a 100%);
+  flex-shrink: 0;
+}
+
+.hero-name-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-first {
+  font-family: 'Space', serif;
+  font-size: clamp(2.8rem, 5.5vw, 7rem);
+  font-weight: normal;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  line-height: 0.92;
+}
+
+.hero-last {
+  font-family: 'Space', serif;
+  font-size: clamp(2.0rem, 4vw, 5rem);
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.48);
+  letter-spacing: 0.22em;
+  line-height: 0.92;
+}
+
+/* Thin gold rule — aligned to name text (bar 2px + gap 18px = 20px offset) */
+.hero-rule {
+  width: 55px;
+  height: 1px;
+  background: linear-gradient(to right, #e2aa3c 0%, rgba(226, 170, 60, 0) 100%);
+  margin: 0 0 14px 20px;
+}
+
+.hero-tagline {
+  color: rgba(255, 255, 255, 0.68);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+  text-shadow: 0 1px 8px rgba(37, 37, 37, 0.5);
+  text-align: left;
 }
 
 .photo-credit {
   position: absolute;
   bottom: 10px;
   right: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(37, 37, 37, 0.5);
   padding: 5px 10px;
   border-radius: 5px;
   color: #f0f0f0;
@@ -228,49 +326,36 @@ a:hover {
   z-index: 10;
 }
 
-.home-intro {
-  text-align: center;
-  background: rgba(5, 5, 3, 0.7);
-  padding: 1.5rem;
-  border-radius: 10px;
-  z-index: 1;
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 32%;
-}
-
-.welcome-txt {
-  color: #e2aa3c;
-  margin: 0;
-  font-size: 1.9rem
-}
-
 /* Responsive adjustments */
 @media (max-width: 910px) {
-  .home-intro {
-    width: min(68vw, 430px);
+  .home-section::before {
+    background-position: 72% 18%;
   }
-  .welcome-txt {
-    font-size: 1.6rem
+
+  .home-section .hero-content {
+    bottom: 14%;
+    left: 5%;
   }
-  /* Section Styles */
-.home-section {
-  background-position: 72% 18%;
-}
 }
 
 @media (max-width: 600px) {
-  .home-intro {
-    width: min(92vw, 420px);
-    padding: 1.1rem;
-    top: 62%;
+  .hero-first {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
   }
 
-  .welcome-txt {
-    font-size: 1.35rem;
-    line-height: 1.2;
+  .hero-last {
+    font-size: clamp(1.4rem, 6vw, 2.0rem);
+  }
+
+  .hero-tagline {
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    margin-left: 16px;
+  }
+
+  .hero-rule {
+    width: 38px;
+    margin-left: 16px;
   }
 
   .home-photo-credit {
@@ -287,11 +372,32 @@ a:hover {
 
 .main-content {
   margin-top: 100vh;
-  background: rgb(255, 255, 255);
+  background: #ededea;
 }
 
 .about-section {
-  background: #fff;
+  background: #ededea;
+}
+
+.about-section a,
+.projects-section a,
+.publications-section .abstract a {
+  color: #8B6914;
+}
+
+.about-section a[href="arluxis.html"] {
+  color: #e2aa3c;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(226, 170, 60, 0.5);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.about-section a[href="arluxis.html"]:hover {
+  color: #c9933a;
+  border-bottom-color: #e2aa3c;
+  text-decoration: none;
 }
 
 .about-text {
@@ -302,11 +408,25 @@ a:hover {
 
 /* Experience Section */
 .experience-section {
-  background-color: #f9f9f9;
+  background-color: #252525;
+  color: #b0b0b0;
 }
 
+.experience-section h2 {
+  color: #f0f0f0;
+}
+
+.experience-section blockquote,
+.experience-section .education-list {
+  color: #b0b0b0;
+}
+
+.experience-section .education-list span {
+  color: #808080;
+}
+
+/* FIX: visual-hierarchy — removed 1.8em override; global h3 (1.75rem) now applies, preserving scale */
 .current-position h3 {
-  font-size: 1.8em;
   color: #e2aa3c;
 }
 
@@ -316,7 +436,7 @@ a:hover {
 
 blockquote {
   font-size: 1.3em;
-  color: #666;
+  color: #5a5a5a;
   border-left: 4px solid #e2aa3c;
   padding-left: 15px;
   margin-top: 10px;
@@ -328,8 +448,8 @@ blockquote {
   margin-bottom: 20px;
 }
 
+/* FIX: visual-hierarchy — removed 1.8em override */
 .education-section h3 {
-  font-size: 1.8em;
   color: #e2aa3c;
   margin-bottom: 10px;
 }
@@ -338,7 +458,7 @@ blockquote {
   list-style: none;
   padding: 0;
   font-size: 1.2em;
-  color: #555;
+  color: #5a5a5a;
 }
 
 .education-list li {
@@ -346,7 +466,7 @@ blockquote {
 }
 
 .education-list span {
-  color: #777;
+  color: #808080;
 }
 
 /* Skills Section Styles */
@@ -354,8 +474,8 @@ blockquote {
   margin-bottom: 20px;
 }
 
+/* FIX: visual-hierarchy — removed 1.8em override */
 .skills-section h3 {
-  font-size: 1.8em;
   color: #e2aa3c;
   margin-bottom: 10px;
 }
@@ -367,7 +487,7 @@ blockquote {
 }
 
 .skill-item {
-  background-color: #e2aa3c;
+  background: linear-gradient(135deg, #e2aa3c 0%, #c9933a 100%);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -378,8 +498,8 @@ blockquote {
   margin-bottom: 20px;
 }
 
+/* FIX: visual-hierarchy — removed 1.8em override */
 .prizes-section h3 {
-  font-size: 1.8em;
   color: #e2aa3c;
   margin-bottom: 10px;
 }
@@ -401,7 +521,7 @@ blockquote {
 }
 
 .prize-gold::before {
-  background: linear-gradient(180deg, #e2aa3c, #dba14d);
+  background: linear-gradient(180deg, #e2aa3c, #c9933a);
 }
 
 .prize-silver::before {
@@ -449,12 +569,12 @@ blockquote {
 
 .voka-quote {
   text-align: center;
-  background: rgba(5, 5, 3, 0.6);
+  background-color: rgba(10, 10, 10, 0.65);
   padding: 2rem;
   border-radius: 10px;
   z-index: 1;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 70%;
   transform: translate(-50%, -50%);
   max-width: 50%;
@@ -467,8 +587,11 @@ blockquote {
   font-size: 1.5em;
   color: #e2aa3c;
   margin: 0;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
+/* FIX: cta-clarity — added border/padding so voka-link reads as a button */
 .voka-link {
   text-decoration: none;
   color: #e2aa3c;
@@ -476,6 +599,16 @@ blockquote {
   margin-top: 1rem;
   display: inline-flex;
   align-items: center;
+  padding: 8px 18px;
+  border: 1px solid #e2aa3c;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.voka-link:hover {
+  background-color: #e2aa3c;
+  color: #1a1a1a;
+  text-decoration: none;
 }
 
 .link-icon {
@@ -500,9 +633,36 @@ blockquote {
 /* Publications Section Styles */
 .publications-section {
   padding-top: 10px;
-  background-color: #f7f7f7;
+  background-color: #252525;
   text-align: left;
   width: 100%;
+}
+
+/* Dark-mode overrides scoped to publications */
+.publications-section .publications-title,
+.publications-section .publication-title {
+  color: #f0f0f0;
+}
+
+.publications-section .publication-authors,
+.publications-section .publication-journal {
+  color: #b0b0b0;
+}
+
+.publications-section .publication-journal span {
+  color: #808080;
+}
+
+.publications-section .divider {
+  background-color: rgba(226, 170, 60, 0.25);
+}
+
+.publications-section .publication-item:hover {
+  background-color: rgba(226, 170, 60, 0.08);
+}
+
+.publications-section .abstract-icon {
+  filter: brightness(0) invert(1) opacity(0.7);
 }
 
 .publications-title {
@@ -529,18 +689,18 @@ blockquote {
 .publication-title {
   font-weight: bold;
   font-size: 1.4em;
-  color: #333;
+  color: #1a1a1a;
   margin: 0;
 }
 
 .publication-authors, .publication-journal {
   margin: 5px 0;
-  color: #555;
+  color: #5a5a5a;
 }
 
 .publication-journal span {
   margin-left: 10px;
-  color: #777;
+  color: #808080;
 }
 
 .abstract-link {
@@ -553,7 +713,7 @@ blockquote {
   display: none;
   margin-top: 10px;
   padding: 10px;
-  background-color: #f0f0f0;
+  background-color: #ededea;
   border-radius: 5px;
 }
 
@@ -562,16 +722,29 @@ blockquote {
   margin-top: 3px;
 }
 
+/* FIX: cta-clarity — styled as button so "View Manuscript" is visible as an action target */
 .manuscript-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 16px;
   color: #e2aa3c;
   text-decoration: none;
   font-weight: bold;
+  border: 1px solid #e2aa3c;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.manuscript-link:hover {
+  background-color: #e2aa3c;
+  color: #1a1a1a;
+  text-decoration: none;
 }
 
 .divider {
   width: 65%;
   height: 1px;
-  background-color: #ddd;
+  background-color: #d9d0bd;
   margin: 20px auto;
 }
 
@@ -609,14 +782,14 @@ blockquote {
 /* Projects Section Styles */
 .projects-section {
   padding: 40px;
-  background-color: #fff;
+  background-color: #ededea;
   text-align: left;
 }
 
 .projects-title {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #333;
+  color: #1a1a1a;
 }
 
 .projects-container {
@@ -626,7 +799,7 @@ blockquote {
 }
 
 .project-card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -653,12 +826,12 @@ blockquote {
 }
 
 .project-description {
-  color: #555;
+  color: #5a5a5a;
   flex: 1;
   margin-top: 10px;
   overflow: hidden;
   max-height: 120px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .project-link {
@@ -675,9 +848,11 @@ blockquote {
 
 
 /* Contact Section Styles */
+/* FIX: spacing-consistency — padding 20/20/30px was inconsistent with 40px used everywhere else;
+   inner .max-widht now handles all horizontal spacing */
 .contact-section {
   position: relative;
-  padding: 20px 20px 30px;
+  padding: 0;
   background: url('images/sunday_running_club.jpg') center/cover no-repeat;
   filter: grayscale(20%);
   text-align: left;
@@ -691,7 +866,7 @@ blockquote {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(67, 69, 68, 0.85);
+  background-color: rgba(37, 37, 37, 0.88);
   pointer-events: none;
 }
 
@@ -703,7 +878,7 @@ blockquote {
   gap: 15px;
   max-width: 300px;
   color: #f0f0f0;
-  padding: 0 10px
+  padding: 0 10px;
 }
 
 .contact-title {
@@ -759,27 +934,35 @@ blockquote {
 @media (max-width: 910px) {
   .contact-section {
     background-size: cover;
-    padding: 15px; 
+    /* FIX: spacing-consistency — padding removed; max-widht handles spacing */
+    padding: 0;
     text-align: center;
     max-width: 100%;
     box-sizing: border-box;
   }
 
   .contact-content {
-    max-width: 90%; /* Allow more width for content on small screens */
+    max-width: 90%;
     margin: auto;
   }
 
+  /* FIX: mobile — flex row stayed left-aligned despite text-align: center */
+  .contact-name {
+    justify-content: center;
+  }
+
   .contact-title {
-    font-size: 2em; /* Adjust font size */
+    font-size: 2em;
   }
 
   .contact-full-name {
-    font-size: 1.5em; /* Adjust font size for mobile */
+    font-size: 1.5em;
   }
 
+  /* FIX: mobile — 1.2em links overflow at 375px; word-break prevents clipping */
   .contact-link {
-    font-size: 1.2em; /* Adjust link font size */
+    font-size: 1em;
+    word-break: break-all;
   }
 }
 
