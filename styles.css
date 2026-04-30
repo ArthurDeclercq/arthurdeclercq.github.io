@@ -574,7 +574,7 @@ blockquote {
   border-radius: 10px;
   z-index: 1;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 70%;
   transform: translate(-50%, -50%);
   max-width: 50%;
