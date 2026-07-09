@@ -43,3 +43,8 @@ venv/
 logos.pptx
 
 /.quarto/
+
+**/*.quarto_ipynb
+
+# Generated publications include (built from publications.yml)
+_publications.qmd
