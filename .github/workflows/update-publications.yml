@@ -1,0 +1,44 @@
+# .github/workflows/update-publications.yml
+name: Update publications
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # 06:00 UTC on the 1st of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml requests
+
+      - name: Fetch new publications from Crossref
+        run: python scripts/fetch_crossref.py
+
+      - name: Open pull request if publications.yml changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: add new publications from Crossref"
+          branch: auto/update-publications
+          delete-branch: true
+          title: "Add new publications from Crossref"
+          body: |
+            Automated monthly Crossref pull. Review before merge:
+
+            - Co-first authors: add ` & ` between the co-first names in `authors`.
+            - `first_author` flag (Crossref position 0 heuristic — verify).
+            - Abstracts marked `TODO: add abstract` (Crossref + Europe PMC had none).
+            - `venue_label` (`Journal` vs `Book`) and `link_text`.
+            - `venue` wording and `url`.
+          labels: publications
