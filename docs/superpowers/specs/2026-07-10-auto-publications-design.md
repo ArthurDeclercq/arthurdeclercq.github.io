@@ -22,11 +22,18 @@ In scope:
 - A monthly GitHub Action that discovers new publications from Crossref and opens
   a pull request appending them to the YAML file.
 
+In scope (added):
+- Auto-deploy on merge to `main` via a GitHub Action (replaces the manual
+  `quarto publish gh-pages`).
+- The GitHub repo settings required for the Actions to push `gh-pages` and open
+  PRs.
+
 Out of scope:
-- Changing deploy. Deploy remains the manual `quarto publish gh-pages` from `main`.
-  (An on-merge auto-deploy Action may be added later if desired.)
 - Changing the client-side JS (toggle abstract, New tag, sort, divider color).
   These continue to run unchanged on the generated DOM.
+- Migrating GitHub Pages off the `gh-pages` branch. Pages keeps serving from
+  `gh-pages`; the deploy Action just pushes that branch in CI instead of you
+  running the command locally.
 
 ## What stays identical
 
@@ -118,7 +125,32 @@ papers are not pulled.
   `peter-evans/create-pull-request` with a body listing the added titles.
 - Arthur reviews (co-first `&`, blank abstracts, `venue_label`, `link_text`),
   edits in the PR if needed, merges.
-- Merge does not auto-deploy; Arthur runs `quarto publish gh-pages` as today.
+- Merge to `main` triggers the deploy Action (component 6) automatically.
+
+### 6. `.github/workflows/deploy.yml`
+
+- Trigger: `push` to `main` (plus `workflow_dispatch`).
+- Steps: checkout, set up Quarto (`quarto-dev/quarto-actions/setup`), set up Python
+  + `pip install pyyaml requests` (the pre-render step needs them), then
+  `quarto-dev/quarto-actions/publish` with `target: gh-pages`.
+- The publish action runs `quarto render` (firing `render_publications.py`
+  pre-render) and pushes `_site` to the `gh-pages` branch using `GITHUB_TOKEN`.
+- Pages continues serving from `gh-pages`; `CNAME` survives via the existing
+  `resources:` entry, so `arthurdeclercq.bio` keeps working.
+- Concurrency guard so overlapping merges do not race the deploy.
+
+## GitHub repo settings required
+
+Repo: `ArthurDeclercq/arthurdeclercq.github.io` (public).
+
+1. Actions -> General -> Workflow permissions: **Read and write permissions**
+   (lets the deploy Action push `gh-pages`) and **Allow GitHub Actions to create
+   and approve pull requests** (lets the monthly Action open the PR).
+   Applied via `gh api` (see below).
+2. Pages -> Build and deployment -> Source: **Deploy from a branch**, branch
+   `gh-pages` / root. Already configured (site is live); no change.
+
+These are applied during implementation, not assumed manual.
 
 ## Data flow
 
