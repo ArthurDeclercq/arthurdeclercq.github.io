@@ -3,8 +3,6 @@ project:
   pre-render: scripts/render_publications.py
   render:
     - "*.qmd"
-    - "!docs/"
-    - "!.superpowers/"
 
 publish:
   method: gh-pages
