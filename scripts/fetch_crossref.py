@@ -126,6 +126,11 @@ def load_existing() -> list[dict]:
     return []
 
 
+def dump_entries(entries: list) -> str:
+    """Serialize entries to a YAML list fragment (block scalars for long/multiline strings)."""
+    return yaml.safe_dump(entries, allow_unicode=True, sort_keys=False, width=1000)
+
+
 def main() -> int:
     existing = load_existing()
     known = {normalize_doi(p.get("doi", "")) for p in existing if p.get("doi")}
@@ -135,11 +140,19 @@ def main() -> int:
         print("No new publications.")
         return 0
     new_entries = [to_entry(it) for it in new_items]
-    combined = existing + new_entries
-    DATA.write_text(
-        yaml.safe_dump(combined, allow_unicode=True, sort_keys=False, width=1000),
-        encoding="utf-8",
-    )
+
+    if DATA.exists():
+        existing_raw = DATA.read_text(encoding="utf-8")
+    else:
+        existing_raw = ""
+
+    if existing_raw.strip():
+        if not existing_raw.endswith("\n"):
+            existing_raw += "\n"
+        DATA.write_text(existing_raw + dump_entries(new_entries), encoding="utf-8")
+    else:
+        DATA.write_text(dump_entries(new_entries), encoding="utf-8")
+
     for e in new_entries:
         print(f"Added: {e['title']} ({e['date']}, first_author={e['first_author']})")
     return 0

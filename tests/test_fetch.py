@@ -1,3 +1,7 @@
+from pathlib import Path
+
+import yaml
+
 import fetch_crossref as fc
 
 
@@ -76,3 +80,36 @@ def test_to_entry_shape():
     assert e["link_text"] == "View Manuscript"
     assert e["abstract"] == "Abs."
     assert "Arthur Declercq" in e["authors"]
+
+
+def test_append_only_preserves_existing_bytes():
+    original_raw = fc.DATA.read_text(encoding="utf-8")
+    original_entries = yaml.safe_load(original_raw) or []
+    original_len = len(original_entries)
+
+    synthetic_entry = {
+        "title": "Synthetic Test Entry",
+        "authors": "Arthur Declercq ∙ Lennart Martens",
+        "venue_label": "Journal",
+        "venue": "Journal of Synthetic Tests",
+        "date": "2026-01",
+        "first_author": True,
+        "url": "https://doi.org/10.0000/synthetic",
+        "link_text": "View Manuscript",
+        "doi": "10.0000/synthetic",
+        "abstract": "A synthetic abstract for append-only verification.",
+    }
+
+    existing_raw = original_raw
+    if not existing_raw.endswith("\n"):
+        existing_raw += "\n"
+
+    result = existing_raw + fc.dump_entries([synthetic_entry])
+
+    original_normalized = original_raw if original_raw.endswith("\n") else original_raw + "\n"
+    assert result.startswith(original_normalized)
+
+    result_entries = yaml.safe_load(result)
+    assert len(result_entries) == original_len + 1
+    assert result_entries[:original_len] == original_entries
+    assert result_entries[-1] == synthetic_entry
