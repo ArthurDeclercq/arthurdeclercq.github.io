@@ -19,6 +19,7 @@ ORCID = "0000-0002-9376-1399"
 FAMILY = "declercq"
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "publications.yml"
+IGNORE = ROOT / "publications_ignore.yml"
 CROSSREF = "https://api.crossref.org/works"
 EUROPEPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 MAILTO = "arthur.declercq@ugent.be"
@@ -126,6 +127,14 @@ def load_existing() -> list[dict]:
     return []
 
 
+def load_ignored() -> set[str]:
+    """Normalized DOIs that must never be imported (hand-maintained blocklist)."""
+    if IGNORE.exists():
+        data = yaml.safe_load(IGNORE.read_text(encoding="utf-8")) or []
+        return {normalize_doi(d) for d in data if d}
+    return set()
+
+
 def dump_entries(entries: list) -> str:
     """Serialize entries to a YAML list fragment (block scalars for long/multiline strings)."""
     return yaml.safe_dump(entries, allow_unicode=True, sort_keys=False, width=1000)
@@ -134,6 +143,7 @@ def dump_entries(entries: list) -> str:
 def main() -> int:
     existing = load_existing()
     known = {normalize_doi(p.get("doi", "")) for p in existing if p.get("doi")}
+    known |= load_ignored()
     items = crossref_works(ORCID)
     new_items = find_new(items, known)
     if not new_items:

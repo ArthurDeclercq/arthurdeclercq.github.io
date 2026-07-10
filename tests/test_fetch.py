@@ -82,6 +82,27 @@ def test_to_entry_shape():
     assert "Arthur Declercq" in e["authors"]
 
 
+def test_load_ignored_reads_and_normalizes(tmp_path, monkeypatch):
+    ignore_file = tmp_path / "publications_ignore.yml"
+    ignore_file.write_text("- 10.ABC/Xyz\n- 10.def/2\n", encoding="utf-8")
+    monkeypatch.setattr(fc, "IGNORE", ignore_file)
+    assert fc.load_ignored() == {"10.abc/xyz", "10.def/2"}
+
+
+def test_load_ignored_missing_file_returns_empty_set(tmp_path, monkeypatch):
+    monkeypatch.setattr(fc, "IGNORE", tmp_path / "does_not_exist.yml")
+    assert fc.load_ignored() == set()
+
+
+def test_find_new_skips_ignored_doi():
+    items = [
+        {"DOI": "10.x/ignored", "title": ["Bad"]},
+        {"DOI": "10.x/good", "title": ["Good"]},
+    ]
+    new = fc.find_new(items, known_dois={"10.x/ignored"})
+    assert [n["DOI"] for n in new] == ["10.x/good"]
+
+
 def test_append_only_preserves_existing_bytes():
     original_raw = fc.DATA.read_text(encoding="utf-8")
     original_entries = yaml.safe_load(original_raw) or []

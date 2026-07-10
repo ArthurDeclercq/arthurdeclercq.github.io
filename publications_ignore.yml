@@ -1,0 +1,6 @@
+# DOIs to permanently exclude from the monthly Crossref import.
+# When a wrong/unwanted publication is removed from publications.yml, add its
+# DOI here (one per line) so the monthly job never re-adds it.
+# Example:
+#   - 10.1234/erratum.5678
+[]
