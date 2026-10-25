@@ -26,6 +26,11 @@ jobs:
       - name: Fetch new publications from Crossref
         run: python scripts/fetch_crossref.py
 
+      # Committed so the include resolves on a clean checkout: Quarto expands
+      # includes before the pre-render step runs.
+      - name: Regenerate publications include
+        run: python scripts/render_publications.py
+
       - name: Open pull request if publications.yml changed
         uses: peter-evans/create-pull-request@v6
         with:

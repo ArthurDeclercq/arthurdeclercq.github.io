@@ -46,5 +46,3 @@ logos.pptx
 
 **/*.quarto_ipynb
 
-# Generated publications include (built from publications.yml)
-_publications.qmd
