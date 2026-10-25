@@ -22,31 +22,18 @@
   abstract: |
     The identification of human leukocyte antigen (HLA)-presented peptides as targets of anti-cancer T cell response is pivotal for the development of novel immunotherapies. Mass spectrometry (MS)-based immunopeptidomics enables the detection of these peptides, yet confident identifications and thus implementation in immunotherapy design are hampered by the high diversity and low abundance of naturally presented HLA peptides. Here, we introduce MHCquant2, a Nextflow-based open-source pipeline that leverages OpenMS tools and peptide property predictors (DeepLC, MS2PIP) for highly sensitive and scalable HLA peptide identification and quantification across various MS platforms. MHCquant2 increased peptide identifications up to 27% with a significant expansion of low-abundant peptides, outperforming state-of-the-art pipelines. Using MHCquant2 we build a comprehensive benign tissue repository comprising re-analyzed data from available benign immunopeptidomes and a novel benignMHCquant2 dataset, adding more than 160,000 novel naturally presented HLA peptides. First applications of this benign repository and the MHCquant2 pipeline enabled (i) the refinement of tumor-associated antigens, (ii) the detection of novel, high-frequent tumor-exclusive peptide antigens for multiple tumor entities, and (iii) the identification and quantification of mutation-derived low-abundant neoepitopes. MHCquant2 refines tumor antigen discovery in immunopeptidomics, paving the way for the implementation of off-the-shelf and personalized immunotherapy design.
 
-- title: "Collisional cross-section prediction for multiconformational peptide ions with IM2Deep"
-  authors: "Robbe Devreese ∙ Alireza Nameni ∙ Arthur Declercq, Emmy Terryn ∙ Ralf Gabriels ∙ Francis Impens ∙ Kris Gevaert ∙ Lennart Martens ∙ Robbin Bouwmeester"
-  venue_label: "Journal"
-  venue: "Biorxiv"
-  date: "2025-02"
+- title: Collisional Cross-Section Prediction for Multiconformational Peptide Ions with IM2Deep
+  authors: |-
+    Robbe Devreese ∙ Alireza Nameni ∙ Arthur Declercq ∙ Emmy Terryn ∙ Ralf Gabriels ∙ Francis Impens ∙ Kris Gevaert ∙ Lennart Martens ∙ Robbin Bouwmeester
+  venue_label: Journal
+  venue: Analytical Chemistry
+  date: 2025-07
   first_author: false
-  url: "https://www.biorxiv.org/content/10.1101/2025.02.18.638865v1"
-  link_text: "View Manuscript"
-  doi: "10.1101/2025.02.18.638865"
-  abstract: |
-    Peptide collisional cross-section (CCS) prediction is complicated by the tendency of peptide ions to exhibit multiple conformations in the gas phase. This adds further complexity to downstream analysis of proteomics data, for example for identification or quantification through feature finding. Here, we present an improved version of IM2Deep that is trained on a carefully curated dataset to predict CCS values of multiconformational peptides. The training data is derived from a large and comprehensive set of publicly available datasets. This comprehensive training dataset together with a tailored architecture allows for the accurate CCS prediction of multiple peptide conformational states. Furthermore, the enhanced IM2Deep model also retains high precision for peptides with a single observed conformation. IM2Deep is publicly available under a permissive open source license at <a href="https://github.com/compomics/IM2Deep" target="_blank" class="manuscript-link">https://github.com/compomics/IM2Deep</a>.
-
-- title: "Boosting metaproteomics identification rates and taxonomic specificity with MS2Rescore"
-  authors: "Tim Van Den Bossche ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Tanja Holstein ∙ Bart Mesuere ∙ Thilo Muth ∙ Pieter Verschaffelt ∙ Lennart Martens"
-  venue_label: "Journal"
-  venue: "Biorxiv"
-  date: "2025-02"
-  first_author: false
-  url: "MANUSCRIPT_LINK"
-  link_text: "View Manuscript"
-  doi: ""
-  abstract: |
-    <strong>Background:</strong><br>Metaproteomics, the study of the collective proteome within microbial ecosystems, has gained increasing interest over the past decade. However, peptide identification rates in metaproteomics remain low compared to single-species proteomics. A key challenge is the limited sequence resolution of current identification algorithms, which were primarily designed for single-species analyses. To address this, we applied the machine learning-driven MS2Rescore tool to multiple metaproteomics datasets from diverse microbial environments and benchmark studies.
-    <br><strong>Results:</strong><br>We demonstrate that MS2Rescore outperforms typical metaproteomics identification workflows. It significantly increases peptide identification rates compared to standard database searches, even when compared to Percolator rescoring. Moreover, it enables lowering the false discovery rate (FDR) to 0.1% with minimal sensitivity loss, a substantial improvement over the 1% or 5% FDR thresholds commonly used in metaproteomics, in turn leading to greater specificity in downstream taxonomic annotation with Unipept.
-    <br><strong>Conclusions:</strong><br> Our findings show that MS2Rescore substantially improves peptide identification sensitivity as well as specificity in metaproteomics, and delivers improved taxonomic specificity. This advancement results in a more reliable downstream taxonomic analysis, reinforcing the potential of machine learning-based rescoring in metaproteomics research.
+  url: https://doi.org/10.1021/acs.analchem.5c01142
+  link_text: View Manuscript
+  doi: 10.1021/acs.analchem.5c01142
+  abstract: |-
+    Peptide collisional cross-section (CCS) prediction is complicated by the tendency of peptide ions to exhibit multiple conformations in the gas phase. This adds further complexity to downstream analysis of proteomics data, for example for identification or quantification through feature finding. Here, we present an improved version of IM2Deep that is trained on a carefully curated data set to predict CCS values of multiconformational peptides. The training data is derived from a large and comprehensive set of publicly available data sets. This comprehensive training data set together with a tailored architecture allows for the accurate CCS prediction of multiple peptide conformational states. Furthermore, the enhanced IM2Deep model also retains high precision for peptides with a single observed conformation. IM2Deep is publicly available under a permissive open-source license at https://github.com/compomics/IM2Deep.
 
 - title: "Maximizing immunopeptidomics-based bacterial epitope discovery by multiple search engines and rescoring"
   authors: "Patrick Willems ∙ Fabien Thery ∙ Laura Van Moortel ∙ Margaux De Meyer ∙ An Staes ∙ Adillah Gul ∙ Lyudmila Kovalchuke ∙ Arthur Declercq ∙ Robbe Devreese ∙ Robbin Bouwmeester ∙ Ralf Gabriels ∙  Lennart Martens ∙ Francis Impens"
@@ -179,3 +166,90 @@
   doi: "10.1038/s41467-026-68981-5"
   abstract: |
     While LC retention time prediction of peptides and their modifications has proven useful, widespread adoption and optimal performance are hindered by variations in experimental parameters. These variations can render retention time prediction models inaccurate and dramatically reduce the value of predictions for identification, validation, and DIA spectral library generation. To date, mitigation of these issues has been attempted through calibration or by training bespoke models for specific experimental setups, with only partial success. We here demonstrate that transfer learning can successfully overcome these limitations by leveraging pre-trained model parameters. Remarkably, this approach can even fit highly performant models to substantially different peptide modifications and LC conditions than those on which the model was originally trained. This impressive adaptability of transfer learning makes it a highly robust solution for accurate peptide retention time prediction across a very wide variety of imaginable proteomics workflows.
+- title: 'iDeepLC: Chemical Structure Information Yields Improved Retention Time Prediction of Peptides with Unseen Modifications'
+  authors: |-
+    Alireza Nameni ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Robbe Devreese ∙ Sven Degroeve ∙ Amélie De Maesschalck ∙ Maarten Dhaenens ∙ Cristina Chiva ∙ Eduard Sabidó ∙ Lennart Martens ∙ Robbin Bouwmeester
+  venue_label: Journal
+  venue: Analytical Chemistry
+  date: 2026-06
+  first_author: false
+  url: https://doi.org/10.1021/acs.analchem.5c08017
+  link_text: View Manuscript
+  doi: 10.1021/acs.analchem.5c08017
+  abstract: |-
+    Deep learning has notably advanced the field of liquid chromatography-mass spectrometry-based proteomics. Accurate prediction of peptide retention times significantly enhances our ability to match LC-MS data with the correct peptides and proteins, especially for data-independent acquisition data. While numerous models predict peptide LC retention times with high accuracy, few can accurately predict the retention times of chemically modified peptides, particularly those with modifications not encountered during model training. In our previously developed DeepLC model, accurate predictions could be made for unseen modifications by leveraging the chemical compositions of (modified) residues. Here, however, we present a further enhancement of this model based on the chemical structural information. The resulting model, called iDeepLC, shows overall more accurate predictions and better generalization performance for predicting the retention time of modifications structurally defined as SMILES but unseen during training than DeepLC. iDeepLC is freely available as an open-source software under the Apache2 license and can be found at https://github.com/CompOmics/iDeepLC.
+- title: Evaluating the use of non-linear models in data-driven rescoring of peptide-spectrum matches
+  authors: Alireza Nameni ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Sven Degroeve ∙ Lennart Martens ∙ Robbin Bouwmeester
+  venue_label: Journal
+  venue: bioRxiv
+  date: 2026-07
+  first_author: false
+  url: https://doi.org/10.64898/2026.07.10.737772
+  link_text: View Manuscript
+  doi: 10.64898/2026.07.10.737772
+  abstract: |-
+    In mass spectrometry (MS)-based proteomics, computational tools match acquired tandem MS spectra to peptides from a sequence database. Machine learning increasingly supports this task through peptide-spectrum match (PSM) rescoring, in which a classifier, typically a linear semi-supervised model, refines the initial matching score. However, Mokapot allows the user to choose among different machine learning algorithms of increasing complexity, from the default linear support vector machine (LSVM) to random forest and XGBoost. Here, we use an entrapment approach to assess the effect of this increasing complexity on PSM identification and the accuracy of the estimated false discovery rate (FDR). We show that, while more complex models increase the number of identified PSMs at a fixed FDR threshold, this gain reflects a bias towards random matches from the target proteome database rather than genuine identifications. Indeed, for the most complex model, the entrapment FDR reaches 6.3% instead of the estimated 1% decoy FDR. This bias thus yields overly optimistic FDR estimates, indicating that model complexity in PSM rescoring must be carefully balanced against this overfitting risk.
+- title: |-
+    narrowPASEF: A Sample-Aware diaPASEF Method Optimization Strategy Improving Differential Proteomics Performance on Low-Abundance Proteins
+  authors: |-
+    Jeewan Babu Rijal ∙ Imane Charmarke Askar ∙ Aurélie Hirschler ∙ Arthur Declercq ∙ Lennart Martens ∙ Christine Schaeffer-Reiss ∙ Dominique Bagnard ∙ Christine Carapito
+  venue_label: Journal
+  venue: Analytical Chemistry
+  date: 2026-08
+  first_author: false
+  url: https://doi.org/10.1021/acs.analchem.6c01740
+  link_text: View Manuscript
+  doi: 10.1021/acs.analchem.6c01740
+  abstract: |-
+    Recent instrumental and computational innovations in mass-spectrometry-based proteomics offer new promise in biomarker discovery, thanks to unprecedented proteome coverage and depth. Data-independent acquisition (DIA) methods are very promising in this context as they allow improved proteome coverage, reduced missing value rates, and enhanced quantification precision. However, DIA methods also suffer from their own challenges, such as increased data complexity, cycle times, and background noise. In this work, we propose a sample-aware diaPASEF method optimization strategy for a timsTOF platform. Thorough method optimizations have first been conducted on standard HeLa lysates. Then, a ground-truth calibrated sample series, consisting of a range of UPS amounts spiked into a complex Arabidopsis background, was used to mimic differential analyses under controlled conditions. These benchmark experiments demonstrate clear benefits of using narrowPASEF for differential protein discovery. Finally, our strategy was applied to real use case biological samples to conduct a differential analysis of purified mouse astrocyte cells across two different conditions. narrowPASEF improved the proteome depth by 13%, considering proteins quantified with a coefficient of variation (CV) of &amp;lt;20%, and led to a 68% (435 vs 729) increase in differentially expressed proteins. These results provide an opportunity for a more precise and comprehensive analysis of the biological functions of biomarkers, offering a more profound understanding of the disease mechanisms. The benefits of our sample-aware narrowPASEF strategy demonstrated the most substantial impact on low-abundance proteins. Overall, these results show promise for more valuable and robust biomarker discoveries in the future.
+- title: |-
+    DeepLC introduces transfer learning for accurate LC retention time prediction and adaptation to substantially different modifications and setups
+  authors: |-
+    Robbin Bouwmeester ∙ Alireza Nameni ∙ Arthur Declercq ∙ Robbe Devreese ∙ Kevin Velghe ∙ Vladimir Gorshkov ∙ Pelayo A. Penanes ∙ Frank Kjeldsen ∙ Magali Rompais ∙ Christine Carapito ∙ Ralf Gabriels ∙ Lennart Martens
+  venue_label: Journal
+  venue: bioRxiv
+  date: 2025-06
+  first_author: false
+  url: https://doi.org/10.1101/2025.06.01.657225
+  link_text: View Manuscript
+  doi: 10.1101/2025.06.01.657225
+  abstract: |-
+    While LC retention time prediction of peptides and their modifications has proven useful, widespread adoption and optimal performance are hindered by variations in experimental parameters. These variations can render retention time prediction models inaccurate and dramatically reduce the value of predictions for identification, validation, and DIA spectral library generation. To date, mitigation of these issues has been attempted through calibration or by training bespoke models for specific experimental setups, with only partial success. We here demonstrate that transfer learning can successfully overcome these limitations by leveraging pre-trained model parameters. Remarkably, this approach can even fit highly performant models to substantially different peptide modifications and LC conditions than those on which the model was originally trained. This impressive adaptability of transfer learning makes it a highly robust solution for accurate peptide retention time prediction across a very wide variety of imaginable proteomics workflows.
+- title: |-
+    Instrument–Software Synergy in Proteomics: Systematic Evaluation across Mass Spectrometry Platforms, Search Engines, and Rescoring Methods
+  authors: |-
+    Sander Heyndrickx ∙ Robbin Bouwmeester ∙ Arthur Declercq ∙ Robbe Devreese ∙ Magnus Palmblad ∙ Wout Bittremieux ∙ Tess AV Afanasyeva ∙ Joel Lapin ∙ Arzu Tugce Guler ∙ Pierre-Olivier Schmit ∙ Christine Carapito ∙ Lennart Martens ∙ Ralf Gabriels
+  venue_label: Journal
+  venue: Journal of Proteome Research
+  date: 2026-07
+  first_author: false
+  url: https://doi.org/10.1021/acs.jproteome.6c00295
+  link_text: View Manuscript
+  doi: 10.1021/acs.jproteome.6c00295
+  abstract: |-
+    Mass spectrometry-based proteomics has advanced through parallel improvements in instrumentation (mass spectrometers) and software (data analysis), yet whether these improvements interact synergistically or provide diminishing returns remains unclear. Here, we systematically evaluate instrument–software coevolution across eight mass spectrometry platforms, three generations of search engines, and multiple rescoring approaches, yielding 72 unique instrument–software combinations spanning from 2004 to 2024. Our results reveal that instrumentation and software improvements produce synergistic rather than substitutive benefits. Here, machine learning-based rescoring consistently recovers identifications from low-intensity precursors that produce noisier, more challenging spectra. Crucially, because of increased sensitivity and speed, modern instruments detect more low-intensity precursors, thereby increasing the population of challenging spectra for which rescoring provides the greatest benefit. However, this expanded detection depth comes at a cost: recovered low-abundance peptides exhibit inherently higher quantification error, creating a fundamental trade-off between proteome coverage and quantification accuracy. Together, these findings provide a systematic overview of how instrument and software advances have jointly shaped proteomics performance over the past two decades.
+- title: Predicting and Elucidating Peptide Retention Mechanisms with Graph Attention Networks
+  authors: |-
+    Alexander Kensert ∙ Katerina Hruzova ∙ Robbe Devreese ∙ Alireza Nameni ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Lennart Martens ∙ Robbin Bouwmeester ∙ Jiri Urban
+  venue_label: Journal
+  venue: bioRxiv
+  date: 2026-05
+  first_author: false
+  url: https://doi.org/10.64898/2026.05.18.725893
+  link_text: View Manuscript
+  doi: 10.64898/2026.05.18.725893
+  abstract: |-
+    Liquid chromatography (LC) is a key technology in bottom-up proteomics, separating proteolytic peptides to decrease sample complexity, enhance coverage, and increase the robustness of protein identification and quantification. Although high-resolution mass spectrometry has advanced significantly, comparable progress in LC has lagged, primarily due to a limited understanding of peptide-column interactions. To bridge this knowledge gap, we introduce a novel deep learning model (PeptideGNN) based on a Graph Neural Network (GNN) architecture to model and elucidate peptide behaviors across various separation conditions. Trained to accurately predict peptide retention times on ten diverse proteomic datasets, the model subsequently employed a saliency mapping technique to interpret the underlying retention mechanisms. Our model consistently outperformed existing retention-time predictors across multiple datasets, while the saliency mapping, importantly, revealed insights into peptide-stationary phase interactions, highlighting the effects of neighboring amino acids, post-translational modifications (PTMs), chromato-graphic columns, and mobile phase additives on peptide retention.
+- title: |-
+    Machine learning-based rescoring with MS²Rescore boosts peptide identification and taxonomic specificity in metaproteomics
+  authors: |-
+    Xuxa Malliet ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Tanja Holstein ∙ Bart Mesuere ∙ Thilo Muth ∙ Pieter Verschaffelt ∙ Lennart Martens ∙ Tim Van Den Bossche
+  venue_label: Journal
+  venue: bioRxiv
+  date: 2025-02
+  first_author: false
+  url: https://doi.org/10.1101/2025.02.17.638783
+  link_text: View Manuscript
+  doi: 10.1101/2025.02.17.638783
+  abstract: |-
+    Metaproteomics, the study of the collective proteome within microbial ecosystems, has gained increasing interest over the past decade. However, peptide identification rates in metaproteomics remain low compared to single-species proteomics. A key challenge is the identification sensitivity of current identification algorithms, which were primarily designed for single-species analyses. Addressing this, we evaluated the machine learning-driven MS²Rescore post-processing tool on multiple metaproteomics datasets from diverse microbial environments and benchmark studies. We demonstrate that machine learning-driven rescoring outperforms traditional metaproteomics identification workflows. It significantly increases peptide identification rates compared to Sage, which itself already implements basic rescoring. Moreover, it enables lowering the false discovery rate (FDR) to 0.1% with minimal to no sensitivity loss, a substantial improvement over the 1% or 5% FDR thresholds commonly used in metaproteomics, in turn leading to greater confidence in downstream taxonomic annotation. Our findings show that MS²Rescore substantially improves peptide identification sensitivity as well as specificity in metaproteomics, and delivers improved confidence in taxonomic annotation. This advancement results in a more reliable downstream taxonomic analysis, reinforcing the potential of machine learning-based rescoring in metaproteomics research.
