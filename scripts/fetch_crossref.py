@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch new publications from Crossref by ORCID and append them to publications.yml.
+"""Fetch new publications by ORCID (Crossref and OpenAlex) and add them to publications.yml.
 
 Works are looked up by ORCID. Preprints with a journal version (Crossref
 is-preprint-of / has-preprint relations, or a matching title) and older preprint
@@ -25,6 +25,9 @@ DATA = ROOT / "publications.yml"
 IGNORE = ROOT / "publications_ignore.yml"
 CROSSREF = "https://api.crossref.org/works"
 EUROPEPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+OPENALEX = "https://api.openalex.org/works"
+OPENALEX_TYPES = {"article", "preprint", "book-chapter", "review", "letter"}
+ZENODO_PREFIX = "10.5281/"
 MAILTO = "arthur.declercq@ugent.be"
 TIMEOUT = 30
 ABSTRACT_TODO = "TODO: add abstract"
@@ -133,22 +136,24 @@ def to_entry(item: dict) -> dict:
         f"{a.get('given', '')} {a.get('family', '')}".strip()
         for a in (item.get("author") or [])
     )
+    book = item.get("type") == "book-chapter"
     return {
         "title": clean_title((item.get("title") or [""])[0]),
         "authors": authors,
-        "venue_label": "Journal",
+        "venue_label": "Book" if book else "Journal",
         "venue": venue(item),
         "date": issued_to_date(item),
         "first_author": is_first_author(item),
         "url": item.get("URL") or (f"https://doi.org/{doi}" if doi else ""),
-        "link_text": "View Manuscript",
+        "link_text": "View Book Chapter" if book else "View Manuscript",
         "doi": doi,
         "abstract": abstract,
     }
 
 
 def venue(item: dict) -> str:
-    container = (item.get("container-title") or [""])[0]
+    # Book chapters list the series first and the book title last.
+    container = (item.get("container-title") or [""])[-1]
     if container or not is_preprint(item):
         return container
     institution = (item.get("institution") or [{}])[0].get("name", "")
@@ -199,6 +204,40 @@ def crossref_works(orcid: str) -> list[dict]:
     r = requests.get(CROSSREF, params=params, timeout=TIMEOUT)
     r.raise_for_status()
     return r.json()["message"]["items"]
+
+
+def openalex_dois(orcid: str) -> set[str]:
+    """DOIs OpenAlex attributes to the ORCID; datasets and Zenodo records excluded."""
+    params = {"filter": f"author.orcid:{orcid}", "per-page": 200, "mailto": MAILTO,
+              "select": "doi,type"}
+    r = requests.get(OPENALEX, params=params, timeout=TIMEOUT)
+    r.raise_for_status()
+    dois = set()
+    for w in r.json()["results"]:
+        doi = normalize_doi((w.get("doi") or "").removeprefix("https://doi.org/"))
+        if doi and w.get("type") in OPENALEX_TYPES and not doi.startswith(ZENODO_PREFIX):
+            dois.add(doi)
+    return dois
+
+
+def crossref_work(doi: str) -> dict | None:
+    """Crossref record for one DOI, or None if Crossref does not register it."""
+    r = requests.get(f"{CROSSREF}/{doi}", params={"mailto": MAILTO}, timeout=TIMEOUT)
+    if r.status_code == 404:
+        return None
+    r.raise_for_status()
+    return r.json()["message"]
+
+
+def fetch_works(orcid: str, skip: set[str]) -> list[dict]:
+    """Crossref records by ORCID, plus Crossref records for DOIs only OpenAlex links to it."""
+    items = crossref_works(orcid)
+    seen = {normalize_doi(it.get("DOI", "")) for it in items} | skip
+    for doi in sorted(openalex_dois(orcid) - seen):
+        item = crossref_work(doi)
+        if item:
+            items.append(item)
+    return items
 
 
 def load_existing() -> list[dict]:
@@ -270,7 +309,7 @@ def main() -> int:
     known = {normalize_doi(p.get("doi", "")) for p in existing if p.get("doi")}
     known |= load_ignored()
     known_titles = {title_key(p["title"]) for p in existing if p.get("title")}
-    items = crossref_works(ORCID)
+    items = fetch_works(ORCID, known)
     new_items = find_new(items, known, known_titles)
     if not new_items:
         print("No new publications.")

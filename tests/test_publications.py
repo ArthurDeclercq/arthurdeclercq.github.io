@@ -27,6 +27,35 @@ def test_to_entry_cleans_crossref_record():
     assert e["url"] == "https://doi.org/10.1101/2024.05.29.596400"
 
 
+
+def test_to_entry_book_chapter():
+    item = {"DOI": "10.1007/978-1-0716-4832-2_5", "type": "book-chapter", "title": ["Chapter"],
+            "container-title": ["Methods in Molecular Biology", "Immunoproteomics"],
+            "abstract": "<jats:p>A.</jats:p>", "issued": {"date-parts": [[2025, 10]]}}
+    e = fc.to_entry(item)
+    assert (e["venue_label"], e["venue"], e["link_text"]) == ("Book", "Immunoproteomics", "View Book Chapter")
+
+
+def test_openalex_dois_keeps_publications_only(monkeypatch):
+    results = [
+        {"doi": "https://doi.org/10.1186/S40793-026-00962-Z", "type": "article"},
+        {"doi": "https://doi.org/10.1007/978-1-0716-4832-2_5", "type": "book-chapter"},
+        {"doi": "https://doi.org/10.5281/zenodo.18757265", "type": "article"},
+        {"doi": "https://doi.org/10.5281/zenodo.7669701", "type": "dataset"},
+        {"doi": None, "type": "article"},
+    ]
+
+    class Response:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"results": results}
+
+    monkeypatch.setattr(fc.requests, "get", lambda *a, **k: Response())
+    assert fc.openalex_dois(fc.ORCID) == {"10.1186/s40793-026-00962-z", "10.1007/978-1-0716-4832-2_5"}
+
+
 def test_first_author_only_when_declercq_leads():
     other_leads = {"author": [
         {"family": "Scheid", "sequence": "first"},

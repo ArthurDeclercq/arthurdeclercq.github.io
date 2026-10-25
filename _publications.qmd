@@ -19,22 +19,21 @@
       </div>
     </div>
     <div class="divider"></div>
-    <div class="publication-item" data-year="2024-12" data-first-author="false">
+    <div class="publication-item" data-year="2025-09" data-first-author="false">
       <h3 class="publication-title">MHCquant2 refines immunopeptidomics tumor antigen discovery</h3>
       <p class="publication-authors">
         <strong>Authors:</strong> Jonas Scheid ∙ Steffen Lemke ∙ Naomi Hoenisch-Gravel ∙ Anna Dengler ∙ Timo Sachsenberg ∙ Arthur Declerq ∙ Ralf Gabriels ∙ Jens Bauer ∙ Marcel Wacker ∙ Leon Bichmann ∙ Lennart Martens ∙ Marissa L. Dubbelaar ∙ Sven Nahnsen ∙ Juliane S. Walz
       </p>
       <p class="publication-journal">
-        <strong>Journal:</strong> Research Square<span>|</span> <strong>Year:</strong> December 2024 <span>|</span>
+        <strong>Journal:</strong> Genome Biology<span>|</span> <strong>Year:</strong> September 2025 <span>|</span>
         <span class="abstract-container" onclick="toggleAbstract(this)">
           Abstract
           <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
         </span>
       </p>
       <div class="abstract">
-        <p class="abstract-text">The identification of human leukocyte antigen (HLA)-presented peptides as targets of anti-cancer T cell response is pivotal for the development of novel immunotherapies. Mass spectrometry (MS)-based immunopeptidomics enables the detection of these peptides, yet confident identifications and thus implementation in immunotherapy design are hampered by the high diversity and low abundance of naturally presented HLA peptides. Here, we introduce MHCquant2, a Nextflow-based open-source pipeline that leverages OpenMS tools and peptide property predictors (DeepLC, MS2PIP) for highly sensitive and scalable HLA peptide identification and quantification across various MS platforms. MHCquant2 increased peptide identifications up to 27% with a significant expansion of low-abundant peptides, outperforming state-of-the-art pipelines. Using MHCquant2 we build a comprehensive benign tissue repository comprising re-analyzed data from available benign immunopeptidomes and a novel benignMHCquant2 dataset, adding more than 160,000 novel naturally presented HLA peptides. First applications of this benign repository and the MHCquant2 pipeline enabled (i) the refinement of tumor-associated antigens, (ii) the detection of novel, high-frequent tumor-exclusive peptide antigens for multiple tumor entities, and (iii) the identification and quantification of mutation-derived low-abundant neoepitopes. MHCquant2 refines tumor antigen discovery in immunopeptidomics, paving the way for the implementation of off-the-shelf and personalized immunotherapy design.
-</p>
-        <a href="https://www.researchsquare.com/article/rs-5560023/v1" target="_blank" class="manuscript-link">
+        <p class="abstract-text">Confident identification of human leukocyte antigen (HLA)-presented peptides is crucial for advancing cancer immunotherapy. We present MHCquant2, a scalable and modular Nextflow pipeline integrated into nf-core as a reproducible, portable, and standardized workflow for immunopeptidomics. This integration allows a community-driven, robust solution for high-throughput analyses across operating systems and cloud infrastructures. MHCquant2 integrates open-source tools including OpenMS, DeepLC, and MS2PIP, improving peptide identifications by up to 27% across diverse MS platforms, particularly enriching low-abundant peptides. MHCquant2 demonstrates state-of-the-art performance on our novel benignMHCquant2 dataset (n = 92) and expands the benign human immunopeptidome by over 160,000 unique naturally presented HLA peptides.</p>
+        <a href="https://doi.org/10.1186/s13059-025-03763-8" target="_blank" class="manuscript-link">
           View Manuscript
         </a>
       </div>
@@ -411,22 +410,42 @@
       </div>
     </div>
     <div class="divider"></div>
-    <div class="publication-item" data-year="2025-02" data-first-author="false">
+    <div class="publication-item" data-year="2026-09" data-first-author="false">
       <h3 class="publication-title">Machine learning-based rescoring with MS²Rescore boosts peptide identification and taxonomic specificity in metaproteomics</h3>
       <p class="publication-authors">
-        <strong>Authors:</strong> Xuxa Malliet ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Tanja Holstein ∙ Bart Mesuere ∙ Thilo Muth ∙ Pieter Verschaffelt ∙ Lennart Martens ∙ Tim Van Den Bossche
+        <strong>Authors:</strong> Xuxa Malliet ∙ Arthur Declercq ∙ Ralf Gabriels ∙ Tanja Holstein ∙ Bart Mesuere ∙ Thilo Muth ∙ Pieter Verschaffelt ∙ Christine Carapito ∙ Lennart Martens ∙ Tim Van Den Bossche
       </p>
       <p class="publication-journal">
-        <strong>Journal:</strong> bioRxiv<span>|</span> <strong>Year:</strong> February 2025 <span>|</span>
+        <strong>Journal:</strong> Environmental Microbiome<span>|</span> <strong>Year:</strong> September 2026 <span>|</span>
         <span class="abstract-container" onclick="toggleAbstract(this)">
           Abstract
           <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
         </span>
       </p>
       <div class="abstract">
-        <p class="abstract-text">Metaproteomics, the study of the collective proteome within microbial ecosystems, has gained increasing interest over the past decade. However, peptide identification rates in metaproteomics remain low compared to single-species proteomics. A key challenge is the identification sensitivity of current identification algorithms, which were primarily designed for single-species analyses. Addressing this, we evaluated the machine learning-driven MS²Rescore post-processing tool on multiple metaproteomics datasets from diverse microbial environments and benchmark studies. We demonstrate that machine learning-driven rescoring outperforms traditional metaproteomics identification workflows. It significantly increases peptide identification rates compared to Sage, which itself already implements basic rescoring. Moreover, it enables lowering the false discovery rate (FDR) to 0.1% with minimal to no sensitivity loss, a substantial improvement over the 1% or 5% FDR thresholds commonly used in metaproteomics, in turn leading to greater confidence in downstream taxonomic annotation. Our findings show that MS²Rescore substantially improves peptide identification sensitivity as well as specificity in metaproteomics, and delivers improved confidence in taxonomic annotation. This advancement results in a more reliable downstream taxonomic analysis, reinforcing the potential of machine learning-based rescoring in metaproteomics research.</p>
-        <a href="https://doi.org/10.1101/2025.02.17.638783" target="_blank" class="manuscript-link">
+        <p class="abstract-text">Metaproteomics, the study of the collective proteome within microbial ecosystems, has gained increasing interest over the past decade. However, peptide identification rates in metaproteomics remain low compared to single-species proteomics. A key challenge is the identification sensitivity of current identification algorithms, which were primarily designed for single-species analyses. Addressing this, we evaluated the machine learning-driven MS²Rescore post-processing tool on multiple metaproteomics datasets from diverse microbial environments, including highly complex environments such as soil, which represent the most analytically demanding conditions in metaproteomics. We demonstrate that machine learning-driven rescoring outperforms state-of-the-art metaproteomics identification workflows. It significantly increases peptide identification rates compared to Sage, which itself already implements basic rescoring. Moreover, it enables lowering the false discovery rate (FDR) to 0.1% with minimal to no sensitivity loss, a substantial improvement over the 1% or 5% FDR thresholds commonly used in metaproteomics, in turn leading to greater confidence in downstream taxonomic annotation when paired with downstream statistical tools like Peptonizer2000. The performance gains are most pronounced in the most complex settings, making it particularly well-suited for environmental metaproteomics. Our findings show that MS²Rescore substantially improves peptide identification sensitivity as well as specificity in metaproteomics, and delivers improved confidence in taxonomic annotation when paired with downstream taxonomic analysis tools. This advancement results in a more reliable downstream taxonomic analysis, reinforcing the potential of machine learning-based rescoring in metaproteomics research.</p>
+        <a href="https://doi.org/10.1186/s40793-026-00962-z" target="_blank" class="manuscript-link">
           View Manuscript
+        </a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="publication-item" data-year="2025-10" data-first-author="false">
+      <h3 class="publication-title">High-Coverage Immunopeptidomics Using timsTOF Mass Spectrometers with Thunder-DDA-PASEF Boosted by MS2Rescore</h3>
+      <p class="publication-authors">
+        <strong>Authors:</strong> David Gomez-Zepeda ∙ Julian Beyrle ∙ Annica Preikschat ∙ Arthur Declercq ∙ Yannic Chen ∙ Ralf Gabriels ∙ Lennart Martens ∙ Ute Distler ∙ Stefan Tenzer
+      </p>
+      <p class="publication-journal">
+        <strong>Book:</strong> Immunoproteomics<span>|</span> <strong>Year:</strong> October 2025 <span>|</span>
+        <span class="abstract-container" onclick="toggleAbstract(this)">
+          Abstract
+          <img src="icons/document.png" alt="abstract Icon" class="abstract-icon">
+        </span>
+      </p>
+      <div class="abstract">
+        <p class="abstract-text">Major histocompatibility complex (MHC, or human leukocyte antigen, HLA) peptide ligands can be exploited to develop immunotherapies targeting immunogenic disease-specific immunopeptides, such as virus- or cancer mutation-derived peptides. Liquid chromatography coupled with mass spectrometry (LC-MS)-based immunopeptidomics is the gold standard for identifying MHC ligands. We previously optimized a workflow enabling the identification of more than 10,000 MHC class I ligands per cell line. This process comprises three major steps: (I) a high-recovery immunopeptidome enrichment, (II) an optimized MS acquisition in the timsTOF Pro called Thunder-Data-Dependent Acquisition with Parallel Accumulation-SErial Fragmentation (Thunder-DDA-PASEF), and (III) peptide identification using PEAKS XPro boosted by MS<sup>2</sup>Rescore data-driven rescoring. Here, we describe our workflow for deep-coverage immunopeptidomics step-by-step, from sample preparation to data analysis and validation.</p>
+        <a href="https://doi.org/10.1007/978-1-0716-4832-2_5" target="_blank" class="manuscript-link">
+          View Book Chapter
         </a>
       </div>
     </div>
