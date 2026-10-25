@@ -2,9 +2,10 @@
 """Fetch new publications from Crossref by ORCID and append them to publications.yml.
 
 Discovery is scoped by ORCID so unrelated "Declercq A" papers are not pulled.
-Existing entries are never modified. Preprints superseded by a journal version
-(Crossref is-preprint-of / has-preprint relations, or a matching title) and older
-preprint versions are skipped. Abstract lookup order: Crossref JATS ->
+Preprints superseded by a journal version (Crossref is-preprint-of / has-preprint
+relations, or a matching title) and older preprint versions are skipped. When a
+listed preprint gets its journal version, that entry is replaced in place; all
+other existing entries are left byte-for-byte unchanged. Abstract lookup order: Crossref JATS ->
 Europe PMC by DOI -> a visible 'TODO: add abstract' placeholder for PR review.
 Network errors abort with a non-zero exit and no partial write.
 """
@@ -29,6 +30,9 @@ MAILTO = "arthur.declercq@ugent.be"
 TIMEOUT = 30
 ABSTRACT_TODO = "TODO: add abstract"
 PREPRINT_SERVERS = {"10.26434/chemrxiv": "ChemRxiv"}
+# bioRxiv/medRxiv (old and new prefix), ChemRxiv, Research Square, arXiv.
+PREPRINT_PREFIXES = ("10.1101/", "10.64898/", "10.26434/", "10.21203/", "10.48550/")
+PREPRINT_VENUES = {"biorxiv", "medrxiv", "chemrxiv", "research square", "arxiv"}
 SUPERSCRIPT = str.maketrans("0123456789+-", "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻")
 
 
@@ -218,6 +222,51 @@ def dump_entries(entries: list) -> str:
     return yaml.safe_dump(entries, allow_unicode=True, sort_keys=False, width=1000)
 
 
+def is_preprint_entry(entry: dict) -> bool:
+    doi = normalize_doi(entry.get("doi", ""))
+    venue = (entry.get("venue") or "").casefold()
+    return doi.startswith(PREPRINT_PREFIXES) or venue in PREPRINT_VENUES
+
+
+def preprint_match(item: dict, existing: list[dict]) -> int | None:
+    """Index of the listed preprint that this journal article publishes, if any.
+
+    Uses the Crossref has-preprint relation first, then an exact title match
+    restricted to preprint entries (titles often survive peer review unchanged).
+    """
+    if is_preprint(item):
+        return None
+    preprint_bases = {version_base(d) for d in related_dois(item, "has-preprint")}
+    for j, e in enumerate(existing):
+        if e.get("doi") and version_base(e["doi"]) in preprint_bases:
+            return j
+    key = title_key((item.get("title") or [""])[0])
+    for j, e in enumerate(existing):
+        if is_preprint_entry(e) and title_key(e.get("title", "")) == key:
+            return j
+    return None
+
+
+def merge_text(raw: str, replacements: dict[int, dict], appended: list[dict]) -> str:
+    """Swap entries in place (by list position) and append new ones.
+
+    Works on the raw text so untouched entries keep their exact bytes and the
+    review diff only shows what changed. Every entry starts with '- ' at column 0.
+    """
+    blocks = re.split(r"(?m)^(?=- )", raw)
+    head, entries = blocks[0], blocks[1:]
+    for j, entry in replacements.items():
+        body = entries[j].rstrip("\n")
+        trailing = entries[j][len(body):]
+        entries[j] = dump_entries([entry]).rstrip("\n") + trailing
+    out = head + "".join(entries)
+    if appended:
+        if out.strip() and not out.endswith("\n"):
+            out += "\n"
+        out += dump_entries(appended)
+    return out
+
+
 def main() -> int:
     existing = load_existing()
     known = {normalize_doi(p.get("doi", "")) for p in existing if p.get("doi")}
@@ -230,26 +279,21 @@ def main() -> int:
         return 0
     new_entries = [to_entry(it) for it in new_items]
 
-    if DATA.exists():
-        existing_raw = DATA.read_text(encoding="utf-8")
-    else:
-        existing_raw = ""
-
-    if existing_raw.strip():
-        if not existing_raw.endswith("\n"):
-            existing_raw += "\n"
-        DATA.write_text(existing_raw + dump_entries(new_entries), encoding="utf-8")
-    else:
-        DATA.write_text(dump_entries(new_entries), encoding="utf-8")
-
-    known_bases = {version_base(d) for d in known}
+    replacements: dict[int, dict] = {}
+    appended: list[dict] = []
     for it, e in zip(new_items, new_entries):
-        print(f"Added: {e['title']} ({e['date']}, first_author={e['first_author']})")
-        for pre in sorted(related_dois(it, "has-preprint")):
-            if version_base(pre) in known_bases:
-                print(f"  Note: published version of listed preprint {pre}; consider removing that entry.")
+        j = preprint_match(it, existing)
+        if j is not None and j not in replacements:
+            replacements[j] = e
+            print(f"Replaced preprint {existing[j].get('doi') or existing[j]['title']!r} with: {e['title']} ({e['date']})")
+        else:
+            appended.append(e)
+            print(f"Added: {e['title']} ({e['date']}, first_author={e['first_author']})")
         if "\ufffd" in e["title"] + e["abstract"]:
             print("  Note: Crossref text contains a replacement character (\ufffd); fix by hand.")
+
+    raw = DATA.read_text(encoding="utf-8") if DATA.exists() else ""
+    DATA.write_text(merge_text(raw, replacements, appended), encoding="utf-8")
     return 0
 
 

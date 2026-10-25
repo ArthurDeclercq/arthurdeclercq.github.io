@@ -220,3 +220,45 @@ def test_find_new_keeps_journal_version_of_listed_preprint_title():
 
 def test_strip_jats_drops_plain_abstract_prefix():
     assert fc.strip_jats("<jats:p>Abstract Major histocompatibility</jats:p>") == "Major histocompatibility"
+
+
+RAW = '''- title: "Old preprint"
+  venue: "Biorxiv"
+  doi: "10.1101/2025.01.01.1"
+
+- title: "Journal paper"
+  venue: "Journal X"
+  doi: "10.1/j"
+'''
+
+
+def test_preprint_match_by_has_preprint_relation():
+    existing = yaml.safe_load(RAW)
+    item = {"DOI": "10.2/new", "title": ["Renamed on publication"], "type": "journal-article",
+            "relation": {"has-preprint": [{"id": "10.1101/2025.01.01.1"}]}}
+    assert fc.preprint_match(item, existing) == 0
+
+
+def test_preprint_match_by_title_only_for_preprint_entries():
+    existing = yaml.safe_load(RAW)
+    pub = {"DOI": "10.2/new", "title": ["OLD PREPRINT"], "type": "journal-article"}
+    assert fc.preprint_match(pub, existing) == 0
+    same_as_journal = {"DOI": "10.2/new", "title": ["Journal paper"], "type": "journal-article"}
+    assert fc.preprint_match(same_as_journal, existing) is None
+
+
+def test_preprint_match_ignores_preprint_items():
+    existing = yaml.safe_load(RAW)
+    item = {"DOI": "10.1101/x", "title": ["Old preprint"], "type": "posted-content"}
+    assert fc.preprint_match(item, existing) is None
+
+
+def test_merge_replaces_in_place_and_appends_rest():
+    new = {"title": "Published", "doi": "10.2/new"}
+    extra = {"title": "Extra", "doi": "10.3/x"}
+    out = fc.merge_text(RAW, {0: new}, [extra])
+    entries = yaml.safe_load(out)
+    assert [e["title"] for e in entries] == ["Published", "Journal paper", "Extra"]
+    # Untouched entries keep their exact bytes.
+    assert '- title: "Journal paper"\n  venue: "Journal X"\n  doi: "10.1/j"\n' in out
+    assert "Old preprint" not in out

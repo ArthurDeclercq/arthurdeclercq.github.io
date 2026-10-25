@@ -46,4 +46,6 @@ jobs:
             - Abstracts marked `TODO: add abstract` (Crossref + Europe PMC had none).
             - `venue_label` (`Journal` vs `Book`) and `link_text`.
             - `venue` wording and `url`.
+            - Preprints replaced in place by their journal version: hand edits to the
+              old entry (co-first `&`, abstract formatting) are not carried over.
           labels: publications
