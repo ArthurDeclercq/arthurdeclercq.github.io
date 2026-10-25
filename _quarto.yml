@@ -1,5 +1,8 @@
 project:
   type: website
+  pre-render: scripts/render_publications.py
+  render:
+    - "*.qmd"
 
 publish:
   method: gh-pages

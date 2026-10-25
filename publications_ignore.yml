@@ -1,0 +1,9 @@
+# DOIs to permanently exclude from the monthly Crossref import.
+# When a wrong/unwanted publication is removed from publications.yml, add its
+# DOI here (one per line); the monthly job skips listed DOIs.
+# Example:
+#   - 10.1234/erratum.5678
+# Thunder-DDA-PASEF preprint (Research Square)
+- 10.21203/rs.3.rs-4849156/v1
+# Real-Time TIMSrescore conference abstract
+- 10.1016/j.jmccpl.2025.100451

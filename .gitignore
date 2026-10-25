@@ -43,3 +43,10 @@ venv/
 logos.pptx
 
 /.quarto/
+
+**/*.quarto_ipynb
+
+
+# Claude Code superpowers plans and reports
+docs/superpowers/
+.superpowers/
