@@ -134,3 +134,89 @@ def test_append_only_preserves_existing_bytes():
     assert len(result_entries) == original_len + 1
     assert result_entries[:original_len] == original_entries
     assert result_entries[-1] == synthetic_entry
+
+
+def test_strip_jats_drops_abstract_heading_and_collapses_whitespace():
+    raw = "<jats:title>Abstract</jats:title>\n      <jats:p>Line one\n      line two.</jats:p>"
+    assert fc.strip_jats(raw) == "Line one line two."
+
+
+def test_clean_title_superscript_and_newlines():
+    assert fc.clean_title("TIMS\n   <sup>2</sup>\n   Rescore: A pipeline") == "TIMS²Rescore: A pipeline"
+    assert fc.clean_title("narrowPASEF:\nA Sample-Aware\nStrategy") == "narrowPASEF: A Sample-Aware Strategy"
+    assert fc.clean_title("Using <i>in vivo</i> data") == "Using in vivo data"
+
+
+def test_title_key_ignores_case_markup_and_superscripts():
+    assert fc.title_key("TIMS²Rescore: A Pipeline") == fc.title_key("TIMS\n<sup>2</sup>\nRescore: a pipeline")
+
+
+def test_find_new_skips_preprint_of_published_work():
+    items = [
+        {"DOI": "10.1101/pre", "title": ["Pre"], "type": "posted-content",
+         "relation": {"is-preprint-of": [{"id": "10.1/pub"}]}},
+        {"DOI": "10.1/pub", "title": ["Pub"], "type": "journal-article"},
+    ]
+    assert [n["DOI"] for n in fc.find_new(items, set())] == ["10.1/pub"]
+
+
+def test_find_new_skips_preprint_listed_by_journal_has_preprint():
+    items = [
+        {"DOI": "10.1101/pre", "title": ["Different preprint title"], "type": "posted-content"},
+        {"DOI": "10.1/pub", "title": ["Pub"], "type": "journal-article",
+         "relation": {"has-preprint": [{"id": "10.1101/pre"}]}},
+    ]
+    assert [n["DOI"] for n in fc.find_new(items, set())] == ["10.1/pub"]
+
+
+def test_find_new_skips_all_versions_of_superseded_preprint():
+    items = [
+        {"DOI": "10.26434/chemrxiv.1/v1", "title": ["Old title"], "type": "posted-content"},
+        {"DOI": "10.26434/chemrxiv.1/v3", "title": ["New title"], "type": "posted-content",
+         "relation": {"is-preprint-of": [{"id": "10.1/pub"}]}},
+        {"DOI": "10.1/pub", "title": ["New title"], "type": "journal-article"},
+    ]
+    assert [n["DOI"] for n in fc.find_new(items, set())] == ["10.1/pub"]
+
+
+def test_find_new_keeps_latest_preprint_version_only():
+    items = [
+        {"DOI": "10.26434/chemrxiv.1/v1", "title": ["T"], "type": "posted-content"},
+        {"DOI": "10.26434/chemrxiv.1/v2", "title": ["T revised"], "type": "posted-content"},
+    ]
+    assert [n["DOI"] for n in fc.find_new(items, set())] == ["10.26434/chemrxiv.1/v2"]
+
+
+def test_find_new_skips_new_version_of_known_preprint():
+    items = [{"DOI": "10.21203/rs.3.rs-1/v2", "title": ["T"], "type": "posted-content"}]
+    assert fc.find_new(items, {"10.21203/rs.3.rs-1/v1"}) == []
+
+
+def test_find_new_prefers_journal_over_preprint_with_same_title():
+    items = [
+        {"DOI": "10.1101/pre", "title": ["iDeepLC: chemical structure"], "type": "posted-content"},
+        {"DOI": "10.1/pub", "title": ["iDeepLC: Chemical Structure"], "type": "journal-article"},
+    ]
+    assert [n["DOI"] for n in fc.find_new(items, set())] == ["10.1/pub"]
+
+
+def test_find_new_skips_title_already_listed():
+    items = [{"DOI": "10.1101/pre", "title": ["MS\n<sup>2</sup>\nRescore: Boosts"], "type": "posted-content"}]
+    assert fc.find_new(items, set(), known_titles={fc.title_key("MS²Rescore: boosts")}) == []
+
+
+def test_to_entry_uses_preprint_server_as_venue():
+    base = {"title": ["T"], "issued": {"date-parts": [[2025, 2]]}, "abstract": "<jats:p>A</jats:p>",
+            "type": "posted-content", "container-title": []}
+    assert fc.to_entry({**base, "DOI": "10.1101/x", "institution": [{"name": "bioRxiv"}]})["venue"] == "bioRxiv"
+    assert fc.to_entry({**base, "DOI": "10.26434/chemrxiv.1/v2"})["venue"] == "ChemRxiv"
+
+
+def test_find_new_keeps_journal_version_of_listed_preprint_title():
+    items = [{"DOI": "10.1/pub", "title": ["Same Title"], "type": "journal-article"}]
+    new = fc.find_new(items, {"10.1101/pre"}, known_titles={fc.title_key("Same title")})
+    assert [n["DOI"] for n in new] == ["10.1/pub"]
+
+
+def test_strip_jats_drops_plain_abstract_prefix():
+    assert fc.strip_jats("<jats:p>Abstract Major histocompatibility</jats:p>") == "Major histocompatibility"
