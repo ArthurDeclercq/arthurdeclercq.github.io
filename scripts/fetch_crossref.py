@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """Fetch new publications from Crossref by ORCID and append them to publications.yml.
 
-Discovery is scoped by ORCID so unrelated "Declercq A" papers are not pulled.
-Preprints superseded by a journal version (Crossref is-preprint-of / has-preprint
-relations, or a matching title) and older preprint versions are skipped. When a
-listed preprint gets its journal version, that entry is replaced in place; all
-other existing entries are left byte-for-byte unchanged. Abstract lookup order: Crossref JATS ->
-Europe PMC by DOI -> a visible 'TODO: add abstract' placeholder for PR review.
+Works are looked up by ORCID. Preprints with a journal version (Crossref
+is-preprint-of / has-preprint relations, or a matching title) and older preprint
+versions are skipped. A listed preprint whose journal version is found is replaced
+in place; other existing entries are not changed. Abstract lookup order: Crossref
+JATS -> Europe PMC by DOI -> 'TODO: add abstract'.
 Network errors abort with a non-zero exit and no partial write.
 """
 from __future__ import annotations
@@ -36,7 +35,7 @@ PREPRINT_VENUES = {"biorxiv", "medrxiv", "chemrxiv", "research square", "arxiv"}
 SUPERSCRIPT = str.maketrans("0123456789+-", "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻")
 
 
-# Keep long / multi-line strings readable as literal block scalars in the diff.
+# Long or multi-line strings are written as literal block scalars.
 def _str_presenter(dumper, data):
     if "\n" in data or len(data) > 120:
         return dumper.represent_scalar("tag:yaml.org,2002:str", data, style="|")
@@ -175,13 +174,12 @@ def find_new(items: list[dict], known_dois: set[str], known_titles: set[str] = f
         title = (it.get("title") or [""])[0]
         if not doi or not title or version_base(doi) in skip_bases:
             continue
-        # A listed title only blocks preprints: a journal article with that title
-        # is the published version of a listed preprint.
+        # A listed title skips preprints only; journal articles with that title are kept.
         if is_preprint(it) and title_key(title) in known_titles:
             continue
         candidates.append((i, it))
 
-    # Journal articles first, then the newest preprint version, so those win ties.
+    # Rank: journal articles first, then the newest preprint version.
     ranked = sorted(candidates, key=lambda c: (is_preprint(c[1]), -version_number(c[1]["DOI"]), c[0]))
     taken_titles: set[str] = set()
     taken_bases: set[str] = set()
@@ -231,8 +229,8 @@ def is_preprint_entry(entry: dict) -> bool:
 def preprint_match(item: dict, existing: list[dict]) -> int | None:
     """Index of the listed preprint that this journal article publishes, if any.
 
-    Uses the Crossref has-preprint relation first, then an exact title match
-    restricted to preprint entries (titles often survive peer review unchanged).
+    Matches on the Crossref has-preprint relation first, then on an exact title
+    match against preprint entries.
     """
     if is_preprint(item):
         return None
@@ -250,8 +248,8 @@ def preprint_match(item: dict, existing: list[dict]) -> int | None:
 def merge_text(raw: str, replacements: dict[int, dict], appended: list[dict]) -> str:
     """Swap entries in place (by list position) and append new ones.
 
-    Works on the raw text so untouched entries keep their exact bytes and the
-    review diff only shows what changed. Every entry starts with '- ' at column 0.
+    Untouched entries keep their exact bytes. Expects every entry to start with
+    '- ' at column 0.
     """
     blocks = re.split(r"(?m)^(?=- )", raw)
     head, entries = blocks[0], blocks[1:]
