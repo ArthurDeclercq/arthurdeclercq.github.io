@@ -420,12 +420,6 @@ a {
   font-variant-numeric: lining-nums;
 }
 
-/* A pair shares one place line; on phones, where the photos stack,
-   each photo shows its own */
-.plate__pair .plate__figure + .plate__figure .plate__place {
-  visibility: hidden; /* keeps both caption lines aligned */
-}
-
 /* Colophon */
 .colophon {
   max-width: 34rem;
@@ -629,10 +623,6 @@ a {
 
   .plate__place {
     font-size: 1.02rem;
-  }
-
-  .plate__pair .plate__figure + .plate__figure .plate__place {
-    visibility: visible;
   }
 
   .plate__settings {
