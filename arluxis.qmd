@@ -35,9 +35,9 @@ format:
 
 <nav class="galleries" id="galleries" aria-label="Galleries">
   <div class="galleries__inner">
-    <a class="galleries__link" href="#landscape" data-gallery="landscape">Landscape<span class="galleries__count">13</span></a>
-    <a class="galleries__link" href="#sports" data-gallery="sports">Sports<span class="galleries__count">14</span></a>
-    <a class="galleries__link" href="#street" data-gallery="street">Street<span class="galleries__count">17</span></a>
+    <a class="galleries__link" href="#landscape" data-gallery="landscape">Landscape<span class="galleries__count">8</span></a>
+    <a class="galleries__link" href="#sports" data-gallery="sports">Sports<span class="galleries__count">9</span></a>
+    <a class="galleries__link" href="#street" data-gallery="street">Street<span class="galleries__count">12</span></a>
   </div>
 </nav>
 
@@ -56,27 +56,9 @@ format:
         </figure>
       </div>
       <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/landscape_photography/DSCF0451.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/4|1/850 s|ISO 160">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF0451.webp" width="1800" height="1200" alt="Kungsleden, July 2025" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Kungsleden, July 2025</span><span class="plate__settings"><span>55 mm</span><span>f/4</span><span>1/850 s</span><span>ISO 160</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/landscape_photography/DSCF0671.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/9|1/480 s|ISO 160">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF0671.webp" width="1800" height="1200" alt="Kungsleden, July 2025" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Kungsleden, July 2025</span><span class="plate__settings"><span>55 mm</span><span>f/9</span><span>1/480 s</span><span>ISO 160</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:1.5">
         <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/landscape_photography/DSCF0822.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|34 mm|f/10|1/240 s|ISO 160">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF0822.webp" width="1800" height="1200" alt="Kungsleden, July 2025" loading="lazy" decoding="async"></button>
           <figcaption class="plate__caption"><span class="plate__place">Kungsleden, July 2025</span><span class="plate__settings"><span>34 mm</span><span>f/10</span><span>1/240 s</span><span>ISO 160</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:0.6667">
-        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/landscape_photography/DSCF0928.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|39 mm|f/7.1|1/4000 s|ISO 400">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF0928.webp" width="1200" height="1800" alt="Kungsleden, July 2025" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Kungsleden, July 2025</span><span class="plate__settings"><span>39 mm</span><span>f/7.1</span><span>1/4000 s</span><span>ISO 400</span></span></figcaption>
         </figure>
       </div>
       <div class="plate" style="--r:1.5">
@@ -91,12 +73,6 @@ format:
           <figcaption class="plate__caption"><span class="plate__place">Chamonix, September 2025</span><span class="plate__settings"><span>27 mm</span><span>f/10</span><span>1/1100 s</span><span>ISO 640</span></span></figcaption>
         </figure>
       </div>
-      <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/landscape_photography/DSCF2623.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|34 mm|f/9|1/1250 s|ISO 640|Classic Negative">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF2623.webp" width="1800" height="1200" alt="Chamonix, September 2025" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Chamonix, September 2025</span><span class="plate__settings"><span>34 mm</span><span>f/9</span><span>1/1250 s</span><span>ISO 640</span></span></figcaption>
-        </figure>
-      </div>
       <div class="plate" style="--r:0.6667">
         <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/landscape_photography/DSCF2716.JPG" data-exif="X-T30 II|XF27mm F2.8|f/11|1/100 s|ISO 250">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF2716.webp" width="1200" height="1800" alt="Chamonix, September 2025" loading="lazy" decoding="async"></button>
@@ -107,12 +83,6 @@ format:
         <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/landscape_photography/DSCF4227.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|39 mm|f/3.6|1/550 s|ISO 640|Classic Negative">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF4227.webp" width="1800" height="1200" alt="Toronto, November 2025" loading="lazy" decoding="async"></button>
           <figcaption class="plate__caption"><span class="plate__place">Toronto, November 2025</span><span class="plate__settings"><span>39 mm</span><span>f/3.6</span><span>1/550 s</span><span>ISO 640</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/landscape_photography/DSCF4560.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|46 mm|f/9|1/170 s|ISO 640">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF4560.webp" width="1800" height="1200" alt="Toronto, November 2025" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Toronto, November 2025</span><span class="plate__settings"><span>46 mm</span><span>f/9</span><span>1/170 s</span><span>ISO 640</span></span></figcaption>
         </figure>
       </div>
       <div class="plate" style="--r:1.5">
@@ -143,21 +113,9 @@ format:
         </figure>
       </div>
       <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/sports_photography/DSCF1158.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|48 mm|f/4.5|1/4000 s|ISO 800|Velvia">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF1158.webp" width="1800" height="1200" alt="The Cave Triathlon, July 2025" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">The Cave Triathlon, July 2025</span><span class="plate__settings"><span>48 mm</span><span>f/4.5</span><span>1/4000 s</span><span>ISO 800</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:1.5">
         <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/sports_photography/DSCF1175.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/8|1/500 s|ISO 500">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF1175.webp" width="1800" height="1200" alt="The Cave Triathlon, July 2025" loading="lazy" decoding="async"></button>
           <figcaption class="plate__caption"><span class="plate__place">The Cave Triathlon, July 2025</span><span class="plate__settings"><span>55 mm</span><span>f/8</span><span>1/500 s</span><span>ISO 500</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:0.5628">
-        <figure class="plate__figure" style="--r:0.5628" data-full="images/arluxis/sports_photography/DSCF3431-2.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/6.4|1/280 s|ISO 320">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF3431-2.webp" width="1013" height="1800" alt="Antwerp Marathon, October 2025" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Antwerp Marathon, October 2025</span><span class="plate__settings"><span>55 mm</span><span>f/6.4</span><span>1/280 s</span><span>ISO 320</span></span></figcaption>
         </figure>
       </div>
       <div class="plate" style="--r:1.5">
@@ -178,23 +136,11 @@ format:
           <figcaption class="plate__caption"><span class="plate__place">Kings vs Maple Leafs, November 2025</span><span class="plate__settings"><span>55 mm</span><span>f/4</span><span>1/400 s</span><span>ISO 640</span></span></figcaption>
         </figure>
       </div>
-      <div class="plate" style="--r:1.3333">
-        <figure class="plate__figure" style="--r:1.3333" data-full="images/arluxis/sports_photography/DSCF4312-2.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/4|1/160 s|ISO 250">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF4312-2.webp" width="1800" height="1350" alt="Kings vs Maple Leafs, November 2025" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Kings vs Maple Leafs, November 2025</span><span class="plate__settings"><span>55 mm</span><span>f/4</span><span>1/160 s</span><span>ISO 250</span></span></figcaption>
+      <div class="plate" style="--r:0.6667">
+        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/sports_photography/DSCF7973.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/8|1/210 s|ISO 320|Classic Chrome">
+          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF7973.webp" width="1200" height="1800" alt="Volta a Catalunya, March 2026" loading="lazy" decoding="async"></button>
+          <figcaption class="plate__caption"><span class="plate__place">Volta a Catalunya, March 2026</span><span class="plate__settings"><span>55 mm</span><span>f/8</span><span>1/210 s</span><span>ISO 320</span></span></figcaption>
         </figure>
-      </div>
-      <div class="plate plate--spread" style="--r:1.3334">
-        <div class="plate__pair">
-          <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/sports_photography/DSCF7835.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/7.1|1/4000 s|ISO 2000|Classic Chrome">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF7835.webp" width="1200" height="1800" alt="Volta a Catalunya, March 2026" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Volta a Catalunya, March 2026</span><span class="plate__settings"><span>55 mm</span><span>f/7.1</span><span>1/4000 s</span><span>ISO 2000</span></span></figcaption>
-          </figure>
-          <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/sports_photography/DSCF7973.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/8|1/210 s|ISO 320|Classic Chrome">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF7973.webp" width="1200" height="1800" alt="Volta a Catalunya, March 2026" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Volta a Catalunya, March 2026</span><span class="plate__settings"><span>55 mm</span><span>f/8</span><span>1/210 s</span><span>ISO 320</span></span></figcaption>
-          </figure>
-        </div>
       </div>
       <div class="plate" style="--r:0.6667">
         <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/sports_photography/DSCF8051.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|32 mm|f/20|1/30 s|ISO 320|Classic Chrome">
@@ -214,12 +160,6 @@ format:
           </figure>
         </div>
       </div>
-      <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/sports_photography/DSCF8854.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|48 mm|f/4|1/60 s|ISO 3200|Classic Chrome">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF8854.webp" width="1800" height="1200" alt="Ghent Marathon, March 2026" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Ghent Marathon, March 2026</span><span class="plate__settings"><span>48 mm</span><span>f/4</span><span>1/60 s</span><span>ISO 3200</span></span></figcaption>
-        </figure>
-      </div>
     <p class="chapter__end"><a href="#street" data-gallery="street">Next gallery: Street</a><a href="#top">Back to top</a></p>
   </section>
 
@@ -229,29 +169,17 @@ format:
       <h2 class="chapter__title" tabindex="-1" id="street-title">Street</h2>
       <p class="chapter__places">Stockholm, Ghent, Toronto, Girona, Rotterdam</p>
     </header>
-      <div class="plate plate--spread" style="--r:1.3334">
-        <div class="plate__pair">
-          <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF1058.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|42 mm|f/7.1|1/125 s|ISO 1250">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1058.webp" width="1200" height="1800" alt="Stockholm, July 2025" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Stockholm, July 2025</span><span class="plate__settings"><span>42 mm</span><span>f/7.1</span><span>1/125 s</span><span>ISO 1250</span></span></figcaption>
-          </figure>
-          <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF1106.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|50 mm|f/7.1|1/170 s|ISO 160">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1106.webp" width="1200" height="1800" alt="Stockholm, July 2025" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Stockholm, July 2025</span><span class="plate__settings"><span>50 mm</span><span>f/7.1</span><span>1/170 s</span><span>ISO 160</span></span></figcaption>
-          </figure>
-        </div>
+      <div class="plate" style="--r:0.6667">
+        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF1106.jpg" data-exif="X-T30 II|XF18-55mm F2.8-4|50 mm|f/7.1|1/170 s|ISO 160">
+          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1106.webp" width="1200" height="1800" alt="Stockholm, July 2025" loading="lazy" decoding="async"></button>
+          <figcaption class="plate__caption"><span class="plate__place">Stockholm, July 2025</span><span class="plate__settings"><span>50 mm</span><span>f/7.1</span><span>1/170 s</span><span>ISO 160</span></span></figcaption>
+        </figure>
       </div>
-      <div class="plate plate--spread" style="--r:1.3334">
-        <div class="plate__pair">
-          <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF1634.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|37 mm|f/4.5|1/56 s|ISO 640|Classic Chrome">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1634.webp" width="1200" height="1800" alt="Ghent, August 2025" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Ghent, August 2025</span><span class="plate__settings"><span>37 mm</span><span>f/4.5</span><span>1/56 s</span><span>ISO 640</span></span></figcaption>
-          </figure>
-          <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF1775.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|37 mm|f/7.1|1/110 s|ISO 640">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1775.webp" width="1200" height="1800" alt="Ghent, August 2025" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Ghent, August 2025</span><span class="plate__settings"><span>37 mm</span><span>f/7.1</span><span>1/110 s</span><span>ISO 640</span></span></figcaption>
-          </figure>
-        </div>
+      <div class="plate" style="--r:0.6667">
+        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF1634.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|37 mm|f/4.5|1/56 s|ISO 640|Classic Chrome">
+          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1634.webp" width="1200" height="1800" alt="Ghent, August 2025" loading="lazy" decoding="async"></button>
+          <figcaption class="plate__caption"><span class="plate__place">Ghent, August 2025</span><span class="plate__settings"><span>37 mm</span><span>f/4.5</span><span>1/56 s</span><span>ISO 640</span></span></figcaption>
+        </figure>
       </div>
       <div class="plate" style="--r:0.6667">
         <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF2414.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/5.6|1/1000 s|ISO 640|Classic Negative">
@@ -271,17 +199,11 @@ format:
           <figcaption class="plate__caption"><span class="plate__place">Toronto, November 2025</span><span class="plate__settings"><span>27 mm</span><span>f/2.8</span><span>1/100 s</span><span>ISO 160</span></span></figcaption>
         </figure>
       </div>
-      <div class="plate plate--spread" style="--r:1.5">
-        <div class="plate__pair">
-          <figure class="plate__figure" style="--r:0.75" data-full="images/arluxis/street_photography/DSCF3931.jpg" data-exif="X-T30 II|XF27mm F2.8|f/4.5|1/125 s|ISO 160">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF3931.webp" width="1350" height="1800" alt="Toronto, November 2025" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Toronto, November 2025</span><span class="plate__settings"><span>27 mm</span><span>f/4.5</span><span>1/125 s</span><span>ISO 160</span></span></figcaption>
-          </figure>
-          <figure class="plate__figure" style="--r:0.75" data-full="images/arluxis/street_photography/DSCF3933.jpg" data-exif="X-T30 II|XF27mm F2.8|f/4.5|1/280 s|ISO 320">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF3933.webp" width="1350" height="1800" alt="Toronto, November 2025" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Toronto, November 2025</span><span class="plate__settings"><span>27 mm</span><span>f/4.5</span><span>1/280 s</span><span>ISO 320</span></span></figcaption>
-          </figure>
-        </div>
+      <div class="plate" style="--r:0.75">
+        <figure class="plate__figure" style="--r:0.75" data-full="images/arluxis/street_photography/DSCF3933.jpg" data-exif="X-T30 II|XF27mm F2.8|f/4.5|1/280 s|ISO 320">
+          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF3933.webp" width="1350" height="1800" alt="Toronto, November 2025" loading="lazy" decoding="async"></button>
+          <figcaption class="plate__caption"><span class="plate__place">Toronto, November 2025</span><span class="plate__settings"><span>27 mm</span><span>f/4.5</span><span>1/280 s</span><span>ISO 320</span></span></figcaption>
+        </figure>
       </div>
       <div class="plate plate--spread" style="--r:1.3334">
         <div class="plate__pair">
@@ -302,21 +224,9 @@ format:
         </figure>
       </div>
       <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/street_photography/DSCF7925.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|37 mm|f/8|1/1000 s|ISO 1250|Classic Chrome">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF7925.webp" width="1800" height="1200" alt="Girona, March 2026" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Girona, March 2026</span><span class="plate__settings"><span>37 mm</span><span>f/8</span><span>1/1000 s</span><span>ISO 1250</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:1.5">
         <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/street_photography/DSCF7927.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|18 mm|f/8|1/1000 s|ISO 1000|Classic Chrome">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF7927.webp" width="1800" height="1200" alt="Girona, March 2026" loading="lazy" decoding="async"></button>
           <figcaption class="plate__caption"><span class="plate__place">Girona, March 2026</span><span class="plate__settings"><span>18 mm</span><span>f/8</span><span>1/1000 s</span><span>ISO 1000</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/street_photography/DSCF8216.JPG" data-exif="X-T30 II|XF27mm F2.8|f/4|1/2500 s|ISO 640|Classic Chrome">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF8216.webp" width="1800" height="1200" alt="Girona, March 2026" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Girona, March 2026</span><span class="plate__settings"><span>27 mm</span><span>f/4</span><span>1/2500 s</span><span>ISO 640</span></span></figcaption>
         </figure>
       </div>
       <div class="plate plate--spread" style="--r:1.3334">
