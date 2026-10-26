@@ -355,9 +355,9 @@ a {
 
 /* Corners appear around a photo on hover or keyboard focus */
 .plate__open::after {
-  --arm: 20px;
-  --line: 1.5px;
-  inset: -10px;
+  --arm: 28px;
+  --line: 2px;
+  inset: -12px;
   opacity: 0;
   transition: opacity 0.25s ease, inset 0.25s ease;
 }
@@ -365,11 +365,44 @@ a {
 .plate__open:hover::after,
 .plate__open:focus-visible::after {
   opacity: 1;
-  inset: -7px;
+  inset: -8px;
 }
 
-.plate__open:focus-visible::after {
-  --line: 2px;
+/* Enlarge mark in the lower right corner of each photo. It shows on hover
+   and focus, and stays visible on touch screens, which have no hover. */
+.plate__open::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23252525' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M14 5h5v5M10 19H5v-5M19 5l-6 6M5 19l6-6'/%3E%3C/svg%3E")
+    center / 16px no-repeat,
+    rgb(237 237 234 / 0.88);
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.plate__open:hover::before,
+.plate__open:focus-visible::before {
+  opacity: 1;
+  transform: none;
+}
+
+.plate__open:hover .plate__img.is-loaded {
+  opacity: 0.94;
+}
+
+@media (hover: none) {
+  .plate__open::before {
+    opacity: 0.85;
+    transform: none;
+  }
 }
 
 .plate__img {
@@ -667,6 +700,7 @@ a {
   .js .frontispiece::after,
   .js .plate__img,
   .plate__open::after,
+  .plate__open::before,
   .viewer__img {
     animation: none;
     transition: none;
