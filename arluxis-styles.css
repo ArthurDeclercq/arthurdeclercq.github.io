@@ -270,20 +270,13 @@ a {
   outline: none;
 }
 
-.chapter__places {
-  max-width: 44ch;
-  margin: 0 auto;
-  color: var(--muted);
-  font-size: 1.2rem;
-}
-
-/* A short gold rule between the gallery title and its places */
-.chapter__places::before {
+/* A short gold rule under the gallery title */
+.chapter__head::after {
   content: "";
   display: block;
   width: 48px;
   height: 1px;
-  margin: 20px auto 14px;
+  margin: 20px auto 0;
   background: var(--gold);
 }
 
