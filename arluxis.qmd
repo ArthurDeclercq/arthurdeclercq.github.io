@@ -22,12 +22,11 @@ format:
 
 <nav class="topline" id="top" aria-label="Site">
   <a class="topline__link" href="index.html">Back to main site</a>
-  <img class="topline__logo" src="icons/logo_arluxis_mark.png" alt="ARLUXIS logo" width="240" height="240">
   <a class="topline__link topline__link--end" href="https://www.instagram.com/arluxis/" target="_blank" rel="noopener">Instagram</a>
 </nav>
 
 <header class="title-page">
-  <h1 class="title-page__title">ARLUXIS</h1>
+  <h1 class="title-page__title"><img src="icons/logo_arluxis_long.webp" alt="ARLUXIS" width="900" height="212"></h1>
   <p class="title-page__byline">Photographs by Arthur Declercq</p>
   <figure class="frontispiece">
     <img src="images/arluxis_webp/hero_shot.webp" width="2400" height="1600" alt="A camera held up to a car's wing mirror on a snowy forest road" fetchpriority="high">
@@ -340,6 +339,7 @@ format:
 <footer class="colophon">
   <p>Landscape, sport and street photography by Arthur Declercq, made with Fujifilm cameras.</p>
   <p class="colophon__small">&copy; 2026 Arthur Declercq. <a href="https://www.instagram.com/arluxis/" target="_blank" rel="noopener">More photographs on Instagram</a></p>
+  <img class="colophon__mark" src="icons/logo_arluxis_mark.webp" alt="" width="152" height="160">
 </footer>
 
 <!-- Viewer for full-size photos -->
