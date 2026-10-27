@@ -53,16 +53,6 @@
   aperture: 5.6
   shutter: "1/180"
   iso: 400
-- file: landscape_photography/DSCF8204.JPG
-  place: Singapore
-  taken: 2026-10-02T17:09:01
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 37
-  aperture: 5.6
-  shutter: "1/1000"
-  iso: 320
-  film: Classic Chrome
 - file: landscape_photography/DSCF8167.JPG
   place: Singapore
   taken: 2026-10-02T14:32:08
@@ -113,16 +103,6 @@
   shutter: "1/1000"
   iso: 400
   film: Classic Chrome
-- file: landscape_photography/DSCF8915.JPG
-  place: Cap Blanc-Nez
-  taken: 2026-04-04T14:43:50
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 55
-  aperture: 6.4
-  shutter: "1/500"
-  iso: 320
-  film: Classic Chrome
 - file: landscape_photography/DSCF8884.JPG
   place: Cap Blanc-Nez
   taken: 2026-04-04T11:13:34
@@ -141,15 +121,6 @@
   focal_length: 27
   aperture: 5.6
   shutter: "1/1250"
-  iso: 640
-- file: landscape_photography/DSCF5781-2.jpg
-  place: Harrachov
-  taken: 2026-01-18T11:32:36
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 6.4
-  shutter: "1/5000"
   iso: 640
 - file: landscape_photography/DSCF4227.JPG
   place: Toronto
@@ -199,15 +170,6 @@
   aperture: 10
   shutter: "1/240"
   iso: 160
-- file: landscape_photography/DSCF0336.jpg
-  place: Kungsleden
-  taken: 2025-07-13T21:24:16
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 25
-  aperture: 5.6
-  shutter: "1/250"
-  iso: 160
 
 # Sports
 - file: sports_photography/DSCF8627.JPG
@@ -249,36 +211,6 @@
   shutter: "1/8"
   iso: 160
   film: Eterna
-- file: sports_photography/DSCF3509.JPG
-  place: Tour de France Femmes
-  taken: 2026-08-07T16:28:26
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 55
-  aperture: 8
-  shutter: "1/1000"
-  iso: 3200
-  film: Eterna
-- file: sports_photography/DSCF3446.JPG
-  place: Carpentras
-  taken: 2026-08-06T10:10:29
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 30
-  aperture: 8
-  shutter: "1/4000"
-  iso: 2500
-  film: Eterna
-- file: sports_photography/DSCF3409.JPG
-  place: Carpentras
-  taken: 2026-08-06T10:05:01
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 55
-  aperture: 4
-  shutter: "1/4000"
-  iso: 800
-  film: Classic Chrome
 - file: sports_photography/DSCF2892.JPG
   place: Chamonix
   taken: 2026-07-30T13:57:53
@@ -349,16 +281,6 @@
   shutter: "1/30"
   iso: 320
   film: Classic Chrome
-- file: sports_photography/DSCF7973.JPG
-  place: Volta a Catalunya
-  taken: 2026-03-24T16:37:00
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 55
-  aperture: 8
-  shutter: "1/210"
-  iso: 320
-  film: Classic Chrome
 - file: sports_photography/DSCF4309-2.jpg
   place: Kings vs Maple Leafs
   taken: 2025-11-13T21:08:14
@@ -368,15 +290,6 @@
   aperture: 4
   shutter: "1/160"
   iso: 250
-- file: sports_photography/DSCF4289-2.jpg
-  place: Kings vs Maple Leafs
-  taken: 2025-11-13T20:24:13
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 55
-  aperture: 4
-  shutter: "1/400"
-  iso: 640
 - file: sports_photography/DSCF3586.jpg
   place: Antwerp Marathon
   taken: 2025-10-19T15:13:14
@@ -463,16 +376,6 @@
   shutter: "1/250"
   iso: 640
   film: Classic Negative
-- file: street_photography/DSCF3239.JPG
-  place: Carpentras
-  taken: 2026-08-02T12:51:53
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 7.1
-  shutter: "1/1000"
-  iso: 800
-  film: Classic Negative
 - file: street_photography/DSCF1969.JPG
   place: Friesland
   taken: 2026-07-12T21:00:16
@@ -501,16 +404,6 @@
   aperture: 7.1
   shutter: "1/2000"
   iso: 800
-  film: Classic Negative
-- file: street_photography/DSCF9156.JPG
-  place: Rotterdam
-  taken: 2026-04-13T12:36:07
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 7.1
-  shutter: "1/2000"
-  iso: 640
   film: Classic Negative
 - file: street_photography/DSCF7927.JPG
   place: Girona
@@ -552,24 +445,6 @@
   shutter: "1/250"
   iso: 640
   film: Classic Negative
-- file: street_photography/DSCF3933.jpg
-  place: Toronto
-  taken: 2025-11-08T15:20:34
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 4.5
-  shutter: "1/280"
-  iso: 320
-- file: street_photography/DSCF3916.jpg
-  place: Toronto
-  taken: 2025-11-08T13:48:22
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 2.8
-  shutter: "1/100"
-  iso: 160
 - file: street_photography/DSCF3907.jpg
   place: Toronto
   taken: 2025-11-08T13:28:51
@@ -589,22 +464,3 @@
   shutter: "1/1000"
   iso: 640
   film: Classic Negative
-- file: street_photography/DSCF1634.JPG
-  place: Ghent
-  taken: 2025-08-08T21:08:35
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 37
-  aperture: 4.5
-  shutter: "1/56"
-  iso: 640
-  film: Classic Chrome
-- file: street_photography/DSCF1106.jpg
-  place: Stockholm
-  taken: 2025-07-24T18:31:47
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 50
-  aperture: 7.1
-  shutter: "1/170"
-  iso: 160
