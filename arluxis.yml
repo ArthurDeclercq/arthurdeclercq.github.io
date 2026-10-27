@@ -2,12 +2,14 @@
 #
 # The image folder decides the gallery: landscape_photography -> Nature,
 # sports_photography -> Sports, street_photography -> Street. Order in this
-# file does not matter; each gallery is shown newest first by `taken`.
+# file does not matter; each gallery is shown newest first by `taken`, after
+# any photos that have an `order` number.
 #
 # Add photos with: python scripts/add_arluxis_photos.py
 # That script makes the WebP preview and fills in the camera details below.
 #
 # Optional keys per photo:
+#   order: 1            show at the top of its gallery, lowest number first
 #   alt: text           describe the photo for screen readers (default: place and month)
 #   pair_with: DSCF1234 show next to this photo instead of the automatic pairing
 #   single: true        never pair this photo
@@ -73,8 +75,9 @@
   shutter: "1/8"
   iso: 320
   film: Eterna
-- file: landscape_photography/DSCF3159.JPG
+- file: sports_photography/DSCF3159.JPG
   place: Chamonix
+  order: 1
   taken: 2026-08-01T13:35:42
   camera: X-T30 II
   lens: XF27mmF2.8 R WR
@@ -464,3 +467,13 @@
   shutter: "1/1000"
   iso: 640
   film: Classic Negative
+- file: sports_photography/DSCF2567.JPG
+  place: Chamonix
+  order: 2
+  taken: 2026-07-28T12:47:56
+  camera: X-T30 II
+  lens: XF27mmF2.8 R WR
+  focal_length: 27
+  aperture: 2.8
+  shutter: "1/6400"
+  iso: 400

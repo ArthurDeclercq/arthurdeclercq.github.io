@@ -2,8 +2,8 @@
 ```{=html}
 <nav class="galleries" id="galleries" aria-label="Galleries">
   <div class="galleries__inner">
-    <a class="galleries__link" href="#nature" data-gallery="nature">Nature<span class="galleries__count">16</span></a>
-    <a class="galleries__link" href="#sports" data-gallery="sports">Sports<span class="galleries__count">15</span></a>
+    <a class="galleries__link" href="#nature" data-gallery="nature">Nature<span class="galleries__count">15</span></a>
+    <a class="galleries__link" href="#sports" data-gallery="sports">Sports<span class="galleries__count">17</span></a>
     <a class="galleries__link" href="#street" data-gallery="street">Street<span class="galleries__count">15</span></a>
   </div>
 </nav>
@@ -49,12 +49,6 @@
         <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/landscape_photography/DSCF7423.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|34 mm|f/22|1/8 s|ISO 320|Eterna">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF7423.webp" width="1200" height="1800" alt="Singapore, September 2026" loading="lazy" decoding="async"></button>
           <figcaption class="plate__caption"><span class="plate__place">Singapore, September 2026</span><span class="plate__settings"><span>34 mm</span><span>f/22</span><span>1/8 s</span><span>ISO 320</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:1.5">
-        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/landscape_photography/DSCF3159.JPG" data-exif="X-T30 II|XF27mm F2.8|f/10|1/1000 s|ISO 500|Classic Chrome">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/landscape_photography/DSCF3159.webp" width="1800" height="1200" alt="Chamonix, August 2026" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Chamonix, August 2026</span><span class="plate__settings"><span>27 mm</span><span>f/10</span><span>1/1000 s</span><span>ISO 500</span></span></figcaption>
         </figure>
       </div>
       <div class="plate" style="--r:1.5">
@@ -120,6 +114,24 @@
       <h2 class="chapter__title" tabindex="-1" id="sports-title">Sports</h2>
     </header>
       <div class="plate" style="--r:1.5">
+        <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/sports_photography/DSCF3159.JPG" data-exif="X-T30 II|XF27mm F2.8|f/10|1/1000 s|ISO 500|Classic Chrome">
+          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF3159.webp" width="1800" height="1200" alt="Chamonix, August 2026" loading="lazy" decoding="async"></button>
+          <figcaption class="plate__caption"><span class="plate__place">Chamonix, August 2026</span><span class="plate__settings"><span>27 mm</span><span>f/10</span><span>1/1000 s</span><span>ISO 500</span></span></figcaption>
+        </figure>
+      </div>
+      <div class="plate plate--spread" style="--r:1.3334">
+        <div class="plate__pair">
+          <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/sports_photography/DSCF2567.JPG" data-exif="X-T30 II|XF27mm F2.8|f/2.8|1/6400 s|ISO 400">
+            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF2567.webp" width="1200" height="1800" alt="Chamonix, July 2026" loading="lazy" decoding="async"></button>
+            <figcaption class="plate__caption"><span class="plate__place">Chamonix, July 2026</span><span class="plate__settings"><span>27 mm</span><span>f/2.8</span><span>1/6400 s</span><span>ISO 400</span></span></figcaption>
+          </figure>
+          <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/sports_photography/DSCF2892.JPG" data-exif="X-T30 II|XF27mm F2.8|f/4.5|1/2000 s|ISO 800|Classic Chrome">
+            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF2892.webp" width="1200" height="1800" alt="Chamonix, July 2026" loading="lazy" decoding="async"></button>
+            <figcaption class="plate__caption"><span class="plate__place">Chamonix, July 2026</span><span class="plate__settings"><span>27 mm</span><span>f/4.5</span><span>1/2000 s</span><span>ISO 800</span></span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="plate" style="--r:1.5">
         <figure class="plate__figure" style="--r:1.5" data-full="images/arluxis/sports_photography/DSCF8627.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/5|1/500 s|ISO 400|Classic Chrome">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF8627.webp" width="1800" height="1200" alt="Eindhoven Marathon, October 2026" loading="lazy" decoding="async"></button>
           <figcaption class="plate__caption"><span class="plate__place">Eindhoven Marathon, October 2026</span><span class="plate__settings"><span>55 mm</span><span>f/5</span><span>1/500 s</span><span>ISO 400</span></span></figcaption>
@@ -141,12 +153,6 @@
         <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/sports_photography/DSCF3540.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/22|1/8 s|ISO 160|Eterna">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF3540.webp" width="1200" height="1800" alt="Tour de France Femmes, August 2026" loading="lazy" decoding="async"></button>
           <figcaption class="plate__caption"><span class="plate__place">Tour de France Femmes, August 2026</span><span class="plate__settings"><span>55 mm</span><span>f/22</span><span>1/8 s</span><span>ISO 160</span></span></figcaption>
-        </figure>
-      </div>
-      <div class="plate" style="--r:0.6667">
-        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/sports_photography/DSCF2892.JPG" data-exif="X-T30 II|XF27mm F2.8|f/4.5|1/2000 s|ISO 800|Classic Chrome">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/sports_photography/DSCF2892.webp" width="1200" height="1800" alt="Chamonix, July 2026" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Chamonix, July 2026</span><span class="plate__settings"><span>27 mm</span><span>f/4.5</span><span>1/2000 s</span><span>ISO 800</span></span></figcaption>
         </figure>
       </div>
       <div class="plate" style="--r:1.5">

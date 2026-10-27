@@ -2,11 +2,13 @@
 """Render arluxis.yml into _arluxis_galleries.qmd (gallery tabs and photo plates).
 
 Runs as a Quarto pre-render step and needs only PyYAML. arluxis.qmd includes
-the output. Within each gallery the photos run newest first. Two upright
+the output. Within each gallery the photos run newest first, after any photos
+with an `order` number (lowest first). Two upright
 photos from the same place share a row (a "spread"); with three or more, the
 two taken closest together are paired first. Per-photo keys in arluxis.yml
 can override this:
 
+  order: 1              show at the top of the gallery
   pair_with: DSCF1234   pair with this photo instead
   single: true          never pair this photo
   pair_at: older        place the pair where its older photo falls
@@ -102,6 +104,7 @@ def load() -> list[dict]:
         )
         photos.append(p)
     photos.sort(key=lambda p: p["taken"], reverse=True)
+    photos.sort(key=lambda p: p.get("order", float("inf")))
     return photos
 
 
