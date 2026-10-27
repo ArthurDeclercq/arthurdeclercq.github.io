@@ -148,11 +148,22 @@ a {
   margin: 28px auto 0;
 }
 
+/* Zoom into the cover photo without changing its size on the page.
+   --zoom: 1 shows the whole photo; higher values crop more.
+   --focus: the point that stays in place, as x% y% of the photo. */
+.frontispiece__crop {
+  --zoom: 1.65;
+  --focus: 37% 62%;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+
 .frontispiece img {
   display: block;
   width: 100%;
   height: auto;
-  background: var(--paper-deep);
+  transform: scale(var(--zoom));
+  transform-origin: var(--focus);
 }
 
 .frontispiece::after {

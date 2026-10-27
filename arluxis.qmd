@@ -36,7 +36,9 @@ format:
   <h1 class="title-page__title"><img src="icons/logo_arluxis_long.webp" alt="ARLUXIS" width="900" height="212"></h1>
   <p class="title-page__byline">Photographs by Arthur Declercq</p>
   <figure class="frontispiece">
-    <img src="images/arluxis_webp/hero_shot.webp" width="2400" height="1600" alt="A camera held up to a car's wing mirror on a snowy forest road" fetchpriority="high">
+    <div class="frontispiece__crop">
+      <img src="images/arluxis_webp/hero_shot.webp" width="2400" height="1600" alt="A camera held up to a car's wing mirror on a snowy forest road" fetchpriority="high">
+    </div>
   </figure>
 </header>
 ```
