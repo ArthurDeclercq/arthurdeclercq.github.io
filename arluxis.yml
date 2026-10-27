@@ -320,153 +320,6 @@
   aperture: 7.1
   shutter: "1/4000"
   iso: 3200
-
-# Street
-- file: street_photography/DSCF9160.JPG
-  place: Friesland
-  taken: 2026-10-20T16:13:22
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 46
-  aperture: 5
-  shutter: "1/500"
-  iso: 800
-- file: street_photography/DSCF7981.JPG
-  place: Singapore
-  taken: 2026-10-01T13:46:34
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 29
-  aperture: 8
-  shutter: "1/2000"
-  iso: 800
-- file: street_photography/DSCF7784.JPG
-  place: Singapore
-  taken: 2026-09-26T18:09:07
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 5
-  shutter: "1/1000"
-  iso: 800
-  film: Classic Chrome
-- file: street_photography/DSCF7706.JPG
-  place: Singapore
-  taken: 2026-09-26T16:42:55
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 7.1
-  shutter: "1/1000"
-  iso: 800
-  film: Classic Chrome
-- file: street_photography/DSCF4573.JPG
-  place: Damme
-  taken: 2026-08-30T11:54:18
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 5
-  shutter: "1/340"
-  iso: 160
-- file: street_photography/DSCF3322.JPG
-  place: Carpentras
-  taken: 2026-08-02T19:06:34
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 50
-  aperture: 9
-  shutter: "1/250"
-  iso: 640
-  film: Classic Negative
-- file: street_photography/DSCF1969.JPG
-  place: Friesland
-  taken: 2026-07-12T21:00:16
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 55
-  aperture: 4
-  shutter: "1/500"
-  iso: 12800
-  film: Classic Chrome
-- file: street_photography/DSCF1632.JPG
-  place: Friesland
-  taken: 2026-07-01T20:01:00
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 55
-  aperture: 6.4
-  shutter: "1/500"
-  iso: 3200
-- file: street_photography/DSCF9170.JPG
-  place: Rotterdam
-  taken: 2026-04-13T13:13:16
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 7.1
-  shutter: "1/2000"
-  iso: 800
-  film: Classic Negative
-- file: street_photography/DSCF7927.JPG
-  place: Girona
-  taken: 2026-03-23T18:19:26
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 18
-  aperture: 8
-  shutter: "1/1000"
-  iso: 1000
-  film: Classic Chrome
-- file: street_photography/DSCF7713.JPG
-  place: Girona
-  taken: 2026-03-22T12:52:45
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 32
-  aperture: 8
-  shutter: "1/1000"
-  iso: 320
-  film: Classic Negative
-- file: street_photography/DSCF4010.JPG
-  place: Toronto
-  taken: 2025-11-09T15:19:16
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 2.8
-  shutter: "1/1300"
-  iso: 640
-  film: Classic Negative
-- file: street_photography/DSCF4003.JPG
-  place: Toronto
-  taken: 2025-11-09T15:17:21
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 2.8
-  shutter: "1/250"
-  iso: 640
-  film: Classic Negative
-- file: street_photography/DSCF3907.jpg
-  place: Toronto
-  taken: 2025-11-08T13:28:51
-  camera: X-T30 II
-  lens: XF27mmF2.8 R WR
-  focal_length: 27
-  aperture: 3.6
-  shutter: "1/100"
-  iso: 320
-- file: street_photography/DSCF2414.JPG
-  place: Ghent
-  taken: 2025-09-06T17:39:40
-  camera: X-T30 II
-  lens: XF18-55mmF2.8-4 R LM OIS
-  focal_length: 55
-  aperture: 5.6
-  shutter: "1/1000"
-  iso: 640
-  film: Classic Negative
 - file: sports_photography/DSCF2567.JPG
   place: Chamonix
   order: 2
@@ -477,3 +330,166 @@
   aperture: 2.8
   shutter: "1/6400"
   iso: 400
+
+# Street
+- file: street_photography/DSCF9160.JPG
+  place: Friesland
+  order: 1
+  taken: 2026-10-20T16:13:22
+  camera: X-T30 II
+  lens: XF18-55mmF2.8-4 R LM OIS
+  focal_length: 46
+  aperture: 5
+  shutter: "1/500"
+  iso: 800
+- file: street_photography/DSCF7981.JPG
+  place: Singapore
+  order: 2
+  taken: 2026-10-01T13:46:34
+  camera: X-T30 II
+  lens: XF18-55mmF2.8-4 R LM OIS
+  focal_length: 29
+  aperture: 8
+  shutter: "1/2000"
+  iso: 800
+- file: street_photography/DSCF7784.JPG
+  place: Singapore
+  order: 3
+  taken: 2026-09-26T18:09:07
+  camera: X-T30 II
+  lens: XF27mmF2.8 R WR
+  focal_length: 27
+  aperture: 5
+  shutter: "1/1000"
+  iso: 800
+  film: Classic Chrome
+- file: street_photography/DSCF7706.JPG
+  place: Singapore
+  order: 4
+  taken: 2026-09-26T16:42:55
+  camera: X-T30 II
+  lens: XF27mmF2.8 R WR
+  focal_length: 27
+  aperture: 7.1
+  shutter: "1/1000"
+  iso: 800
+  film: Classic Chrome
+- file: street_photography/DSCF4573.JPG
+  place: Damme
+  order: 5
+  taken: 2026-08-30T11:54:18
+  camera: X-T30 II
+  lens: XF27mmF2.8 R WR
+  focal_length: 27
+  aperture: 5
+  shutter: "1/340"
+  iso: 160
+- file: street_photography/DSCF3322.JPG
+  place: Carpentras
+  order: 8
+  taken: 2026-08-02T19:06:34
+  camera: X-T30 II
+  lens: XF18-55mmF2.8-4 R LM OIS
+  focal_length: 50
+  aperture: 9
+  shutter: "1/250"
+  iso: 640
+  film: Classic Negative
+- file: street_photography/DSCF1969.JPG
+  place: Ghent
+  order: 6
+  taken: 2026-07-12T21:00:16
+  camera: X-T30 II
+  lens: XF18-55mmF2.8-4 R LM OIS
+  focal_length: 55
+  aperture: 4
+  shutter: "1/500"
+  iso: 12800
+  film: Classic Chrome
+- file: street_photography/DSCF1632.JPG
+  place: Ghent
+  order: 7
+  taken: 2026-07-01T20:01:00
+  camera: X-T30 II
+  lens: XF18-55mmF2.8-4 R LM OIS
+  focal_length: 55
+  aperture: 6.4
+  shutter: "1/500"
+  iso: 3200
+- file: street_photography/DSCF9170.JPG
+  place: Rotterdam
+  order: 14
+  taken: 2026-04-13T13:13:16
+  camera: X-T30 II
+  lens: XF27mmF2.8 R WR
+  focal_length: 27
+  aperture: 7.1
+  shutter: "1/2000"
+  iso: 800
+  film: Classic Negative
+- file: street_photography/DSCF7927.JPG
+  place: Girona
+  order: 9
+  taken: 2026-03-23T18:19:26
+  camera: X-T30 II
+  lens: XF18-55mmF2.8-4 R LM OIS
+  focal_length: 18
+  aperture: 8
+  shutter: "1/1000"
+  iso: 1000
+  film: Classic Chrome
+- file: street_photography/DSCF7713.JPG
+  place: Girona
+  order: 10
+  taken: 2026-03-22T12:52:45
+  camera: X-T30 II
+  lens: XF18-55mmF2.8-4 R LM OIS
+  focal_length: 32
+  aperture: 8
+  shutter: "1/1000"
+  iso: 320
+  film: Classic Negative
+- file: street_photography/DSCF4010.JPG
+  place: Toronto
+  order: 11
+  taken: 2025-11-09T15:19:16
+  camera: X-T30 II
+  lens: XF27mmF2.8 R WR
+  focal_length: 27
+  aperture: 2.8
+  shutter: "1/1300"
+  iso: 640
+  film: Classic Negative
+- file: street_photography/DSCF4003.JPG
+  place: Toronto
+  order: 12
+  taken: 2025-11-09T15:17:21
+  camera: X-T30 II
+  lens: XF27mmF2.8 R WR
+  focal_length: 27
+  aperture: 2.8
+  shutter: "1/250"
+  iso: 640
+  film: Classic Negative
+- file: street_photography/DSCF3907.jpg
+  place: Toronto
+  order: 13
+  taken: 2025-11-08T13:28:51
+  camera: X-T30 II
+  lens: XF27mmF2.8 R WR
+  focal_length: 27
+  aperture: 3.6
+  shutter: "1/100"
+  iso: 320
+- file: street_photography/DSCF2414.JPG
+  place: Ghent
+  order: 15
+  taken: 2025-09-06T17:39:40
+  camera: X-T30 II
+  lens: XF18-55mmF2.8-4 R LM OIS
+  focal_length: 55
+  aperture: 5.6
+  shutter: "1/1000"
+  iso: 640
+  film: Classic Negative
+

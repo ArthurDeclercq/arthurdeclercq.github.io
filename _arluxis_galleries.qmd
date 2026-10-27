@@ -253,28 +253,22 @@
           <figcaption class="plate__caption"><span class="plate__place">Damme, August 2026</span><span class="plate__settings"><span>27 mm</span><span>f/5</span><span>1/340 s</span><span>ISO 160</span></span></figcaption>
         </figure>
       </div>
-      <div class="plate" style="--r:0.6667">
-        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF3322.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|50 mm|f/9|1/250 s|ISO 640|Classic Negative">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF3322.webp" width="1200" height="1800" alt="Carpentras, August 2026" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Carpentras, August 2026</span><span class="plate__settings"><span>50 mm</span><span>f/9</span><span>1/250 s</span><span>ISO 640</span></span></figcaption>
-        </figure>
-      </div>
       <div class="plate plate--spread" style="--r:1.3334">
         <div class="plate__pair">
           <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF1969.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/4|1/500 s|ISO 12800|Classic Chrome">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1969.webp" width="1200" height="1800" alt="Friesland, July 2026" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Friesland, July 2026</span><span class="plate__settings"><span>55 mm</span><span>f/4</span><span>1/500 s</span><span>ISO 12800</span></span></figcaption>
+            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1969.webp" width="1200" height="1800" alt="Ghent, July 2026" loading="lazy" decoding="async"></button>
+            <figcaption class="plate__caption"><span class="plate__place">Ghent, July 2026</span><span class="plate__settings"><span>55 mm</span><span>f/4</span><span>1/500 s</span><span>ISO 12800</span></span></figcaption>
           </figure>
           <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF1632.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|55 mm|f/6.4|1/500 s|ISO 3200">
-            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1632.webp" width="1200" height="1800" alt="Friesland, July 2026" loading="lazy" decoding="async"></button>
-            <figcaption class="plate__caption"><span class="plate__place">Friesland, July 2026</span><span class="plate__settings"><span>55 mm</span><span>f/6.4</span><span>1/500 s</span><span>ISO 3200</span></span></figcaption>
+            <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF1632.webp" width="1200" height="1800" alt="Ghent, July 2026" loading="lazy" decoding="async"></button>
+            <figcaption class="plate__caption"><span class="plate__place">Ghent, July 2026</span><span class="plate__settings"><span>55 mm</span><span>f/6.4</span><span>1/500 s</span><span>ISO 3200</span></span></figcaption>
           </figure>
         </div>
       </div>
       <div class="plate" style="--r:0.6667">
-        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF9170.JPG" data-exif="X-T30 II|XF27mm F2.8|f/7.1|1/2000 s|ISO 800|Classic Negative">
-          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF9170.webp" width="4160" height="6240" alt="Rotterdam, April 2026" loading="lazy" decoding="async"></button>
-          <figcaption class="plate__caption"><span class="plate__place">Rotterdam, April 2026</span><span class="plate__settings"><span>27 mm</span><span>f/7.1</span><span>1/2000 s</span><span>ISO 800</span></span></figcaption>
+        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF3322.JPG" data-exif="X-T30 II|XF18-55mm F2.8-4|50 mm|f/9|1/250 s|ISO 640|Classic Negative">
+          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF3322.webp" width="1200" height="1800" alt="Carpentras, August 2026" loading="lazy" decoding="async"></button>
+          <figcaption class="plate__caption"><span class="plate__place">Carpentras, August 2026</span><span class="plate__settings"><span>50 mm</span><span>f/9</span><span>1/250 s</span><span>ISO 640</span></span></figcaption>
         </figure>
       </div>
       <div class="plate" style="--r:1.5">
@@ -305,6 +299,12 @@
         <figure class="plate__figure" style="--r:0.75" data-full="images/arluxis/street_photography/DSCF3907.jpg" data-exif="X-T30 II|XF27mm F2.8|f/3.6|1/100 s|ISO 320">
           <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF3907.webp" width="1350" height="1800" alt="Toronto, November 2025" loading="lazy" decoding="async"></button>
           <figcaption class="plate__caption"><span class="plate__place">Toronto, November 2025</span><span class="plate__settings"><span>27 mm</span><span>f/3.6</span><span>1/100 s</span><span>ISO 320</span></span></figcaption>
+        </figure>
+      </div>
+      <div class="plate" style="--r:0.6667">
+        <figure class="plate__figure" style="--r:0.6667" data-full="images/arluxis/street_photography/DSCF9170.JPG" data-exif="X-T30 II|XF27mm F2.8|f/7.1|1/2000 s|ISO 800|Classic Negative">
+          <button class="plate__open" type="button"><img class="plate__img" src="images/arluxis_webp/street_photography/DSCF9170.webp" width="4160" height="6240" alt="Rotterdam, April 2026" loading="lazy" decoding="async"></button>
+          <figcaption class="plate__caption"><span class="plate__place">Rotterdam, April 2026</span><span class="plate__settings"><span>27 mm</span><span>f/7.1</span><span>1/2000 s</span><span>ISO 800</span></span></figcaption>
         </figure>
       </div>
       <div class="plate" style="--r:0.6667">
