@@ -226,7 +226,7 @@ a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('images/ArthurDeclercq-1.jpg') 52% center / cover no-repeat;
+  background: url('images/home/hero.webp') 52% center / cover no-repeat;
   filter: grayscale(20%);
   z-index: 0;
 }
@@ -330,6 +330,14 @@ a:hover {
 @media (max-width: 910px) {
   .home-section::before {
     background-position: 72% 18%;
+  }
+
+  /* Portrait phones: full-height crop of the hero (cut at the same 72% x-position),
+     about a third of the bytes of the desktop file */
+  @media (max-aspect-ratio: 3/4) {
+    .home-section::before {
+      background-image: url('images/home/hero_mobile.webp');
+    }
   }
 
   .home-section .hero-content {
@@ -544,7 +552,7 @@ blockquote {
   height: 80vh;
   position: relative;
   width: 100%;
-  background: url('images/ArthurDeclercq-20.jpg') center/cover no-repeat;
+  background: url('images/home/voka.webp') center/cover no-repeat;
   filter: grayscale(20%);
   overflow: hidden;
   background-position: left top;
@@ -853,7 +861,7 @@ blockquote {
 .contact-section {
   position: relative;
   padding: 0;
-  background: url('images/sunday_running_club.jpg') center/cover no-repeat;
+  background: url('images/home/contact.webp') center/cover no-repeat;
   filter: grayscale(20%);
   text-align: left;
   width: 100%;
