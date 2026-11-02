@@ -9,6 +9,8 @@ format:
         <link rel="icon" type="image/png" href="icons/AD_logo_small.png" />
         <link rel="shortcut icon" href="icons/AD_logo_small.png" />
         <link rel="apple-touch-icon" href="icons/AD_logo_small.png" />
+        <link rel="preload" as="image" type="image/webp" href="images/home/hero.webp" media="not all and (max-width: 910px) and (max-aspect-ratio: 3/4)" />
+        <link rel="preload" as="image" type="image/webp" href="images/home/hero_mobile.webp" media="(max-width: 910px) and (max-aspect-ratio: 3/4)" />
 ---
 
 ```{=html}
