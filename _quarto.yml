@@ -1,8 +1,11 @@
 project:
   type: website
-  pre-render: scripts/render_publications.py
+  pre-render:
+    - scripts/render_publications.py
+    - scripts/render_arluxis.py
   render:
     - "*.qmd"
+    - "!docs/"
 
 publish:
   method: gh-pages
@@ -15,7 +18,6 @@ website:
 format:
   html:
     theme: none
-    css: styles.css
     page-layout: full
 
 

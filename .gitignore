@@ -50,3 +50,6 @@ logos.pptx
 # Claude Code superpowers plans and reports
 docs/superpowers/
 .superpowers/
+
+# Full-size originals of the main page photos; kept locally, not deployed
+images/originals/
